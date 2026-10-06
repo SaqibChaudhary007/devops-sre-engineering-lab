@@ -14,9 +14,9 @@
 | Content Mapping | Defined |
 | GitHub Architecture | Defined |
 | D00-T001 How Computers Work | Canonical topic published |
-| D00-T002 Operating System Mental Model | Canonical draft authored |
-| D00-T002 Practical Assets | Next |
-| D00-T002 Assessment | Pending |
+| D00-T002 Operating System Mental Model | Canonical topic published |
+| D00-T002 Practical Assets | Drafted |
+| D00-T002 Assessment | Next |
 | D00-T002 Visual Package | Pending |
 | Domain v1.0 | Pending |
 
