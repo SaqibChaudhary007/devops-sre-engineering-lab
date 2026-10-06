@@ -71,6 +71,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.06 — Cloud Mental Models
+
+[Open D00-T006 Assessment Package](../../assessments/topics/D00/D00-T006/README.md)
+
+Includes:
+
+- 86-question knowledge check
+- applied cloud architecture / autoscaling / quota scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
