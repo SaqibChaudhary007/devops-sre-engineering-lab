@@ -1,4 +1,3 @@
-
 # D00 Content Mapping
 
 GitHub is the permanent knowledge base. Public content is the distribution and teach-back layer.
@@ -39,7 +38,19 @@ Visual package:
 4. [Bottleneck & Queueing Mental Model](../../docs/diagrams/D00/D00-T001/DIA-D00-004-bottleneck-queueing.md)
 5. [Process & Resource Relationship](../../docs/diagrams/D00/D00-T001/DIA-D00-005-process-resource-relationship.md)
 
-These can later be reused in deep videos, Shorts, LinkedIn posts, articles and teach-back material.
+## D00-T002 — Operating System Mental Model
+
+Priority: **P1**
+
+Visual package:
+
+1. [Operating System Overview](../../docs/diagrams/D00/D00-T002/DIA-D00-006-operating-system-overview.md)
+2. [User Space, System Calls & Kernel Boundary](../../docs/diagrams/D00/D00-T002/DIA-D00-007-user-kernel-boundary.md)
+3. [Process States & CPU Scheduling](../../docs/diagrams/D00/D00-T002/DIA-D00-008-process-states-scheduling.md)
+4. [Application I/O Through the Kernel](../../docs/diagrams/D00/D00-T002/DIA-D00-009-application-io-kernel-flow.md)
+5. [Virtual Machine vs Container OS Model](../../docs/diagrams/D00/D00-T002/DIA-D00-010-vm-vs-container.md)
+
+These diagrams can later be reused in deep videos, Shorts, LinkedIn carousels, articles, practical explanations and teach-back material.
 
 ## Rule
 
