@@ -1,3 +1,4 @@
+
 # D00 — Engineering Foundations & DevOps Mental Models
 
 ## Purpose
@@ -15,6 +16,11 @@ to:
 ## Entry Requirements
 
 No Linux, programming, cloud, DevOps or Kubernetes experience is required.
+
+## Start Learning
+
+- [Topics Index](topics/README.md)
+- [00.01 — How Computers Work](topics/00-01-how-computers-work/README.md)
 
 ## Learning Stages
 
@@ -46,7 +52,7 @@ No Linux, programming, cloud, DevOps or Kubernetes experience is required.
 
 A learner should be able to connect:
 
-```text
+~~~text
 User
 → Network
 → Application
@@ -54,11 +60,11 @@ User
 → Operating System
 → Infrastructure
 → Data
-```
+~~~
 
 with:
 
-```text
+~~~text
 Security
 Observability
 Reliability
@@ -67,7 +73,7 @@ Capacity
 Cost
 Failure
 Recovery
-```
+~~~
 
 ## Next Domain
 
