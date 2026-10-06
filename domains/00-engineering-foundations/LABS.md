@@ -27,17 +27,23 @@ Observe
 
 ## 00.01 — How Computers Work
 
-The first practical package is drafted:
-
 1. [OBS-D00-001 — Observe System Resources](../../labs/observation/D00/OBS-D00-001-observe-system-resources.md)
 2. [OBS-D00-002 — Observe a Process](../../labs/observation/D00/OBS-D00-002-observe-a-process.md)
 3. [EXP-D00-001 — Resource Consumption Experiment](../../labs/experiments/D00/EXP-D00-001-resource-consumption.md)
 
-These labs connect CPU, memory, storage, network and process mental models to a real Linux system without requiring deep Linux administration.
+## 00.02 — Operating System Mental Model
+
+1. [OBS-D00-003 — Observe the Operating System Boundary](../../labs/observation/D00/OBS-D00-003-observe-os-boundary.md)
+2. [OBS-D00-004 — Observe System Calls](../../labs/observation/D00/OBS-D00-004-observe-system-calls.md)
+3. [EXP-D00-002 — Process States, Scheduling and Waiting](../../labs/experiments/D00/EXP-D00-002-process-states-scheduling-waiting.md)
+
+These practical assets connect kernel/user-space separation, process state, system calls, identity, permissions, scheduling and waiting to a real Linux system.
 
 ### Verification Status
 
-All three assets are DRAFT, not LAB-VERIFIED. Promote them only after executing each end-to-end on the supported environment.
+All D00-T002 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after executing them end-to-end on supported environments.
 
 ## Future D00 Practical Catalog
 
