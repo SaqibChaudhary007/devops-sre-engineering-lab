@@ -96,6 +96,28 @@ Recommended content angles:
 - **Build-Break-Fix:** Local State Breaks Horizontal Scaling
 - **5 Levels:** Explain Stateless Architecture from Beginner to Architect
 
+
+## D00-T005 — Infrastructure Foundations
+
+Priority: **P1**
+
+Visual package:
+
+1. [Physical Server Resource Model](../../docs/diagrams/D00/D00-T005/DIA-D00-023-physical-server-resource-model.md)
+2. [Bare Metal vs Virtual Machine](../../docs/diagrams/D00/D00-T005/DIA-D00-024-bare-metal-vs-virtual-machine.md)
+3. [Local vs Shared Storage](../../docs/diagrams/D00/D00-T005/DIA-D00-025-local-vs-shared-storage.md)
+4. [Network Path: Client → Load Balancer → Compute](../../docs/diagrams/D00/D00-T005/DIA-D00-026-network-path-client-loadbalancer-compute.md)
+5. [Failure Domains: Host → Rack → Zone → Region](../../docs/diagrams/D00/D00-T005/DIA-D00-027-failure-domains.md)
+6. [Capacity, Headroom & Failover](../../docs/diagrams/D00/D00-T005/DIA-D00-028-capacity-headroom-failover.md)
+
+Recommended content angles:
+
+- **How It Really Works:** What Infrastructure Actually Means
+- **Under the Hood:** Physical Host vs Virtual Machine
+- **Follow the Request:** DNS → Load Balancer → Compute → Dependency
+- **Think Like an SRE:** Why Two VMs May Still Share One Failure Domain
+- **5 Levels:** Explain Capacity and Headroom from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
