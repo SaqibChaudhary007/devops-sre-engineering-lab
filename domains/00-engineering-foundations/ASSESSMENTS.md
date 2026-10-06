@@ -45,6 +45,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.04 — Application Architecture Fundamentals
+
+[Open D00-T004 Assessment Package](../../assessments/topics/D00/D00-T004/README.md)
+
+Includes:
+
+- 50-question knowledge check
+- applied architecture scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
