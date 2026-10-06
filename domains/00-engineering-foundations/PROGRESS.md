@@ -15,11 +15,11 @@
 | D00-T001 How Computers Work | Full topic package published |
 | D00-T002 Operating System Mental Model | Full topic package integrated |
 | D00-T003 Software Engineering Foundations | Canonical draft authored |
-| D00-T003 Source Verification | Next |
-| D00-T003 Practical Assets | Pending |
+| D00-T003 Source Verification | Complete |
+| D00-T003 Practical Assets | Drafted |
 | D00-T003 Assessment | Drafted |
-| D00-T003 Visual Package | Next |
-| D00-T003 Cross-Link Integration | Pending |
+| D00-T003 Visual Package | Drafted |
+| D00-T003 Cross-Link Integration | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
