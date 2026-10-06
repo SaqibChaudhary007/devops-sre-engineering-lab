@@ -1,191 +1,107 @@
 # DevOps SRE Engineering Lab
 
-## About the Author
-
-Hi, I’m **Saqib Chaudhary**.
-
-I’m a **DevOps, SRE, Cloud, and Platform Engineering professional** with hands-on experience across enterprise infrastructure, Kubernetes, OpenShift, cloud platforms, automation, observability, CI/CD, and production operations.
-
-My journey in technology spans software engineering, cloud, DevOps, infrastructure, and platform operations.
-
-Over the years, I have worked with technologies and platforms including:
-
-- Kubernetes
-- OpenShift
-- Docker
-- AWS
-- Azure
-- Terraform
-- Ansible
-- Jenkins
-- GitHub Actions
-- Azure DevOps
-- GitLab CI
-- Argo CD
-- Prometheus
-- Grafana
-- ELK
-- Instana
-- Kafka
-- IBM MQ
-- Redis
-- RabbitMQ
-- IBM Cloud Pak for Integration
-
-My focus today is deeper than simply learning tools.
-
-I want to understand:
-
-- how systems work internally
-- why technologies exist
-- how infrastructure behaves under failure
-- how production incidents are investigated
-- how reliability is engineered
-- how architectural decisions are made
-- how DevOps evolves into SRE and Platform Engineering
-
-I’m building this repository as part of my own journey to become stronger in:
-
-**DevOps → SRE → Platform Engineering → Architecture**
-
-while sharing everything I learn with the engineering community.
-
----
-
-# My Learning Philosophy
-
-I believe engineers should not only know commands.
-
-They should understand:
-
-- systems
-- dependencies
-- internals
-- failure modes
-- evidence
-- trade-offs
-- reliability
-- business impact
-
-That is why my learning model is:
+A production-first learning platform by **Saqib Chaudhary** for people who want to grow from **Beginner → Engineer → Senior Engineer → SRE → Architect**.
 
 > **Learn → Build → Break → Troubleshoot → Interview → Architect → Teach**
 
-For every important topic, I try to move beyond theory.
+This repository is designed to make deep engineering learning easy to navigate. Every learner should always be able to answer:
 
-I want to:
+- Where am I?
+- What should I know first?
+- What am I learning now?
+- Why does it matter?
+- How can I practice it?
+- How can it fail?
+- How do I troubleshoot it?
+- How do I prove I understand it?
+- What should I learn next?
 
-1. understand the concept
-2. understand why it exists
-3. understand the architecture
-4. understand the internals
-5. build it
-6. intentionally break it
-7. observe the failure
-8. troubleshoot it systematically
-9. understand production usage
-10. study interview scenarios
-11. connect it to system design
-12. teach it back clearly
+## Start Here
 
----
+1. Read the [Learning Path](LEARNING-PATH.md).
+2. Review the [36-domain Roadmap](ROADMAP.md).
+3. Start with [Domain 00 — Engineering Foundations](domains/00-engineering-foundations/README.md).
+4. Follow each topic in prerequisite order.
+5. Use labs, scenarios, interviews, assessments, and teach-back to prove understanding.
 
-# Why I’m Building This in Public
+## What Makes This Different
 
-This repository is also part of my **Learn in Public** journey.
+This is not a command dump or interview-answer list. The platform connects each major topic to:
 
-Instead of keeping my learning private, I want to document:
+- mental models and fundamentals
+- architecture and internals
+- hands-on practice
+- Build-Break-Fix exercises
+- blind troubleshooting
+- production scenarios
+- SRE reliability thinking
+- architecture trade-offs
+- interview follow-up trees
+- assessments and mastery criteria
+- teach-back and public content
 
-- technical notes
-- hands-on labs
-- architecture diagrams
-- troubleshooting exercises
-- failure scenarios
-- production lessons
-- interview preparation
-- real engineering questions
-- system design thinking
-- video topics
-- content ideas
+## Navigation
 
-The goal is simple:
+| Area | Purpose |
+|---|---|
+| [Domains](domains/README.md) | Canonical technical knowledge |
+| [Labs](labs/README.md) | Observe, build, break, recover |
+| [Scenarios](scenarios/README.md) | Production, SRE and architecture reasoning |
+| [Interview Bank](interview-bank/README.md) | L1–L5 questions and follow-up trees |
+| [Assessments](assessments/README.md) | Prove competency and mastery |
+| [Content](content/README.md) | Teach-back and public learning assets |
+| [Methodology](docs/methodology/README.md) | How the learning system works |
+| [Sources](docs/sources/README.md) | Evidence and source standards |
+| [Progress](progress/README.md) | Repository learning/build progress |
 
-> **Learn deeply, practice honestly, document clearly, and help others learn from the journey.**
+## Learning Standard
 
----
+Major topics progress through:
 
-# What I Want This Repository to Become
+```text
+Start Here
+   ↓
+What You Will Learn
+   ↓
+Prerequisites
+   ↓
+Simple Mental Model
+   ↓
+Why This Exists
+   ↓
+Core Concept
+   ↓
+How It Works
+   ↓
+Diagram / Flow
+   ↓
+Hands-On
+   ↓
+Break It
+   ↓
+Troubleshoot It
+   ↓
+Production Perspective
+   ↓
+Senior / SRE / Architect View
+   ↓
+Interview Questions
+   ↓
+Knowledge Check
+   ↓
+Teach Back
+   ↓
+What to Learn Next
+```
 
-Over time, I want this project to become a practical open learning platform for:
+## Current Release
 
-- DevOps Engineers
-- Cloud Engineers
-- Site Reliability Engineers
-- Platform Engineers
-- Kubernetes Engineers
-- OpenShift Engineers
-- Infrastructure Engineers
-- engineers preparing for technical interviews
-- engineers moving toward architecture roles
+**v0.1 — Foundation Architecture**
 
-The focus will always remain practical and production-oriented.
+Domain 00 architecture, methodology, templates, navigation, evidence rules, practical model, interview model, assessment model and content model are being established before mass authoring begins.
 
----
+## Author
 
-# About This Repository
+**Saqib Chaudhary**
 
-**DevOps SRE Engineering Lab** is a production-first learning platform for:
-
-- DevOps
-- Site Reliability Engineering
-- Platform Engineering
-- Linux
-- Networking
-- Containers
-- Kubernetes
-- OpenShift
-- AWS
-- Azure
-- Infrastructure as Code
-- CI/CD
-- GitOps
-- Observability
-- Security
-- Distributed Systems
-- System Design
-
-This repository is not intended to become another collection of copied notes, random commands, or interview-question dumps.
-
-The goal is to build a structured engineering knowledge system where every important topic is studied from multiple angles:
-
-- what it is
-- why it exists
-- what problem it solves
-- how it works internally
-- how to build it
-- how it fails
-- how to troubleshoot it
-- how to secure it
-- how to optimize it
-- how it is used in production
-- how it appears in interviews
-- how it connects to architecture
-- how to explain it clearly to others
-
----
-
-# Mission
-
-The mission of this repository is to create a complete learning path from engineering fundamentals to:
-
-- Senior DevOps Engineer
-- Site Reliability Engineer
-- Platform Engineer
-- Kubernetes / OpenShift Engineer
-- Cloud Engineer
-- Infrastructure Engineer
-- SRE / Platform Architect
-
-The learning model is:
-
-> **Learn → Build → Break → Troubleshoot → Interview → Architect → Teach**
+The purpose of this repository is to learn deeply, practice honestly, document clearly, and help others become stronger engineers.
