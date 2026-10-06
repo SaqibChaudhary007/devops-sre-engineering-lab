@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 5-7h
   practical: 1-2h
@@ -98,6 +98,54 @@ You should already understand:
 - dependency
 - startup/runtime failure
 - application version identity
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T004 Source Verification](../../../../docs/sources/D00/D00-T004-source-verification.md).
+3. **Visualize** — review the [D00-T004 Visual Package](../../../../docs/diagrams/D00/D00-T004/README.md).
+4. **Observe** — complete [OBS-D00-007 — Trace a Request Through Client → API → Data](../../../../labs/observation/D00/OBS-D00-007-trace-client-api-data.md).
+5. **Experiment with State** — complete [EXP-D00-004 — Local State vs Replaceable Instances](../../../../labs/experiments/D00/EXP-D00-004-local-state-vs-replaceable-instances.md).
+6. **Experiment with Dependencies** — complete [EXP-D00-005 — Observe Synchronous Dependency Latency Propagation](../../../../labs/experiments/D00/EXP-D00-005-synchronous-dependency-latency.md).
+7. **Assess** — complete the [D00-T004 Assessment Package](../../../../assessments/topics/D00/D00-T004/README.md).
+8. **Teach Back** — explain architecture at Beginner, Engineer, Senior, SRE and Architect levels.
+9. **Continue** — move to 00.05 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-017 — Client → Server → Data](../../../../docs/diagrams/D00/D00-T004/DIA-D00-017-client-server-data.md)
+- [DIA-D00-018 — Three-Tier Architecture](../../../../docs/diagrams/D00/D00-T004/DIA-D00-018-three-tier-architecture.md)
+- [DIA-D00-019 — Monolith vs Microservices](../../../../docs/diagrams/D00/D00-T004/DIA-D00-019-monolith-vs-microservices.md)
+- [DIA-D00-020 — Synchronous vs Asynchronous Communication](../../../../docs/diagrams/D00/D00-T004/DIA-D00-020-sync-vs-async.md)
+- [DIA-D00-021 — Stateful vs Stateless Scaling](../../../../docs/diagrams/D00/D00-T004/DIA-D00-021-stateful-vs-stateless.md)
+- [DIA-D00-022 — Request Path & Failure Propagation](../../../../docs/diagrams/D00/D00-T004/DIA-D00-022-request-path-failure-propagation.md)
+
+## Practical Package
+
+- [OBS-D00-007 — Trace a Request Through Client → API → Data](../../../../labs/observation/D00/OBS-D00-007-trace-client-api-data.md)
+- [EXP-D00-004 — Local State vs Replaceable Instances](../../../../labs/experiments/D00/EXP-D00-004-local-state-vs-replaceable-instances.md)
+- [EXP-D00-005 — Observe Synchronous Dependency Latency Propagation](../../../../labs/experiments/D00/EXP-D00-005-synchronous-dependency-latency.md)
+
+The practical assets remain **DRAFT** until they are executed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T004 Assessment Package](../../../../assessments/topics/D00/D00-T004/README.md) includes:
+
+- 50-question knowledge check
+- applied architecture scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1360,23 +1408,23 @@ Before moving on, retain:
 
 ---
 
-# 45. Practical Package — Next Layer
+# 45. Practical Package
 
-The practical package should include safe local exercises such as:
+Complete the practical assets:
 
-- trace a request through client → API → data
-- run multiple simple app instances behind a local load balancer simulation
-- demonstrate stateless vs local-state behavior
-- create a controlled dependency slowdown and observe propagation
-- create a simple asynchronous producer/consumer flow
+1. [OBS-D00-007 — Trace a Request Through Client → API → Data](../../../../labs/observation/D00/OBS-D00-007-trace-client-api-data.md)
+2. [EXP-D00-004 — Local State vs Replaceable Instances](../../../../labs/experiments/D00/EXP-D00-004-local-state-vs-replaceable-instances.md)
+3. [EXP-D00-005 — Observe Synchronous Dependency Latency Propagation](../../../../labs/experiments/D00/EXP-D00-005-synchronous-dependency-latency.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These labs turn request flow, state placement and dependency latency into observable behavior.
 
 ---
 
-# 46. Assessment Package — Pending
+# 46. Assessment Package
 
-The assessment package should test:
+Complete the [D00-T004 Assessment Package](../../../../assessments/topics/D00/D00-T004/README.md).
+
+It tests:
 
 - client/server roles
 - three-tier architecture
@@ -1391,9 +1439,11 @@ The assessment package should test:
 
 ---
 
-# 47. Visual Package — Pending
+# 47. Visual Package
 
-The visual package should include:
+Review the [D00-T004 Visual Package](../../../../docs/diagrams/D00/D00-T004/README.md).
+
+The package includes:
 
 1. Client → Server → Data
 2. Three-Tier Architecture
@@ -1404,7 +1454,27 @@ The visual package should include:
 
 ---
 
-# 48. What Comes Next
+# 48. Completion Gate
+
+Before moving on, confirm that you can:
+
+- draw a user request path through an application
+- explain client/server roles
+- explain frontend/backend/data responsibilities
+- compare monolith, modular monolith and microservices without assuming one is always better
+- explain an API as a contract
+- distinguish synchronous and asynchronous communication
+- explain why local state affects replaceability and scaling
+- explain why stateless instances can still depend on stateful systems
+- explain why scaling the app tier may not fix database/dependency bottlenecks
+- identify SPOFs and dependency chains
+- explain how failure and latency propagate
+- complete the practical package
+- score at least 80% on the knowledge check
+- demonstrate at least L3 / FD-3 reasoning
+- teach the architecture mental model clearly without relying on notes
+
+# 49. What Comes Next
 
 After D00-T004 is completed, continue to:
 
@@ -1422,7 +1492,7 @@ That topic will connect applications to:
 
 ---
 
-# 49. Sources & Evidence
+# 50. Sources & Evidence
 
 Planned authoritative source families for verification:
 
@@ -1438,9 +1508,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1454,3 +1525,10 @@ Verified nuances:
 - microservices are not automatically better than monoliths
 - load balancing alone does not guarantee high availability
 - asynchronous communication and caching introduce their own operational trade-offs
+
+
+## Topic Package Status
+
+**D00-T004 is structurally complete.**
+
+Remaining quality work is operational verification of the practical labs. Once those labs are successfully executed on supported environments, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
