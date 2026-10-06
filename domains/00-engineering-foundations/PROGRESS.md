@@ -25,8 +25,8 @@
 | D00-T005 Source Verification | Complete |
 | D00-T005 Practical Assets | Drafted |
 | D00-T005 Assessment | Drafted |
-| D00-T005 Visual Package | Next |
-| D00-T005 Cross-Link Integration | Pending |
+| D00-T005 Visual Package | Drafted |
+| D00-T005 Cross-Link Integration | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
