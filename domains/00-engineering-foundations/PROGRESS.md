@@ -19,8 +19,8 @@
 | D00-T004 Source Verification | Complete |
 | D00-T004 Practical Assets | Drafted |
 | D00-T004 Assessment | Drafted |
-| D00-T004 Visual Package | Next |
-| D00-T004 Cross-Link Integration | Pending |
+| D00-T004 Visual Package | Drafted |
+| D00-T004 Cross-Link Integration | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
