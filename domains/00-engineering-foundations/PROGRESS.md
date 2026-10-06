@@ -28,8 +28,8 @@
 | D00-T005 Visual Package | Drafted |
 | D00-T005 Cross-Link Integration | Complete |
 | D00-T006 Cloud Mental Models | Canonical draft authored |
-| D00-T006 Source Verification | Next |
-| D00-T006 Practical Assets | Pending |
+| D00-T006 Source Verification | Complete |
+| D00-T006 Practical Assets | Next |
 | D00-T006 Assessment | Pending |
 | D00-T006 Visual Package | Pending |
 | D00-T006 Cross-Link Integration | Pending |

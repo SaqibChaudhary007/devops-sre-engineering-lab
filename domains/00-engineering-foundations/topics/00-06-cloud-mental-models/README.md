@@ -22,6 +22,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -780,6 +781,10 @@ Challenges include:
 # 28. Multi-Cloud
 
 Multi-cloud means using services from more than one cloud provider.
+
+Important classification note:
+
+> Multi-cloud is common industry terminology, but it is **not** one of the four formal NIST SP 800-145 cloud deployment models.
 
 This may be intentional or organizational.
 
@@ -1551,8 +1556,26 @@ Planned authoritative source families for verification:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T006 Source Verification](../../../../docs/sources/D00/D00-T006-source-verification.md)
+
+Verified nuances:
+
+- NIST cloud characteristics include on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service
+- multi-cloud is industry terminology, not one of NIST SP 800-145's four deployment models
+- control-plane and data-plane behavior/failure can differ
+- scalability and elasticity are related but not identical
+- managed services shift responsibility rather than eliminate it
+- public cloud does not mean every resource is publicly reachable
+- serverless still uses provider-operated servers
+- autoscaling only helps when the scaled tier and signals match the actual bottleneck
+- zone-level resilience is not automatically disaster recovery
+- quotas and service limits are real architecture constraints
+- cloud-native is broader than Kubernetes
