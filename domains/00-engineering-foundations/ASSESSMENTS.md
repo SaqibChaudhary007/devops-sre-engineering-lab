@@ -1,3 +1,4 @@
+
 # D00 Assessments & Mastery Criteria
 
 ## Assessment Layers
@@ -11,6 +12,20 @@
 7. Interview assessment
 8. Teach-back
 9. Final capstone
+
+## Topic Assessment Packages
+
+### 00.01 — How Computers Work
+
+[Open D00-T001 Assessment Package](../../assessments/topics/D00/D00-T001/README.md)
+
+Includes:
+
+- knowledge check
+- applied scenario
+- senior/SRE/architect follow-ups
+- teach-back assessment
+- scoring rubric and remediation map
 
 ## Status
 
