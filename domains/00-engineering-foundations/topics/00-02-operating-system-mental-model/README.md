@@ -8,7 +8,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 4-6h
   practical: 1-2h
@@ -81,6 +81,50 @@ You should already understand:
 - process as a running program
 - bottleneck
 - utilization vs saturation
+
+---
+
+# Learning Package Navigation
+
+Use this topic as the canonical learning page. Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Visualize** — review the [D00-T002 visual package](../../../../docs/diagrams/D00/D00-T002/README.md).
+3. **Observe** — complete [OBS-D00-003 — Observe the Operating System Boundary](../../../../labs/observation/D00/OBS-D00-003-observe-os-boundary.md).
+4. **Trace** — complete [OBS-D00-004 — Observe System Calls](../../../../labs/observation/D00/OBS-D00-004-observe-system-calls.md).
+5. **Experiment** — complete [EXP-D00-002 — Process States, Scheduling and Waiting](../../../../labs/experiments/D00/EXP-D00-002-process-states-scheduling-waiting.md).
+6. **Assess** — complete the [D00-T002 Assessment Package](../../../../assessments/topics/D00/D00-T002/README.md).
+7. **Teach Back** — explain the topic at Beginner, Engineer, Senior, SRE and Architect levels.
+8. **Continue** — move to 00.03 only when the core mental model is clear.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-006 — Operating System Overview](../../../../docs/diagrams/D00/D00-T002/DIA-D00-006-operating-system-overview.md)
+- [DIA-D00-007 — User Space, System Calls & Kernel Boundary](../../../../docs/diagrams/D00/D00-T002/DIA-D00-007-user-kernel-boundary.md)
+- [DIA-D00-008 — Process States & CPU Scheduling](../../../../docs/diagrams/D00/D00-T002/DIA-D00-008-process-states-scheduling.md)
+- [DIA-D00-009 — Application I/O Through the Kernel](../../../../docs/diagrams/D00/D00-T002/DIA-D00-009-application-io-kernel-flow.md)
+- [DIA-D00-010 — Virtual Machine vs Container OS Model](../../../../docs/diagrams/D00/D00-T002/DIA-D00-010-vm-vs-container.md)
+
+## Practical Package
+
+- [OBS-D00-003 — Observe the Operating System Boundary](../../../../labs/observation/D00/OBS-D00-003-observe-os-boundary.md)
+- [OBS-D00-004 — Observe System Calls](../../../../labs/observation/D00/OBS-D00-004-observe-system-calls.md)
+- [EXP-D00-002 — Process States, Scheduling and Waiting](../../../../labs/experiments/D00/EXP-D00-002-process-states-scheduling-waiting.md)
+
+The practical assets remain **DRAFT** until they are executed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T002 Assessment Package](../../../../assessments/topics/D00/D00-T002/README.md) includes:
+
+- 30-question knowledge check
+- applied OS/resource scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -982,9 +1026,22 @@ Before moving on, retain these ideas:
 
 ---
 
-# 37. What Comes Next
+# 37. Completion Gate & What Comes Next
 
-After completing the practical and assessment package for this topic, continue to:
+Before moving on, confirm that you can:
+
+- explain kernel space vs user space
+- explain why system calls exist
+- distinguish process existence from service health
+- explain why processes can wait without using much CPU
+- describe the OS role in memory, filesystems, networking and devices
+- explain why common Linux containers share the host kernel
+- complete the practical package
+- score at least 80% on the knowledge check
+- demonstrate at least L3 / FD-3 reasoning in the assessment
+- teach the mental model clearly without relying on notes
+
+Then continue to:
 
 ## 00.03 — Software Engineering Foundations
 
@@ -1014,6 +1071,13 @@ Primary references for the mental model:
 Status:
 
 - conceptual material: RESEARCHED / DOC-VERIFIED
-- practical package: not yet authored
-- assessment package: not yet authored
-- visual package: initial canonical diagram included; dedicated visual package next
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
+
+## Topic Package Status
+
+**D00-T002 is structurally complete.**
+
+Remaining quality work is operational verification of the practical labs. Once those labs are executed successfully on supported environments, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
