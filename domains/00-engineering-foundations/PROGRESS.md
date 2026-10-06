@@ -1,3 +1,4 @@
+
 # D00 Progress
 
 | Layer | Status |
@@ -12,8 +13,11 @@
 | Assessment Framework | Defined |
 | Content Mapping | Defined |
 | GitHub Architecture | Defined |
-| Topic Authoring | Next |
-| Lab Verification | Pending |
+| D00-T001 How Computers Work | Canonical topic published |
+| D00-T002 Operating System Mental Model | Canonical draft authored |
+| D00-T002 Practical Assets | Next |
+| D00-T002 Assessment | Pending |
+| D00-T002 Visual Package | Pending |
 | Domain v1.0 | Pending |
 
-Current milestone: **v0.1 foundation architecture**.
+Current milestone: **Domain 00 topic authoring**.
