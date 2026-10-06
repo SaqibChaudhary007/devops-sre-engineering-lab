@@ -19,6 +19,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -1336,8 +1337,20 @@ Planned authoritative source families for verification:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification pass: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification pass: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T003 Source Verification](../../../../docs/sources/D00/D00-T003-source-verification.md)
+
+Verified nuances:
+
+- compiled vs interpreted is not a strict language binary
+- dependency locking improves repeatability but is not full reproducibility
+- artifacts are ecosystem/context dependent
+- build-once/promote is a delivery principle rather than a universal law
+- container images package user-space content, not the host kernel

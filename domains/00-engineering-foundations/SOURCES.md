@@ -21,3 +21,7 @@ D00 follows the repository-wide [Sources & Evidence Model](../../docs/sources/RE
 Prefer standards and official documentation for factual behavior, authoritative engineering literature for mental models, labs for reproducible behavior, and anonymized production patterns for operational context.
 
 AI output is never treated as technical authority.
+
+## Topic Verification Records
+
+- [D00-T003 — Software Engineering Foundations](../../docs/sources/D00/D00-T003-source-verification.md) — core claims DOC-VERIFIED
