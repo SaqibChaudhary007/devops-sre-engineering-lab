@@ -45,6 +45,20 @@ All D00-T002 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after executing them end-to-end on supported environments.
 
+## 00.03 — Software Engineering Foundations
+
+1. [OBS-D00-005 — Observe Source → Runtime → Process](../../labs/observation/D00/OBS-D00-005-observe-source-runtime-process.md)
+2. [OBS-D00-006 — Compile Source and Inspect the Artifact](../../labs/observation/D00/OBS-D00-006-compile-and-inspect-artifact.md)
+3. [EXP-D00-003 — Configuration, Startup Failure and Exit Status](../../labs/experiments/D00/EXP-D00-003-configuration-startup-exit-status.md)
+
+These assets connect source code, runtime execution, compilation, artifacts, configuration and exit status to real Linux processes.
+
+### Verification Status
+
+All D00-T003 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after executing them end-to-end on supported environments.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
