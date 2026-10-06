@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 4-6h
   practical: 1-2h
@@ -87,6 +87,54 @@ You should already understand:
 - process execution
 - files and filesystem abstraction
 - process/resource relationships
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T003 Source Verification](../../../../docs/sources/D00/D00-T003-source-verification.md).
+3. **Visualize** — review the [D00-T003 Visual Package](../../../../docs/diagrams/D00/D00-T003/README.md).
+4. **Observe** — complete [OBS-D00-005 — Observe Source → Runtime → Process](../../../../labs/observation/D00/OBS-D00-005-observe-source-runtime-process.md).
+5. **Build** — complete [OBS-D00-006 — Compile Source and Inspect the Artifact](../../../../labs/observation/D00/OBS-D00-006-compile-and-inspect-artifact.md).
+6. **Break / Fix** — complete [EXP-D00-003 — Configuration, Startup Failure and Exit Status](../../../../labs/experiments/D00/EXP-D00-003-configuration-startup-exit-status.md).
+7. **Assess** — complete the [D00-T003 Assessment Package](../../../../assessments/topics/D00/D00-T003/README.md).
+8. **Teach Back** — explain the lifecycle at Beginner, Engineer, Senior, SRE and Architect levels.
+9. **Continue** — move to 00.04 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-011 — Source to Process Lifecycle](../../../../docs/diagrams/D00/D00-T003/DIA-D00-011-source-to-process-lifecycle.md)
+- [DIA-D00-012 — Compiler vs Runtime-Driven Execution](../../../../docs/diagrams/D00/D00-T003/DIA-D00-012-compiler-vs-runtime.md)
+- [DIA-D00-013 — Dependency Graph](../../../../docs/diagrams/D00/D00-T003/DIA-D00-013-dependency-graph.md)
+- [DIA-D00-014 — Build-Time vs Runtime Dependencies](../../../../docs/diagrams/D00/D00-T003/DIA-D00-014-buildtime-vs-runtime-dependencies.md)
+- [DIA-D00-015 — Build Once, Promote the Artifact](../../../../docs/diagrams/D00/D00-T003/DIA-D00-015-build-once-promote.md)
+- [DIA-D00-016 — Build vs Startup vs Runtime Failure](../../../../docs/diagrams/D00/D00-T003/DIA-D00-016-failure-stage-model.md)
+
+## Practical Package
+
+- [OBS-D00-005 — Observe Source → Runtime → Process](../../../../labs/observation/D00/OBS-D00-005-observe-source-runtime-process.md)
+- [OBS-D00-006 — Compile Source and Inspect the Artifact](../../../../labs/observation/D00/OBS-D00-006-compile-and-inspect-artifact.md)
+- [EXP-D00-003 — Configuration, Startup Failure and Exit Status](../../../../labs/experiments/D00/EXP-D00-003-configuration-startup-exit-status.md)
+
+The practical assets remain **DRAFT** until they are executed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T003 Assessment Package](../../../../assessments/topics/D00/D00-T003/README.md) includes:
+
+- 40-question knowledge check
+- applied source/build/artifact/configuration scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1260,26 +1308,25 @@ Before moving on, retain:
 
 ---
 
-# 45. Practical Package — Next Layer
+# 45. Practical Package
 
-The practical package should include safe, local exercises such as:
+Complete the practical assets:
 
-- observe source → runtime → process
-- compile a tiny native program and inspect the produced artifact
-- run a small Python program and compare the execution model
-- intentionally create a missing runtime dependency/configuration failure
-- inspect exit codes
-- compare artifact identity/version
+1. [OBS-D00-005 — Observe Source → Runtime → Process](../../../../labs/observation/D00/OBS-D00-005-observe-source-runtime-process.md)
+2. [OBS-D00-006 — Compile Source and Inspect the Artifact](../../../../labs/observation/D00/OBS-D00-006-compile-and-inspect-artifact.md)
+3. [EXP-D00-003 — Configuration, Startup Failure and Exit Status](../../../../labs/experiments/D00/EXP-D00-003-configuration-startup-exit-status.md)
 
-These assets will be authored separately and will remain DRAFT until LAB-VERIFIED.
+These labs turn the mental model into observable behavior.
 
 ---
 
-# 46. Assessment Package — Pending
+# 46. Assessment Package
 
-The assessment layer will test:
+Complete the [D00-T003 Assessment Package](../../../../assessments/topics/D00/D00-T003/README.md).
 
-- compilation vs interpretation/runtime
+It tests:
+
+- compilation vs runtime-driven execution
 - source vs artifact
 - build-time vs runtime dependency
 - configuration vs code
@@ -1290,20 +1337,41 @@ The assessment layer will test:
 
 ---
 
-# 47. Visual Package — Pending
+# 47. Visual Package
 
-The visual package should include:
+Review the [D00-T003 Visual Package](../../../../docs/diagrams/D00/D00-T003/README.md).
+
+The package includes:
 
 1. Source → Build → Artifact → Runtime → Process
 2. Compiler vs Runtime-Driven Execution
 3. Dependency Graph
 4. Build-Time vs Runtime Dependency
 5. Build Once → Promote Artifact
-6. Failure Stage: Build vs Startup vs Runtime
+6. Build vs Startup vs Runtime Failure
 
 ---
 
-# 48. What Comes Next
+# 48. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain source → build/runtime → artifact → process
+- distinguish compiler, interpreter and runtime
+- distinguish direct, transitive, build-time and runtime dependencies
+- explain source vs artifact
+- explain configuration vs code
+- explain why a green build does not prove production health
+- classify build, startup and runtime failures
+- explain why exact artifact identity matters
+- explain the purpose and limits of dependency locking
+- explain why reproducibility reduces uncertainty
+- complete the practical package
+- score at least 80% on the knowledge check
+- demonstrate at least L3 / FD-3 reasoning
+- teach the lifecycle clearly without relying on notes
+
+# 49. What Comes Next
 
 After D00-T003 is completed, continue to:
 
@@ -1321,7 +1389,7 @@ That topic connects individual software artifacts into systems:
 
 ---
 
-# 49. Sources & Evidence
+# 50. Sources & Evidence
 
 Planned authoritative source families for verification:
 
@@ -1339,9 +1407,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification pass: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1354,3 +1423,10 @@ Verified nuances:
 - artifacts are ecosystem/context dependent
 - build-once/promote is a delivery principle rather than a universal law
 - container images package user-space content, not the host kernel
+
+
+## Topic Package Status
+
+**D00-T003 is structurally complete.**
+
+Remaining quality work is operational verification of the practical labs. Once those labs are successfully executed on supported environments, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
