@@ -27,12 +27,13 @@
 | D00-T005 Assessment | Drafted |
 | D00-T005 Visual Package | Drafted |
 | D00-T005 Cross-Link Integration | Complete |
-| D00-T006 Cloud Mental Models | Canonical draft authored |
+| D00-T006 Cloud Mental Models | Full topic package integrated |
 | D00-T006 Source Verification | Complete |
 | D00-T006 Practical Assets | Drafted |
 | D00-T006 Assessment | Drafted |
 | D00-T006 Visual Package | Drafted |
-| D00-T006 Cross-Link Integration | Next |
+| D00-T006 Cross-Link Integration | Complete |
+| D00-T007 DevOps Foundations | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
