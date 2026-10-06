@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 5-7h
   practical: 1-2h
@@ -101,6 +101,54 @@ You should already understand:
 - state
 - load balancing
 - failure propagation
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T005 Source Verification](../../../../docs/sources/D00/D00-T005-source-verification.md).
+3. **Visualize** — review the [D00-T005 Visual Package](../../../../docs/diagrams/D00/D00-T005/README.md).
+4. **Observe Resources** — complete [OBS-D00-008 — Inspect Compute, Memory, Storage, and Network Resources](../../../../labs/observation/D00/OBS-D00-008-inspect-infrastructure-resources.md).
+5. **Observe Virtualization & Failure Domains** — complete [OBS-D00-009 — Detect Virtualization and Map Infrastructure Dependencies](../../../../labs/observation/D00/OBS-D00-009-detect-virtualization-map-dependencies.md).
+6. **Experiment with Capacity** — complete [EXP-D00-006 — Capacity, Utilization, and Headroom with a Bounded Workload](../../../../labs/experiments/D00/EXP-D00-006-capacity-utilization-headroom.md).
+7. **Assess** — complete the [D00-T005 Assessment Package](../../../../assessments/topics/D00/D00-T005/README.md).
+8. **Teach Back** — explain infrastructure at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.06 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-023 — Physical Server Resource Model](../../../../docs/diagrams/D00/D00-T005/DIA-D00-023-physical-server-resource-model.md)
+- [DIA-D00-024 — Bare Metal vs Virtual Machine](../../../../docs/diagrams/D00/D00-T005/DIA-D00-024-bare-metal-vs-virtual-machine.md)
+- [DIA-D00-025 — Local vs Shared Storage](../../../../docs/diagrams/D00/D00-T005/DIA-D00-025-local-vs-shared-storage.md)
+- [DIA-D00-026 — Network Path: Client → Load Balancer → Compute](../../../../docs/diagrams/D00/D00-T005/DIA-D00-026-network-path-client-loadbalancer-compute.md)
+- [DIA-D00-027 — Failure Domains: Host → Rack → Zone → Region](../../../../docs/diagrams/D00/D00-T005/DIA-D00-027-failure-domains.md)
+- [DIA-D00-028 — Capacity, Headroom & Failover](../../../../docs/diagrams/D00/D00-T005/DIA-D00-028-capacity-headroom-failover.md)
+
+## Practical Package
+
+- [OBS-D00-008 — Inspect Compute, Memory, Storage, and Network Resources](../../../../labs/observation/D00/OBS-D00-008-inspect-infrastructure-resources.md)
+- [OBS-D00-009 — Detect Virtualization and Map Infrastructure Dependencies](../../../../labs/observation/D00/OBS-D00-009-detect-virtualization-map-dependencies.md)
+- [EXP-D00-006 — Capacity, Utilization, and Headroom with a Bounded Workload](../../../../labs/experiments/D00/EXP-D00-006-capacity-utilization-headroom.md)
+
+The practical assets remain **DRAFT** until they are executed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T005 Assessment Package](../../../../assessments/topics/D00/D00-T005/README.md) includes:
+
+- 68-question knowledge check
+- applied infrastructure/failure-domain scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1247,24 +1295,23 @@ Before moving on, retain:
 
 ---
 
-# 52. Practical Package — Next Layer
+# 52. Practical Package
 
-The practical package should include safe local exercises such as:
+Complete the practical assets:
 
-- inspect physical/virtual CPU, memory, disks, and interfaces from Linux
-- identify whether the system appears virtualized
-- compare local filesystem/storage views
-- inspect IP address, routes, and listening services
-- simulate resource headroom and observe saturation safely
-- draw the local system's infrastructure dependency path
+1. [OBS-D00-008 — Inspect Compute, Memory, Storage, and Network Resources](../../../../labs/observation/D00/OBS-D00-008-inspect-infrastructure-resources.md)
+2. [OBS-D00-009 — Detect Virtualization and Map Infrastructure Dependencies](../../../../labs/observation/D00/OBS-D00-009-detect-virtualization-map-dependencies.md)
+3. [EXP-D00-006 — Capacity, Utilization, and Headroom with a Bounded Workload](../../../../labs/experiments/D00/EXP-D00-006-capacity-utilization-headroom.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These assets turn infrastructure abstractions into observable guest-visible evidence, failure-domain reasoning, and capacity/headroom behavior.
 
 ---
 
-# 53. Assessment Package — Pending
+# 53. Assessment Package
 
-The assessment package should test:
+Complete the [D00-T005 Assessment Package](../../../../assessments/topics/D00/D00-T005/README.md).
+
+It tests:
 
 - physical vs virtual infrastructure
 - hypervisor, host, and guest
@@ -1282,9 +1329,11 @@ The assessment package should test:
 
 ---
 
-# 54. Visual Package — Pending
+# 54. Visual Package
 
-The visual package should include:
+Review the [D00-T005 Visual Package](../../../../docs/diagrams/D00/D00-T005/README.md).
+
+The package includes:
 
 1. Physical Server Resource Model
 2. Bare Metal vs Virtual Machine
@@ -1295,7 +1344,29 @@ The visual package should include:
 
 ---
 
-# 55. What Comes Next
+# 55. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain physical vs virtual infrastructure
+- explain host, guest, hypervisor, and vCPU
+- distinguish local, shared, block, file, and object storage at a high level
+- trace a network path through interface, route, firewall, and load balancer concepts
+- explain why two VMs may still share one failure domain
+- explain host/rack/zone/region failure-domain thinking without assuming provider-specific details
+- distinguish capacity, utilization, saturation, and headroom
+- explain why low CPU does not prove infrastructure health
+- explain why failover capacity must include storage, network, database, and dependency limits
+- explain redundancy vs high availability
+- explain mutable vs immutable infrastructure
+- explain what IaC improves and what it does not guarantee
+- separate observed, inferred, and unknown infrastructure facts
+- complete the practical package
+- score at least 80% on the knowledge check
+- demonstrate at least L3 / FD-3 reasoning
+- teach the infrastructure mental model clearly without relying on notes
+
+# 56. What Comes Next
 
 After D00-T005 is completed, continue to:
 
@@ -1314,7 +1385,7 @@ That topic will connect infrastructure fundamentals to:
 
 ---
 
-# 56. Sources & Evidence
+# 57. Sources & Evidence
 
 Planned authoritative source families for verification:
 
@@ -1331,9 +1402,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1350,3 +1422,10 @@ Verified nuances:
 - utilization and saturation are different concepts
 - immutable infrastructure and IaC are operating patterns, not automatic correctness
 - shared-responsibility boundaries vary by service model
+
+
+## Topic Package Status
+
+**D00-T005 is structurally complete.**
+
+Remaining quality work is operational verification of the practical labs. Once those labs are successfully executed on supported environments, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
