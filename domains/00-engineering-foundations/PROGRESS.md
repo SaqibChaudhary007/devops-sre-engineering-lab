@@ -16,8 +16,8 @@
 | D00-T002 Operating System Mental Model | Full topic package integrated |
 | D00-T003 Software Engineering Foundations | Full topic package integrated |
 | D00-T004 Application Architecture Fundamentals | Canonical draft authored |
-| D00-T004 Source Verification | Next |
-| D00-T004 Practical Assets | Pending |
+| D00-T004 Source Verification | Complete |
+| D00-T004 Practical Assets | Next |
 | D00-T004 Assessment | Pending |
 | D00-T004 Visual Package | Pending |
 | D00-T004 Cross-Link Integration | Pending |
