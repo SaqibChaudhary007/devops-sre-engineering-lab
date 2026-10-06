@@ -32,6 +32,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.03 — Software Engineering Foundations
+
+[Open D00-T003 Assessment Package](../../assessments/topics/D00/D00-T003/README.md)
+
+Includes:
+
+- 40-question knowledge check
+- source/build/artifact/configuration applied scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
