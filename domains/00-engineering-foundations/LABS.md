@@ -87,6 +87,20 @@ All D00-T005 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after executing them end-to-end on supported lab environments.
 
+## 00.06 — Cloud Mental Models
+
+1. [OBS-D00-010 — Map Control Plane vs Data Plane Actions](../../labs/observation/D00/OBS-D00-010-control-plane-vs-data-plane.md)
+2. [EXP-D00-007 — Compare IaaS, PaaS, SaaS, and Serverless Responsibility Boundaries](../../labs/experiments/D00/EXP-D00-007-service-model-responsibility-boundaries.md)
+3. [EXP-D00-008 — Model Autoscaling, Quotas, Cost, and Blast Radius](../../labs/experiments/D00/EXP-D00-008-autoscaling-quotas-cost-blast-radius.md)
+
+These assets convert cloud abstractions into provider-neutral reasoning exercises for control/data planes, service-model responsibility, elasticity, quotas, dependency capacity, cost, governance, and blast radius without requiring paid cloud resources.
+
+### Verification Status
+
+All D00-T006 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after executing/completing them end-to-end and reviewing the results.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
