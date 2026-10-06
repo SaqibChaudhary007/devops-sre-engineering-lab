@@ -17,8 +17,8 @@
 | D00-T003 Software Engineering Foundations | Canonical draft authored |
 | D00-T003 Source Verification | Next |
 | D00-T003 Practical Assets | Pending |
-| D00-T003 Assessment | Pending |
-| D00-T003 Visual Package | Pending |
+| D00-T003 Assessment | Drafted |
+| D00-T003 Visual Package | Next |
 | D00-T003 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
