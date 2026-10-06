@@ -59,6 +59,20 @@ All D00-T003 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after executing them end-to-end on supported environments.
 
+## 00.04 — Application Architecture Fundamentals
+
+1. [OBS-D00-007 — Trace a Request Through Client → API → Data](../../labs/observation/D00/OBS-D00-007-trace-client-api-data.md)
+2. [EXP-D00-004 — Local State vs Replaceable Instances](../../labs/experiments/D00/EXP-D00-004-local-state-vs-replaceable-instances.md)
+3. [EXP-D00-005 — Observe Synchronous Dependency Latency Propagation](../../labs/experiments/D00/EXP-D00-005-synchronous-dependency-latency.md)
+
+These assets connect client/server request flow, state placement, horizontal scaling implications and dependency latency propagation to real local processes.
+
+### Verification Status
+
+All D00-T004 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after executing them end-to-end on supported environments.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
