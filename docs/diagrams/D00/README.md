@@ -1,4 +1,3 @@
-
 # D00 Diagrams
 
 Visual assets for Domain 00.
@@ -7,7 +6,7 @@ Visual assets for Domain 00.
 
 - [Visual / Diagram Package](D00-T001/README.md)
 
-Current diagrams:
+Includes:
 
 - Computer System Overview
 - Memory & Storage Hierarchy
@@ -15,4 +14,16 @@ Current diagrams:
 - Bottleneck & Queueing Mental Model
 - Process & Resource Relationship
 
-Mermaid is used for the first version because it renders directly in GitHub, remains editable in source control and can evolve with the curriculum.
+## D00-T002 — Operating System Mental Model
+
+- [Visual / Diagram Package](D00-T002/README.md)
+
+Includes:
+
+- Operating System Overview
+- User Space, System Calls & Kernel Boundary
+- Process States & CPU Scheduling
+- Application I/O Through the Kernel
+- Virtual Machine vs Container OS Model
+
+Mermaid is used for the initial visual system because it renders directly in GitHub, remains editable in source control and supports reuse across the curriculum.
