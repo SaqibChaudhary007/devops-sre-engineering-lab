@@ -118,6 +118,28 @@ Recommended content angles:
 - **Think Like an SRE:** Why Two VMs May Still Share One Failure Domain
 - **5 Levels:** Explain Capacity and Headroom from Beginner to Architect
 
+
+## D00-T006 — Cloud Mental Models
+
+Priority: **P1**
+
+Visual package:
+
+1. [Traditional Infrastructure vs Cloud Control Plane](../../docs/diagrams/D00/D00-T006/DIA-D00-029-traditional-vs-cloud-control-plane.md)
+2. [Control Plane vs Data Plane](../../docs/diagrams/D00/D00-T006/DIA-D00-030-control-plane-vs-data-plane.md)
+3. [IaaS vs PaaS vs SaaS Responsibility Stack](../../docs/diagrams/D00/D00-T006/DIA-D00-031-service-model-responsibility-stack.md)
+4. [Region / Zone / Resource Failure Domains](../../docs/diagrams/D00/D00-T006/DIA-D00-032-region-zone-failure-domains.md)
+5. [Elasticity & Autoscaling Loop](../../docs/diagrams/D00/D00-T006/DIA-D00-033-elasticity-autoscaling-loop.md)
+6. [Cloud Responsibility / Cost / Governance Triangle](../../docs/diagrams/D00/D00-T006/DIA-D00-034-responsibility-cost-governance.md)
+
+Recommended content angles:
+
+- **How It Really Works:** Cloud Is More Than Someone Else's Server
+- **Under the Hood:** Control Plane vs Data Plane During an Incident
+- **Think Like an SRE:** Why Autoscaling Can Still Fail
+- **Architecture With Saqib:** IaaS vs PaaS vs SaaS Responsibility Boundaries
+- **5 Levels:** Explain Cloud Failure Domains from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.

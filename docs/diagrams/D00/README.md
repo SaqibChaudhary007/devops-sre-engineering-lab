@@ -69,3 +69,17 @@ Includes:
 - Network Path: Client → Load Balancer → Compute
 - Failure Domains: Host → Rack → Zone → Region
 - Capacity, Headroom & Failover
+
+
+## D00-T006 — Cloud Mental Models
+
+- [Visual / Diagram Package](D00-T006/README.md)
+
+Includes:
+
+- Traditional Infrastructure vs Cloud Control Plane
+- Control Plane vs Data Plane
+- IaaS vs PaaS vs SaaS Responsibility Stack
+- Region / Zone / Resource Failure Domains
+- Elasticity & Autoscaling Loop
+- Cloud Responsibility / Cost / Governance Triangle
