@@ -1,0 +1,33 @@
+name: Learning topic
+description: Suggest a topic or improvement to the learning path
+title: "[Learning Topic] "
+labels: ["type/concept"]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What should learners understand better?
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Primary level
+      options:
+        - L1 Foundation
+        - L2 Engineer
+        - L3 Senior
+        - L4 SRE
+        - L5 Architect
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Suggested sources or evidence

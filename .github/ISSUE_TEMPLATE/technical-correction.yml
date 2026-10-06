@@ -1,0 +1,33 @@
+name: Technical correction
+description: Report a potentially inaccurate technical statement
+title: "[Technical Correction] "
+labels: ["technical-correction"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Domain / topic / file
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current statement
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Why it may be inaccurate
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or authoritative source
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Version / environment if relevant
