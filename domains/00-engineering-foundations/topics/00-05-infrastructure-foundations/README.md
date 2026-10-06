@@ -21,6 +21,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -171,7 +172,9 @@ Physical Server
 
 # 5. Bare Metal
 
-Bare metal means the operating system runs directly on physical hardware.
+For this topic, a bare-metal workload means the general-purpose operating system/workload runs directly on physical hardware rather than inside a virtual machine.
+
+Important nuance: some hypervisors also run directly on physical hardware, so "bare metal" is an industry term whose exact usage depends on context.
 
 ~~~text
 Application
@@ -1326,8 +1329,24 @@ Planned authoritative source families for verification:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T005 Source Verification](../../../../docs/sources/D00/D00-T005-source-verification.md)
+
+Verified nuances:
+
+- vCPU is an abstraction and does not always mean one dedicated physical core
+- local storage persistence depends on platform lifecycle guarantees
+- block, file, and object describe different storage access models
+- failure-domain redundancy must account for shared host/rack/zone dependencies
+- region/zone semantics differ across providers
+- redundancy alone does not guarantee high availability
+- utilization and saturation are different concepts
+- immutable infrastructure and IaC are operating patterns, not automatic correctness
+- shared-responsibility boundaries vary by service model
