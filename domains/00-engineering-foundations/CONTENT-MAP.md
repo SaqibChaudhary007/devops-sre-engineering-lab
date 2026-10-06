@@ -74,6 +74,28 @@ Recommended content angles:
 - **5 Levels:** Explain an Artifact from Beginner to Architect
 - **Production Room:** CI Passed but Production Failed
 
+
+## D00-T004 — Application Architecture Fundamentals
+
+Priority: **P1**
+
+Visual package:
+
+1. [Client → Server → Data](../../docs/diagrams/D00/D00-T004/DIA-D00-017-client-server-data.md)
+2. [Three-Tier Architecture](../../docs/diagrams/D00/D00-T004/DIA-D00-018-three-tier-architecture.md)
+3. [Monolith vs Microservices](../../docs/diagrams/D00/D00-T004/DIA-D00-019-monolith-vs-microservices.md)
+4. [Synchronous vs Asynchronous Communication](../../docs/diagrams/D00/D00-T004/DIA-D00-020-sync-vs-async.md)
+5. [Stateful vs Stateless Scaling](../../docs/diagrams/D00/D00-T004/DIA-D00-021-stateful-vs-stateless.md)
+6. [Request Path & Failure Propagation](../../docs/diagrams/D00/D00-T004/DIA-D00-022-request-path-failure-propagation.md)
+
+Recommended content angles:
+
+- **Follow the Request:** Trace a User Request Through the Architecture
+- **Architecture With Saqib:** Monolith vs Microservices Without Hype
+- **Think Like an SRE:** Why a Healthy App Can Still Be Slow
+- **Build-Break-Fix:** Local State Breaks Horizontal Scaling
+- **5 Levels:** Explain Stateless Architecture from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
