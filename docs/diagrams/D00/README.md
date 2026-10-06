@@ -27,3 +27,17 @@ Includes:
 - Virtual Machine vs Container OS Model
 
 Mermaid is used for the initial visual system because it renders directly in GitHub, remains editable in source control and supports reuse across the curriculum.
+
+
+## D00-T003 — Software Engineering Foundations
+
+- [Visual / Diagram Package](D00-T003/README.md)
+
+Includes:
+
+- Source to Process Lifecycle
+- Compiler vs Runtime-Driven Execution
+- Dependency Graph
+- Build-Time vs Runtime Dependencies
+- Build Once, Promote the Artifact
+- Build vs Startup vs Runtime Failure
