@@ -52,6 +52,28 @@ Visual package:
 
 These diagrams can later be reused in deep videos, Shorts, LinkedIn carousels, articles, practical explanations and teach-back material.
 
+
+## D00-T003 — Software Engineering Foundations
+
+Priority: **P1**
+
+Visual package:
+
+1. [Source to Process Lifecycle](../../docs/diagrams/D00/D00-T003/DIA-D00-011-source-to-process-lifecycle.md)
+2. [Compiler vs Runtime-Driven Execution](../../docs/diagrams/D00/D00-T003/DIA-D00-012-compiler-vs-runtime.md)
+3. [Dependency Graph](../../docs/diagrams/D00/D00-T003/DIA-D00-013-dependency-graph.md)
+4. [Build-Time vs Runtime Dependencies](../../docs/diagrams/D00/D00-T003/DIA-D00-014-buildtime-vs-runtime-dependencies.md)
+5. [Build Once, Promote the Artifact](../../docs/diagrams/D00/D00-T003/DIA-D00-015-build-once-promote.md)
+6. [Build vs Startup vs Runtime Failure](../../docs/diagrams/D00/D00-T003/DIA-D00-016-failure-stage-model.md)
+
+Recommended content angles:
+
+- **How It Really Works:** Source Code to Production Process
+- **Under the Hood:** Compiler vs Runtime
+- **Build-Break-Fix:** Missing Configuration After a Green CI Build
+- **5 Levels:** Explain an Artifact from Beginner to Architect
+- **Production Room:** CI Passed but Production Failed
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
