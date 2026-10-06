@@ -30,8 +30,8 @@
 | D00-T006 Cloud Mental Models | Canonical draft authored |
 | D00-T006 Source Verification | Complete |
 | D00-T006 Practical Assets | Drafted |
-| D00-T006 Assessment | Next |
-| D00-T006 Visual Package | Pending |
+| D00-T006 Assessment | Drafted |
+| D00-T006 Visual Package | Next |
 | D00-T006 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
