@@ -9,10 +9,12 @@
 
 ## Next
 
-5. [00.05 — Infrastructure Foundations](00-05-infrastructure-foundations/README.md) — canonical draft authored
+5. [00.05 — Infrastructure Foundations](00-05-infrastructure-foundations/README.md) — full topic package
 
 ## Next
 
-6. 00.06 — Cloud Mental Models — planned
+6. [00.06 — Cloud Mental Models](00-06-cloud-mental-models/README.md) — canonical draft authored
+
+7. 00.07 — DevOps Foundations — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
