@@ -41,3 +41,17 @@ Includes:
 - Build-Time vs Runtime Dependencies
 - Build Once, Promote the Artifact
 - Build vs Startup vs Runtime Failure
+
+
+## D00-T004 — Application Architecture Fundamentals
+
+- [Visual / Diagram Package](D00-T004/README.md)
+
+Includes:
+
+- Client → Server → Data
+- Three-Tier Architecture
+- Monolith vs Microservices
+- Synchronous vs Asynchronous Communication
+- Stateful vs Stateless Scaling
+- Request Path & Failure Propagation
