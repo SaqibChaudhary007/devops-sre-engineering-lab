@@ -58,6 +58,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.05 — Infrastructure Foundations
+
+[Open D00-T005 Assessment Package](../../assessments/topics/D00/D00-T005/README.md)
+
+Includes:
+
+- 68-question knowledge check
+- applied infrastructure/failure-domain scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
