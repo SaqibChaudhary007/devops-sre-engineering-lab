@@ -55,3 +55,17 @@ Includes:
 - Synchronous vs Asynchronous Communication
 - Stateful vs Stateless Scaling
 - Request Path & Failure Propagation
+
+
+## D00-T005 — Infrastructure Foundations
+
+- [Visual / Diagram Package](D00-T005/README.md)
+
+Includes:
+
+- Physical Server Resource Model
+- Bare Metal vs Virtual Machine
+- Local vs Shared Storage
+- Network Path: Client → Load Balancer → Compute
+- Failure Domains: Host → Rack → Zone → Region
+- Capacity, Headroom & Failover
