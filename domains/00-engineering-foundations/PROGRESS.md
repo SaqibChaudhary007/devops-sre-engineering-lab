@@ -18,8 +18,8 @@
 | D00-T004 Application Architecture Fundamentals | Canonical draft authored |
 | D00-T004 Source Verification | Complete |
 | D00-T004 Practical Assets | Drafted |
-| D00-T004 Assessment | Next |
-| D00-T004 Visual Package | Pending |
+| D00-T004 Assessment | Drafted |
+| D00-T004 Visual Package | Next |
 | D00-T004 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
