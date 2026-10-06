@@ -20,6 +20,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -1435,8 +1436,21 @@ Planned authoritative source families for verification:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T004 Source Verification](../../../../docs/sources/D00/D00-T004-source-verification.md)
+
+Verified nuances:
+
+- client/server are interaction roles
+- API is broader than HTTP
+- stateless application instances can still depend on stateful systems
+- microservices are not automatically better than monoliths
+- load balancing alone does not guarantee high availability
+- asynchronous communication and caching introduce their own operational trade-offs
