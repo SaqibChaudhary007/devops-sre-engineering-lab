@@ -16,8 +16,8 @@
 | D00-T001 How Computers Work | Canonical topic published |
 | D00-T002 Operating System Mental Model | Canonical topic published |
 | D00-T002 Practical Assets | Drafted |
-| D00-T002 Assessment | Next |
-| D00-T002 Visual Package | Pending |
+| D00-T002 Assessment | Drafted |
+| D00-T002 Visual Package | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
