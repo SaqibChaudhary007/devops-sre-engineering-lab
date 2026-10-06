@@ -1,4 +1,3 @@
-
 # D00 Progress
 
 | Layer | Status |
@@ -13,11 +12,12 @@
 | Assessment Framework | Defined |
 | Content Mapping | Defined |
 | GitHub Architecture | Defined |
-| D00-T001 How Computers Work | Canonical topic published |
+| D00-T001 How Computers Work | Full topic package published |
 | D00-T002 Operating System Mental Model | Canonical topic published |
 | D00-T002 Practical Assets | Drafted |
 | D00-T002 Assessment | Drafted |
-| D00-T002 Visual Package | Next |
+| D00-T002 Visual Package | Drafted |
+| D00-T002 Cross-Link Integration | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
