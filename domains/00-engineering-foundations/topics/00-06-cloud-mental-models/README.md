@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 5-7h
   practical: 1-2h
@@ -118,6 +118,54 @@ You should already understand:
 - redundancy
 - high availability
 - Infrastructure as Code at a high level
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T006 Source Verification](../../../../docs/sources/D00/D00-T006-source-verification.md).
+3. **Visualize** — review the [D00-T006 Visual Package](../../../../docs/diagrams/D00/D00-T006/README.md).
+4. **Observe Control vs Data Plane** — complete [OBS-D00-010 — Map Control Plane vs Data Plane Actions](../../../../labs/observation/D00/OBS-D00-010-control-plane-vs-data-plane.md).
+5. **Experiment with Responsibility** — complete [EXP-D00-007 — Compare IaaS, PaaS, SaaS, and Serverless Responsibility Boundaries](../../../../labs/experiments/D00/EXP-D00-007-service-model-responsibility-boundaries.md).
+6. **Experiment with Scaling & Governance** — complete [EXP-D00-008 — Model Autoscaling, Quotas, Cost, and Blast Radius](../../../../labs/experiments/D00/EXP-D00-008-autoscaling-quotas-cost-blast-radius.md).
+7. **Assess** — complete the [D00-T006 Assessment Package](../../../../assessments/topics/D00/D00-T006/README.md).
+8. **Teach Back** — explain cloud at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.07 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-029 — Traditional Infrastructure vs Cloud Control Plane](../../../../docs/diagrams/D00/D00-T006/DIA-D00-029-traditional-vs-cloud-control-plane.md)
+- [DIA-D00-030 — Control Plane vs Data Plane](../../../../docs/diagrams/D00/D00-T006/DIA-D00-030-control-plane-vs-data-plane.md)
+- [DIA-D00-031 — IaaS vs PaaS vs SaaS Responsibility Stack](../../../../docs/diagrams/D00/D00-T006/DIA-D00-031-service-model-responsibility-stack.md)
+- [DIA-D00-032 — Region / Zone / Resource Failure Domains](../../../../docs/diagrams/D00/D00-T006/DIA-D00-032-region-zone-failure-domains.md)
+- [DIA-D00-033 — Elasticity & Autoscaling Loop](../../../../docs/diagrams/D00/D00-T006/DIA-D00-033-elasticity-autoscaling-loop.md)
+- [DIA-D00-034 — Cloud Responsibility / Cost / Governance Triangle](../../../../docs/diagrams/D00/D00-T006/DIA-D00-034-responsibility-cost-governance.md)
+
+## Practical Package
+
+- [OBS-D00-010 — Map Control Plane vs Data Plane Actions](../../../../labs/observation/D00/OBS-D00-010-control-plane-vs-data-plane.md)
+- [EXP-D00-007 — Compare IaaS, PaaS, SaaS, and Serverless Responsibility Boundaries](../../../../labs/experiments/D00/EXP-D00-007-service-model-responsibility-boundaries.md)
+- [EXP-D00-008 — Model Autoscaling, Quotas, Cost, and Blast Radius](../../../../labs/experiments/D00/EXP-D00-008-autoscaling-quotas-cost-blast-radius.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T006 Assessment Package](../../../../assessments/topics/D00/D00-T006/README.md) includes:
+
+- 86-question knowledge check
+- applied cloud architecture / autoscaling / quota scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1468,24 +1516,23 @@ Before moving on, retain:
 
 ---
 
-# 57. Practical Package — Next Layer
+# 57. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- map a hypothetical cloud resource from user intent to control plane to data plane
-- classify resources as ephemeral vs persistent
-- compare IaaS/PaaS/SaaS responsibility boundaries
-- reason about a two-zone failure scenario
-- model autoscaling decisions from simple metrics without creating paid cloud resources
-- create a tagging/ownership model for a small application environment
+1. [OBS-D00-010 — Map Control Plane vs Data Plane Actions](../../../../labs/observation/D00/OBS-D00-010-control-plane-vs-data-plane.md)
+2. [EXP-D00-007 — Compare IaaS, PaaS, SaaS, and Serverless Responsibility Boundaries](../../../../labs/experiments/D00/EXP-D00-007-service-model-responsibility-boundaries.md)
+3. [EXP-D00-008 — Model Autoscaling, Quotas, Cost, and Blast Radius](../../../../labs/experiments/D00/EXP-D00-008-autoscaling-quotas-cost-blast-radius.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These assets turn cloud abstractions into provider-neutral operational reasoning around management paths, responsibility boundaries, scaling limits, quotas, cost, governance, and blast radius.
 
 ---
 
-# 58. Assessment Package — Pending
+# 58. Assessment Package
 
-The assessment should test:
+Complete the [D00-T006 Assessment Package](../../../../assessments/topics/D00/D00-T006/README.md).
+
+It tests:
 
 - cloud operating model
 - control plane vs data plane
@@ -1508,9 +1555,11 @@ The assessment should test:
 
 ---
 
-# 59. Visual Package — Pending
+# 59. Visual Package
 
-The visual package should include:
+Review the [D00-T006 Visual Package](../../../../docs/diagrams/D00/D00-T006/README.md).
+
+The package includes:
 
 1. Traditional Infrastructure vs Cloud Control Plane
 2. Control Plane vs Data Plane
@@ -1521,7 +1570,32 @@ The visual package should include:
 
 ---
 
-# 60. What Comes Next
+# 60. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain cloud as an operating model, not just remote hosting
+- distinguish control plane from data plane
+- distinguish scalability from elasticity
+- explain why autoscaling can fail to improve performance
+- explain how quotas and service limits constrain scaling
+- explain region/zone/failure-domain thinking without assuming identical provider semantics
+- compare IaaS, PaaS, SaaS, and serverless responsibility boundaries
+- explain why managed services shift responsibility rather than remove it
+- explain public, private, hybrid, and multi-cloud correctly
+- explain why multi-cloud is industry terminology rather than a formal NIST deployment model
+- distinguish ephemeral from persistent resources
+- explain why local state can break horizontal scaling
+- explain least privilege and cloud identity at a mental-model level
+- connect tagging, quotas, governance, and cost to architecture
+- explain blast radius, resilience, availability, backup, and DR as related but different concepts
+- explain why cloud-native is broader than Kubernetes
+- complete the practical package
+- score at least 80% on the knowledge check
+- demonstrate at least L3 / FD-3 reasoning
+- teach the cloud mental model clearly without relying on notes
+
+# 61. What Comes Next
 
 After D00-T006 is completed, continue to:
 
@@ -1540,7 +1614,7 @@ That topic will connect cloud/infrastructure capability to:
 
 ---
 
-# 61. Sources & Evidence
+# 62. Sources & Evidence
 
 Planned authoritative source families for verification:
 
@@ -1558,9 +1632,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1579,3 +1654,10 @@ Verified nuances:
 - zone-level resilience is not automatically disaster recovery
 - quotas and service limits are real architecture constraints
 - cloud-native is broader than Kubernetes
+
+
+## Topic Package Status
+
+**D00-T006 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed on supported environments, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
