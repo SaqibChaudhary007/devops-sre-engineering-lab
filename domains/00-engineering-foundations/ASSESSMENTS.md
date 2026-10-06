@@ -19,13 +19,18 @@
 
 [Open D00-T001 Assessment Package](../../assessments/topics/D00/D00-T001/README.md)
 
+### 00.02 — Operating System Mental Model
+
+[Open D00-T002 Assessment Package](../../assessments/topics/D00/D00-T002/README.md)
+
 Includes:
 
-- knowledge check
-- applied scenario
-- senior/SRE/architect follow-ups
+- 30-question knowledge check
+- applied OS/resource scenario
+- Senior/SRE/Architect follow-ups
 - teach-back assessment
-- scoring rubric and remediation map
+- scoring rubric
+- remediation map
 
 ## Status
 
