@@ -29,3 +29,5 @@ AI output is never treated as technical authority.
 - [D00-T004 — Application Architecture Fundamentals](../../docs/sources/D00/D00-T004-source-verification.md) — core claims DOC-VERIFIED
 
 - [D00-T005 — Infrastructure Foundations](../../docs/sources/D00/D00-T005-source-verification.md) — core claims DOC-VERIFIED
+
+- [D00-T006 — Cloud Mental Models](../../docs/sources/D00/D00-T006-source-verification.md) — core claims DOC-VERIFIED
