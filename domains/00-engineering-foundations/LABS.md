@@ -73,6 +73,20 @@ All D00-T004 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after executing them end-to-end on supported environments.
 
+## 00.05 — Infrastructure Foundations
+
+1. [OBS-D00-008 — Inspect Compute, Memory, Storage, and Network Resources](../../labs/observation/D00/OBS-D00-008-inspect-infrastructure-resources.md)
+2. [OBS-D00-009 — Detect Virtualization and Map Infrastructure Dependencies](../../labs/observation/D00/OBS-D00-009-detect-virtualization-map-dependencies.md)
+3. [EXP-D00-006 — Capacity, Utilization, and Headroom with a Bounded Workload](../../labs/experiments/D00/EXP-D00-006-capacity-utilization-headroom.md)
+
+These assets connect guest-visible compute, memory, storage, network, virtualization evidence, dependency mapping, failure domains, capacity, utilization, saturation, and headroom to a real Linux lab system.
+
+### Verification Status
+
+All D00-T005 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after executing them end-to-end on supported lab environments.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.

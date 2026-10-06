@@ -23,8 +23,8 @@
 | D00-T004 Cross-Link Integration | Complete |
 | D00-T005 Infrastructure Foundations | Canonical draft authored |
 | D00-T005 Source Verification | Complete |
-| D00-T005 Practical Assets | Next |
-| D00-T005 Assessment | Pending |
+| D00-T005 Practical Assets | Drafted |
+| D00-T005 Assessment | Next |
 | D00-T005 Visual Package | Pending |
 | D00-T005 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
