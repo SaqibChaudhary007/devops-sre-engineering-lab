@@ -49,3 +49,5 @@ AI output is never treated as technical authority.
 - [D00-T014 — Observability Foundations](../../docs/sources/D00/D00-T014-source-verification.md) — core claims DOC-VERIFIED; observability/monitoring boundaries, telemetry/instrumentation, cross-signal correlation, trace context, structured telemetry, cardinality, latency distributions, sampling/retention, security, cost, dashboards, and alerting nuances verified
 
 - [D00-T015 — Security Foundations](../../docs/sources/D00/D00-T015-source-verification.md) — core claims DOC-VERIFIED; security-risk framing, Zero Trust, authentication/authorization, least privilege, secrets lifecycle, secure defaults, cryptographic boundaries, CI/CD trust, supply-chain provenance, cloud shared responsibility, and security/reliability nuances verified
+
+- [D00-T016 — Automation Mental Models](../../docs/sources/D00/D00-T016-source-verification.md) — core claims DOC-VERIFIED; automation value, toil reduction, desired/current state, reconciliation, idempotency, retry/backoff/jitter/timeout safety, partial failure, approval boundaries, guardrails, identity, observability, and bounded remediation nuances verified
