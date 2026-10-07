@@ -30,6 +30,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -207,6 +208,8 @@ Observability helps answer:
 Monitoring often focuses on predefined questions.
 
 Observability should support both known questions and investigation of unexpected behavior.
+
+Do not frame this as "monitoring is old, observability is new." They overlap and reinforce each other.
 
 ---
 
@@ -441,9 +444,11 @@ A correlation ID can represent a wider logical workflow that spans multiple serv
 
 The exact naming varies by system.
 
+Request ID, correlation ID, and trace ID should not be treated as universal synonyms.
+
 The important idea is:
 
-> Preserve a stable identity across related evidence.
+> Preserve stable identifiers across related evidence so activity can be correlated across components and time.
 
 ---
 
@@ -555,9 +560,12 @@ Examples of risky labels may include:
 
 - user ID
 - full request ID
+- email address
 - random UUID
 
 at metric scale.
+
+The exact safe cardinality depends on the platform and workload; do not treat one vendor's numerical rule of thumb as a universal limit.
 
 ---
 
@@ -919,6 +927,8 @@ High-volume telemetry may be sampled.
 
 Sampling means keeping only a subset of observations.
 
+It should be treated as selective evidence: reducing volume can also remove rare-event detail.
+
 Benefits:
 
 - lower cost
@@ -1046,9 +1056,9 @@ Telemetry may contain:
 - payloads
 - customer data
 
-Observability systems must follow data-handling, access, and retention rules.
+Observability systems must follow data-handling, access, minimization, classification, and retention rules.
 
-Never assume logs are harmless.
+Never assume logs, traces, attributes, or baggage are harmless.
 
 ---
 
@@ -1485,8 +1495,33 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T014 Source Verification](../../../../docs/sources/D00/D00-T014-source-verification.md)
+
+Verified nuances:
+
+- observability is a capability, not a tool stack
+- monitoring and observability are complementary rather than competing models
+- telemetry is evidence; observability is the capability to understand system behavior from useful telemetry plus context and analysis
+- the "three pillars" model is pedagogically useful but incomplete
+- request IDs, correlation IDs, and trace IDs are related identity concepts but not universal synonyms
+- standardized trace-context propagation improves cross-service correlation
+- structured telemetry improves queryability and correlation
+- metric dimensions increase context but also increase cardinality/cost
+- unbounded identifiers are generally poor metric-label choices
+- averages can hide tail latency; percentiles/distributions improve tail-awareness
+- golden signals, RED, and USE are useful heuristics rather than complete observability architectures
+- correlation creates hypotheses but does not prove causation
+- sampling trades completeness for cost and volume
+- retention is a value/cost/governance decision
+- telemetry can contain sensitive production data and needs security/privacy controls
+- instrumentation has runtime and platform overhead
+- dashboards should be question-driven
+- observability maturity is measured by operational usefulness, not tool count
