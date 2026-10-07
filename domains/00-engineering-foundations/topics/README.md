@@ -51,7 +51,7 @@
 
 ## Next
 
-17. [00.17 — Systems Thinking](00-17-systems-thinking/README.md) — canonical draft authored
+17. [00.17 — Systems Thinking](00-17-systems-thinking/README.md) — full topic package
 
 ## Next
 
