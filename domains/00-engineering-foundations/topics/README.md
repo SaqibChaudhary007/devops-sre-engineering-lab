@@ -23,7 +23,7 @@
 
 ## Next
 
-10. [00.10 — Containers & Orchestration Mental Model](00-10-containers-orchestration-mental-model/README.md) — canonical draft authored
+10. [00.10 — Containers & Orchestration Mental Model](00-10-containers-orchestration-mental-model/README.md) — full topic package
 
 ## Next
 
