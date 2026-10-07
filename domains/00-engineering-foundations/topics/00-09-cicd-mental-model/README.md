@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 5-7h
   practical: 1-2h
@@ -136,6 +136,54 @@ Required:
 - [00.08 — Infrastructure as Code Mental Model](../00-08-infrastructure-as-code-mental-model/README.md)
 
 You should already understand source control, application artifacts, infrastructure, environments, delivery flow, feedback loops, change risk, desired state, and production ownership.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T009 Source Verification](../../../../docs/sources/D00/D00-T009-source-verification.md).
+3. **Visualize** — review the [D00-T009 Visual Package](../../../../docs/diagrams/D00/D00-T009/README.md).
+4. **Observe Delivery Traceability** — complete [OBS-D00-013 — Trace a Change from Commit to Production Outcome](../../../../labs/observation/D00/OBS-D00-013-trace-commit-to-production-outcome.md).
+5. **Experiment with Artifact Promotion** — complete [EXP-D00-013 — Build Once, Promote, Cache, and Artifact Integrity](../../../../labs/experiments/D00/EXP-D00-013-build-once-promote-artifact-integrity.md).
+6. **Experiment with Pipeline Failure & Recovery** — complete [EXP-D00-014 — Diagnose Pipeline Failure, Retry, Concurrency, and Recovery](../../../../labs/experiments/D00/EXP-D00-014-pipeline-failure-retry-concurrency-recovery.md).
+7. **Assess** — complete the [D00-T009 Assessment Package](../../../../assessments/topics/D00/D00-T009/README.md).
+8. **Teach Back** — explain CI/CD at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.10 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-047 — CI vs Continuous Delivery vs Continuous Deployment](../../../../docs/diagrams/D00/D00-T009/DIA-D00-047-ci-vs-continuous-delivery-vs-deployment.md)
+- [DIA-D00-048 — Source → Build → Validate → Artifact → Promote → Deploy](../../../../docs/diagrams/D00/D00-T009/DIA-D00-048-source-build-validate-artifact-promote-deploy.md)
+- [DIA-D00-049 — Build Once / Promote Same Artifact](../../../../docs/diagrams/D00/D00-T009/DIA-D00-049-build-once-promote-same-artifact.md)
+- [DIA-D00-050 — Pipeline Feedback & Failure Loop](../../../../docs/diagrams/D00/D00-T009/DIA-D00-050-pipeline-feedback-failure-loop.md)
+- [DIA-D00-051 — Deployment vs Release](../../../../docs/diagrams/D00/D00-T009/DIA-D00-051-deployment-vs-release.md)
+- [DIA-D00-052 — CI/CD + IaC + GitOps Relationship](../../../../docs/diagrams/D00/D00-T009/DIA-D00-052-cicd-iac-gitops-relationship.md)
+
+## Practical Package
+
+- [OBS-D00-013 — Trace a Change from Commit to Production Outcome](../../../../labs/observation/D00/OBS-D00-013-trace-commit-to-production-outcome.md)
+- [EXP-D00-013 — Build Once, Promote, Cache, and Artifact Integrity](../../../../labs/experiments/D00/EXP-D00-013-build-once-promote-artifact-integrity.md)
+- [EXP-D00-014 — Diagnose Pipeline Failure, Retry, Concurrency, and Recovery](../../../../labs/experiments/D00/EXP-D00-014-pipeline-failure-retry-concurrency-recovery.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T009 Assessment Package](../../../../assessments/topics/D00/D00-T009/README.md) includes:
+
+- 96-question knowledge check
+- applied CI/CD delivery scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1115,45 +1163,39 @@ Before moving on, retain:
 
 ---
 
-# 58. Practical Package — Next Layer
+# 58. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- trace one change from commit to production
-- classify pipeline stages and feedback points
-- compare build-once/promote vs rebuild-per-environment
-- review a hypothetical failing pipeline and identify root causes
-- classify retryable vs non-retryable failures
-- design artifact/version traceability
-- evaluate approval gates and environment protections
-- design a rollback/roll-forward decision tree
+1. [OBS-D00-013 — Trace a Change from Commit to Production Outcome](../../../../labs/observation/D00/OBS-D00-013-trace-commit-to-production-outcome.md)
+2. [EXP-D00-013 — Build Once, Promote, Cache, and Artifact Integrity](../../../../labs/experiments/D00/EXP-D00-013-build-once-promote-artifact-integrity.md)
+3. [EXP-D00-014 — Diagnose Pipeline Failure, Retry, Concurrency, and Recovery](../../../../labs/experiments/D00/EXP-D00-014-pipeline-failure-retry-concurrency-recovery.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn CI/CD concepts into concrete reasoning around delivery traceability, artifact identity, build-once/promote, cache vs artifact, flaky tests, retries, concurrency, runner trust, environment protection, deployment verification, observability, and rollback/roll-forward recovery.
 
 ---
 
-# 59. Assessment Package — Pending
+# 59. Assessment Package
 
-The assessment should test:
+Complete the [D00-T009 Assessment Package](../../../../assessments/topics/D00/D00-T009/README.md).
+
+It tests:
 
 - CI/CD definitions
-- triggers
+- triggers and pipeline structure
 - build and validation
-- artifacts
-- promotion
+- artifacts and promotion
 - deployment vs release
-- feature flags
-- gates
+- feature flags and gates
 - failure handling
-- retries/flaky tests
-- runners
-- concurrency
+- retries and flaky tests
+- runners and concurrency
 - caching
-- secrets/permissions
+- secrets and permissions
 - environment protection
 - deployment verification
 - observability
-- rollback/roll-forward
+- rollback and roll-forward
 - database change risk
 - CI/CD with IaC
 - CI/CD vs GitOps
@@ -1161,9 +1203,11 @@ The assessment should test:
 
 ---
 
-# 60. Visual Package — Pending
+# 60. Visual Package
 
-The visual package should include:
+Review the [D00-T009 Visual Package](../../../../docs/diagrams/D00/D00-T009/README.md).
+
+The package includes:
 
 1. CI vs Continuous Delivery vs Continuous Deployment
 2. Source → Build → Validate → Artifact → Promote → Deploy
@@ -1174,7 +1218,49 @@ The visual package should include:
 
 ---
 
-# 61. What Comes Next
+# 61. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain CI without defining it as a tool
+- distinguish continuous delivery from continuous deployment
+- explain why frequent integration shortens feedback
+- explain pipeline/workflow vs job/stage vs step/task
+- trace a change from source revision to runtime outcome
+- explain why a successful build is not proof of production safety
+- explain why different validation layers exist
+- explain why fast feedback matters
+- explain what a quality gate should protect
+- explain artifact identity and immutability
+- distinguish artifact from cache
+- explain build-once/promote and its limits
+- explain why same commit is weaker evidence than same verified artifact
+- explain deployment vs release
+- explain feature flags at a mental-model level
+- explain deployment strategy as blast-radius control
+- distinguish meaningful approvals from ritual waiting
+- classify transient, deterministic, flaky, and concurrency failures
+- explain why blind retry can hide defects
+- explain pipeline concurrency risk
+- explain hosted vs self-hosted runner trade-offs
+- explain why runner trust is a security boundary
+- explain least privilege and short-lived pipeline credentials
+- explain environment and branch protection
+- explain why deployment success does not prove service health
+- connect deployment events to production telemetry
+- explain change markers and traceability
+- explain rollback vs roll-forward
+- explain why schema/data changes can make rollback unsafe
+- explain how CI/CD and IaC coordinate
+- distinguish push-style CI/CD from GitOps pull/reconciliation
+- explain provenance at a mental-model level
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the CI/CD mental model clearly without relying on notes
+
+# 62. What Comes Next
 
 After D00-T009 is completed, continue to:
 
@@ -1184,7 +1270,7 @@ That topic will connect software delivery and infrastructure automation to conta
 
 ---
 
-# 62. Sources & Evidence
+# 63. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1202,9 +1288,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1224,3 +1311,10 @@ Verified nuances:
 - deployment success does not by itself prove service health
 - GitOps and CI/CD are complementary but distinct control models
 - SLSA provenance strengthens artifact traceability and integrity evidence
+
+
+## Topic Package Status
+
+**D00-T009 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
