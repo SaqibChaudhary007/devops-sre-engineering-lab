@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 6-8h
   practical: 1-2h
@@ -191,6 +191,54 @@ Required:
 - [00.16 — Automation Mental Models](../00-16-automation-mental-models/README.md)
 
 You should already understand dependencies, queues, retries, saturation, blast radius, reconciliation, SLOs, incidents, and observability.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T017 Source Verification](../../../../docs/sources/D00/D00-T017-source-verification.md).
+3. **Visualize** — review the [D00-T017 Visual Package](../../../../docs/diagrams/D00/D00-T017/README.md).
+4. **Observe System Boundaries** — complete [OBS-D00-021 — System Boundary, Flows, Constraints, and Bottlenecks](../../../../labs/observation/D00/OBS-D00-021-system-boundary-flows-bottlenecks.md).
+5. **Experiment with Feedback & Delay** — complete [EXP-D00-029 — Feedback Loops, Delays, Retry Amplification, and Autoscaling](../../../../labs/experiments/D00/EXP-D00-029-feedback-delays-retries-autoscaling.md).
+6. **Experiment with Coupling & Cascades** — complete [EXP-D00-030 — Hidden Coupling, Cascading Failure, Second-Order Effects, and Leverage Points](../../../../labs/experiments/D00/EXP-D00-030-hidden-coupling-cascading-failure-leverage.md).
+7. **Assess** — complete the [D00-T017 Assessment Package](../../../../assessments/topics/D00/D00-T017/README.md).
+8. **Teach Back** — explain systems thinking at Beginner, Engineer, Senior, SRE/Platform, and Architect levels.
+9. **Continue** — move to 00.18 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-095 — System Boundary → Components → Relationships → Flows → Outcome](../../../../docs/diagrams/D00/D00-T017/DIA-D00-095-system-boundary-components-flows-outcome.md)
+- [DIA-D00-096 — Stock / Flow / Queue Accumulation](../../../../docs/diagrams/D00/D00-T017/DIA-D00-096-stock-flow-queue-accumulation.md)
+- [DIA-D00-097 — Reinforcing vs Balancing Feedback Loops](../../../../docs/diagrams/D00/D00-T017/DIA-D00-097-reinforcing-vs-balancing-feedback.md)
+- [DIA-D00-098 — Local Optimization vs Global Outcome](../../../../docs/diagrams/D00/D00-T017/DIA-D00-098-local-vs-global-optimization.md)
+- [DIA-D00-099 — Dependency Chain → Cascading Failure → Blast Radius](../../../../docs/diagrams/D00/D00-T017/DIA-D00-099-dependency-cascade-blast-radius.md)
+- [DIA-D00-100 — Intervention → First-Order Effect → Second-Order Effect → New System State](../../../../docs/diagrams/D00/D00-T017/DIA-D00-100-intervention-second-order-effects.md)
+
+## Practical Package
+
+- [OBS-D00-021 — System Boundary, Flows, Constraints, and Bottlenecks](../../../../labs/observation/D00/OBS-D00-021-system-boundary-flows-bottlenecks.md)
+- [EXP-D00-029 — Feedback Loops, Delays, Retry Amplification, and Autoscaling](../../../../labs/experiments/D00/EXP-D00-029-feedback-delays-retries-autoscaling.md)
+- [EXP-D00-030 — Hidden Coupling, Cascading Failure, Second-Order Effects, and Leverage Points](../../../../labs/experiments/D00/EXP-D00-030-hidden-coupling-cascading-failure-leverage.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T017 Assessment Package](../../../../assessments/topics/D00/D00-T017/README.md) includes:
+
+- 96-question knowledge check
+- applied systems-thinking scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1365,30 +1413,23 @@ Before moving on, retain:
 
 ---
 
-# 69. Practical Package — Next Layer
+# 69. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- define system boundaries for one user journey
-- map components, relationships, flows, and constraints
-- identify stocks and flows
-- locate the active bottleneck
-- compare local vs global optimization
-- identify reinforcing and balancing loops
-- model retry amplification
-- model autoscaling delay and oscillation
-- identify hidden coupling and shared failure domains
-- map cascading failure
-- identify second-order effects
-- perform a leverage-point and intervention review
+1. [OBS-D00-021 — System Boundary, Flows, Constraints, and Bottlenecks](../../../../labs/observation/D00/OBS-D00-021-system-boundary-flows-bottlenecks.md)
+2. [EXP-D00-029 — Feedback Loops, Delays, Retry Amplification, and Autoscaling](../../../../labs/experiments/D00/EXP-D00-029-feedback-delays-retries-autoscaling.md)
+3. [EXP-D00-030 — Hidden Coupling, Cascading Failure, Second-Order Effects, and Leverage Points](../../../../labs/experiments/D00/EXP-D00-030-hidden-coupling-cascading-failure-leverage.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn systems thinking into concrete reasoning around boundaries, flows, stocks/state, constraints, bottlenecks, critical paths, local-vs-global optimization, reinforcing and balancing feedback loops, delays, oscillation, retry amplification, backpressure, autoscaling, hidden coupling, common failure domains, cascading failure, blast radius, redundancy vs independence, second-order effects, leverage points, structural incident reasoning, and SLOs as system outcomes.
 
 ---
 
-# 70. Assessment Package — Pending
+# 70. Assessment Package
 
-The assessment should test:
+Complete the [D00-T017 Assessment Package](../../../../assessments/topics/D00/D00-T017/README.md).
+
+It tests:
 
 - system / boundary / environment
 - components / relationships / flows
@@ -1421,9 +1462,11 @@ The assessment should test:
 
 ---
 
-# 71. Visual Package — Pending
+# 71. Visual Package
 
-The visual package should include:
+Review the [D00-T017 Visual Package](../../../../docs/diagrams/D00/D00-T017/README.md).
+
+The package includes:
 
 1. System Boundary → Components → Relationships → Flows → Outcome
 2. Stock / Flow / Queue Accumulation
@@ -1434,7 +1477,51 @@ The visual package should include:
 
 ---
 
-# 72. What Comes Next
+# 72. Completion Gate
+
+Before moving on, confirm that you can:
+
+- define a system, system boundary, environment, component, relationship, and flow
+- explain why the chosen boundary depends on the question being analyzed
+- identify inputs, outputs, state, stocks, and flows
+- identify constraints and the active bottleneck
+- explain bottleneck migration after an intervention
+- distinguish throughput from latency
+- explain queue buffering, accumulation, age, and delay
+- explain capacity and saturation
+- distinguish local optimization from global optimization
+- identify the critical path
+- explain reinforcing and balancing feedback loops
+- explain delays, lag, over-correction, oscillation, and stability at a foundation level
+- explain nonlinearity and threshold effects
+- distinguish tight, loose, and hidden coupling
+- identify shared/common failure domains
+- explain resource contention
+- explain backpressure as an upstream/downstream relationship
+- explain retries as system feedback
+- explain why multiple retry layers can amplify work
+- explain autoscaling as a delayed control loop
+- explain alerting, automation, and humans as feedback mechanisms
+- explain how organizational incentives influence system behavior
+- explain emergent behavior without treating it as unexplained magic
+- map cascading failure across dependencies
+- explain blast radius
+- distinguish redundancy from sufficient failure independence
+- identify first-order and second-order effects
+- explain trade-offs and leverage points
+- distinguish symptoms, recurring patterns, structure, and policy/mental models
+- explain why recurring incidents can indicate structural conditions
+- explain why observability should expose relationships and system flows
+- explain SLOs as end-to-end system outcomes
+- treat architecture decisions as interventions that change system behavior
+- explain why more capacity, speed, retries, or replicas are not universal solutions
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the systems-thinking mental model clearly without relying on notes
+
+# 73. What Comes Next
 
 After D00-T017 is completed, continue to:
 
@@ -1444,7 +1531,7 @@ That topic will deepen failure modes, fault models, correlated failures, depende
 
 ---
 
-# 73. Sources & Evidence
+# 74. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1459,9 +1546,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1484,3 +1572,10 @@ Verified nuances:
 - redundancy only helps when relevant failure modes are sufficiently independent
 - humans and organizational incentives can influence production-system behavior
 - architecture changes are interventions whose second-order effects must be considered
+
+
+## Topic Package Status
+
+**D00-T017 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.

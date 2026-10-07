@@ -93,12 +93,13 @@
 | D00-T016 Assessment | Drafted |
 | D00-T016 Visual Package | Drafted |
 | D00-T016 Cross-Link Integration | Complete |
-| D00-T017 Systems Thinking | Canonical draft authored |
+| D00-T017 Systems Thinking | Full topic package integrated |
 | D00-T017 Source Verification | Complete |
 | D00-T017 Practical Assets | Drafted |
 | D00-T017 Assessment | Drafted |
 | D00-T017 Visual Package | Drafted |
-| D00-T017 Cross-Link Integration | Next |
+| D00-T017 Cross-Link Integration | Complete |
+| D00-T018 Failure Thinking | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
