@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 6-8h
   practical: 1-2h
@@ -173,6 +173,54 @@ Required:
 - [00.13 — SRE Foundations](../00-13-sre-foundations/README.md)
 
 You should already understand user journeys, distributed request paths, failures, dependencies, SLOs, incidents, saturation, retries, queues, and evidence-first troubleshooting.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T014 Source Verification](../../../../docs/sources/D00/D00-T014-source-verification.md).
+3. **Visualize** — review the [D00-T014 Visual Package](../../../../docs/diagrams/D00/D00-T014/README.md).
+4. **Observe the User Journey** — complete [OBS-D00-018 — Map a User Journey to Metrics, Logs, Traces, and Events](../../../../labs/observation/D00/OBS-D00-018-map-user-journey-observability-signals.md).
+5. **Experiment with Observability Economics** — complete [EXP-D00-023 — Cardinality, Tail Latency, Sampling, and Telemetry Cost](../../../../labs/experiments/D00/EXP-D00-023-cardinality-latency-sampling-cost.md).
+6. **Experiment with Evidence-First Troubleshooting** — complete [EXP-D00-024 — Evidence-First Incident Investigation and Dashboard Review](../../../../labs/experiments/D00/EXP-D00-024-evidence-first-incident-dashboard-review.md).
+7. **Assess** — complete the [D00-T014 Assessment Package](../../../../assessments/topics/D00/D00-T014/README.md).
+8. **Teach Back** — explain observability at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.15 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-077 — System → Instrumentation → Telemetry → Correlation → Insight](../../../../docs/diagrams/D00/D00-T014/DIA-D00-077-system-instrumentation-telemetry-correlation-insight.md)
+- [DIA-D00-078 — Metrics vs Logs vs Traces vs Events](../../../../docs/diagrams/D00/D00-T014/DIA-D00-078-metrics-logs-traces-events.md)
+- [DIA-D00-079 — User Journey → Trace → Spans → Logs / Metrics](../../../../docs/diagrams/D00/D00-T014/DIA-D00-079-user-journey-trace-spans-logs-metrics.md)
+- [DIA-D00-080 — RED vs USE vs Golden Signals](../../../../docs/diagrams/D00/D00-T014/DIA-D00-080-red-use-golden-signals.md)
+- [DIA-D00-081 — Change Marker → Symptom → Dependency → Root-Cause Hypothesis](../../../../docs/diagrams/D00/D00-T014/DIA-D00-081-change-symptom-dependency-hypothesis.md)
+- [DIA-D00-082 — Cardinality / Sampling / Retention / Cost Trade-Off](../../../../docs/diagrams/D00/D00-T014/DIA-D00-082-cardinality-sampling-retention-cost.md)
+
+## Practical Package
+
+- [OBS-D00-018 — Map a User Journey to Metrics, Logs, Traces, and Events](../../../../labs/observation/D00/OBS-D00-018-map-user-journey-observability-signals.md)
+- [EXP-D00-023 — Cardinality, Tail Latency, Sampling, and Telemetry Cost](../../../../labs/experiments/D00/EXP-D00-023-cardinality-latency-sampling-cost.md)
+- [EXP-D00-024 — Evidence-First Incident Investigation and Dashboard Review](../../../../labs/experiments/D00/EXP-D00-024-evidence-first-incident-dashboard-review.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T014 Assessment Package](../../../../assessments/topics/D00/D00-T014/README.md) includes:
+
+- 96-question knowledge check
+- applied observability scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1407,46 +1455,41 @@ Before moving on, retain:
 
 ---
 
-# 72. Practical Package — Next Layer
+# 72. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- map one user journey to metrics/logs/traces/events
-- distinguish monitoring vs observability questions
-- design structured log fields
-- design request/correlation/trace identity
-- identify dangerous metric cardinality
-- compare average vs percentile latency
-- classify black-box vs white-box signals
-- build a symptom → dependency → resource investigation path
-- add change markers to an incident timeline
-- review a dashboard for signal quality and actionability
+1. [OBS-D00-018 — Map a User Journey to Metrics, Logs, Traces, and Events](../../../../labs/observation/D00/OBS-D00-018-map-user-journey-observability-signals.md)
+2. [EXP-D00-023 — Cardinality, Tail Latency, Sampling, and Telemetry Cost](../../../../labs/experiments/D00/EXP-D00-023-cardinality-latency-sampling-cost.md)
+3. [EXP-D00-024 — Evidence-First Incident Investigation and Dashboard Review](../../../../labs/experiments/D00/EXP-D00-024-evidence-first-incident-dashboard-review.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn observability foundations into concrete reasoning around user journeys, signal mapping, structured logging, trace/correlation identity, black-box/white-box evidence, cardinality, tail latency, aggregation, sampling, retention, telemetry economics, privacy/security, dashboards, alert context, change markers, ranked hypotheses, and recovery validation.
 
 ---
 
-# 73. Assessment Package — Pending
+# 73. Assessment Package
 
-The assessment should test:
+Complete the [D00-T014 Assessment Package](../../../../assessments/topics/D00/D00-T014/README.md).
+
+It tests:
 
 - observability definition
 - monitoring vs observability
 - telemetry and instrumentation
-- metrics/logs/traces/events
+- metrics, logs, traces, and events
 - context and correlation
 - request/correlation/trace IDs
 - spans
 - structured logging
-- dimensions/cardinality
+- dimensions and cardinality
 - aggregation
-- percentiles/distributions
-- errors/traffic/saturation
+- percentiles and distributions
+- errors, traffic, and saturation
 - golden signals
 - RED / USE previews
 - black-box / white-box monitoring
 - synthetic monitoring preview
-- business/dependency/queue signals
+- business / dependency / queue signals
 - change markers
 - sampling / retention / cost
 - telemetry gaps
@@ -1458,9 +1501,11 @@ The assessment should test:
 
 ---
 
-# 74. Visual Package — Pending
+# 74. Visual Package
 
-The visual package should include:
+Review the [D00-T014 Visual Package](../../../../docs/diagrams/D00/D00-T014/README.md).
+
+The package includes:
 
 1. System → Instrumentation → Telemetry → Correlation → Insight
 2. Metrics vs Logs vs Traces vs Events
@@ -1471,7 +1516,53 @@ The visual package should include:
 
 ---
 
-# 75. What Comes Next
+# 75. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain observability, monitoring, telemetry, and instrumentation distinctly
+- explain why monitoring and observability are complementary
+- explain why telemetry alone does not make a system observable
+- explain what metrics, logs, traces, and events each contribute
+- explain why the "three pillars" model is useful but incomplete
+- explain context and correlation
+- distinguish request ID, correlation/workflow ID, and trace ID at the correct foundation level
+- explain trace-context propagation and spans
+- design useful structured-log fields
+- explain why dimensions improve context
+- explain cardinality and why unbounded identifiers are risky metric labels
+- explain how aggregation can hide localized failures
+- explain why average latency can hide tail behavior
+- explain p95/p99 and distributions at a mental-model level
+- explain traffic, errors, latency, and saturation
+- explain golden signals, RED, and USE as scoped heuristics
+- distinguish black-box from white-box monitoring
+- explain synthetic monitoring at a preview level
+- explain why business signals can reveal failures technical metrics miss
+- explain dependency telemetry
+- explain why queue age, producer/consumer rate, retries, and DLQ signals matter alongside depth
+- explain the role of change markers
+- explain why time helps correlation but is not perfect global ordering
+- explain sampling as a completeness/cost trade-off
+- explain retention as a value/cost/governance decision
+- explain why more telemetry is not automatically better
+- identify telemetry blind spots and missing context
+- explain why ephemeral workloads require durable evidence
+- explain telemetry security/privacy risks
+- explain instrumentation overhead
+- use an evidence-first investigation sequence rather than random commands
+- explain correlation vs causation
+- design a question-driven dashboard hierarchy
+- design an alert with useful operational context
+- explain exemplars at a preview level
+- explain observability maturity as operational usefulness rather than tool count
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the observability mental model clearly without relying on notes
+
+# 76. What Comes Next
 
 After D00-T014 is completed, continue to:
 
@@ -1481,7 +1572,7 @@ That topic will introduce identity, authentication, authorization, least privile
 
 ---
 
-# 76. Sources & Evidence
+# 77. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1497,9 +1588,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1525,3 +1617,10 @@ Verified nuances:
 - instrumentation has runtime and platform overhead
 - dashboards should be question-driven
 - observability maturity is measured by operational usefulness, not tool count
+
+
+## Topic Package Status
+
+**D00-T014 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
