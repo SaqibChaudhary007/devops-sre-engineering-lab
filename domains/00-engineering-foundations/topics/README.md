@@ -27,6 +27,10 @@
 
 ## Next
 
-11. 00.11 — Distributed Systems Foundations — planned
+11. [00.11 — Distributed Systems Foundations](00-11-distributed-systems-foundations/README.md) — canonical draft authored
+
+## Next
+
+12. 00.12 — Reliability Engineering Foundations — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.

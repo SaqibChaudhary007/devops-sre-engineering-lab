@@ -57,7 +57,12 @@
 | D00-T010 Assessment | Drafted |
 | D00-T010 Visual Package | Drafted |
 | D00-T010 Cross-Link Integration | Complete |
-| D00-T011 Distributed Systems Foundations | Next |
+| D00-T011 Distributed Systems Foundations | Canonical draft authored |
+| D00-T011 Source Verification | Next |
+| D00-T011 Practical Assets | Pending |
+| D00-T011 Assessment | Pending |
+| D00-T011 Visual Package | Pending |
+| D00-T011 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
