@@ -380,6 +380,30 @@ Recommended content angles:
 - **Architecture With Saqib:** Designing Maximum Safe Automation Blast Radius
 - **5 Levels:** Explain Automation from Beginner to Architect
 
+
+## D00-T017 — Systems Thinking
+
+Priority: **P1**
+
+Visual package:
+
+1. [System Boundary → Components → Relationships → Flows → Outcome](../../docs/diagrams/D00/D00-T017/DIA-D00-095-system-boundary-components-flows-outcome.md)
+2. [Stock / Flow / Queue Accumulation](../../docs/diagrams/D00/D00-T017/DIA-D00-096-stock-flow-queue-accumulation.md)
+3. [Reinforcing vs Balancing Feedback Loops](../../docs/diagrams/D00/D00-T017/DIA-D00-097-reinforcing-vs-balancing-feedback.md)
+4. [Local Optimization vs Global Outcome](../../docs/diagrams/D00/D00-T017/DIA-D00-098-local-vs-global-optimization.md)
+5. [Dependency Chain → Cascading Failure → Blast Radius](../../docs/diagrams/D00/D00-T017/DIA-D00-099-dependency-cascade-blast-radius.md)
+6. [Intervention → First-Order Effect → Second-Order Effect → New System State](../../docs/diagrams/D00/D00-T017/DIA-D00-100-intervention-second-order-effects.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Healthy Components Can Still Produce a Broken System
+- **How It Really Works:** Boundary → Flow → Constraint → Feedback → Outcome
+- **Under the Hood:** Stocks, Flows, Delays, and Feedback Loops
+- **Production Room:** Retry Storms as Reinforcing Feedback
+- **Think Like an SRE:** Find the System Bottleneck, Not the Loudest Metric
+- **Architecture With Saqib:** Hidden Coupling, Shared Failure Domains, and Second-Order Effects
+- **5 Levels:** Explain Systems Thinking from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.

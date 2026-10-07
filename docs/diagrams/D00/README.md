@@ -223,3 +223,17 @@ Includes:
 - Partial Failure → Rollback / Roll-Forward / Compensation
 - Human Approval → Guardrails → Automated Action → Validation
 - Automation Blast Radius: Scope / Rate / Identity / Environment / Stop Conditions
+
+
+## D00-T017 — Systems Thinking
+
+- [Visual / Diagram Package](D00-T017/README.md)
+
+Includes:
+
+- System Boundary → Components → Relationships → Flows → Outcome
+- Stock / Flow / Queue Accumulation
+- Reinforcing vs Balancing Feedback Loops
+- Local Optimization vs Global Outcome
+- Dependency Chain → Cascading Failure → Blast Radius
+- Intervention → First-Order Effect → Second-Order Effect → New System State
