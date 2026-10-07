@@ -708,7 +708,7 @@ It helps expose instability that may otherwise appear only as extra deployment a
 
 ---
 
-# 31. Delivery Performance Is Multi-Dimensional
+# 30. Delivery Performance Is Multi-Dimensional
 
 A healthy delivery system balances:
 
@@ -735,7 +735,7 @@ That is not good delivery performance.
 
 ---
 
-# 30. Ownership
+# 31. Ownership
 
 Ownership means teams understand and accept responsibility for the outcomes of the systems they change.
 
@@ -754,7 +754,7 @@ It means responsibility does not disappear at a handoff.
 
 ---
 
-# 31. "You Build It, You Run It" — Nuance
+# 32. "You Build It, You Run It" — Nuance
 
 This phrase expresses stronger production ownership.
 
@@ -771,7 +771,7 @@ The goal is aligned ownership, not a slogan.
 
 ---
 
-# 32. Toil
+# 33. Toil
 
 Toil is repetitive operational work that is manual, automatable, tactical, and does not create durable value.
 
@@ -788,7 +788,7 @@ Some manual work requires judgment.
 
 ---
 
-# 33. Reduce Toil, Preserve Judgment
+# 34. Reduce Toil, Preserve Judgment
 
 The goal is not:
 
@@ -813,7 +813,7 @@ Human judgment remains important for:
 
 ---
 
-# 34. Infrastructure as Code as a DevOps Enabler
+# 35. Infrastructure as Code as a DevOps Enabler
 
 IaC supports DevOps by making infrastructure:
 
@@ -837,7 +837,7 @@ IaC is an enabler, not DevOps itself.
 
 ---
 
-# 35. Observability as Feedback
+# 36. Observability as Feedback
 
 Observability closes the production feedback loop.
 
@@ -859,7 +859,7 @@ Without production feedback, delivery teams can ship changes without understandi
 
 ---
 
-# 36. Security in the Delivery Flow
+# 37. Security in the Delivery Flow
 
 Security should not be only a final gate.
 
@@ -878,7 +878,7 @@ This is often described as integrating security into the lifecycle.
 
 ---
 
-# 37. Shift Left — Mental Model
+# 38. Shift Left — Mental Model
 
 Shift left means moving useful validation earlier in the lifecycle.
 
@@ -895,7 +895,7 @@ Goal:
 
 ---
 
-# 38. Shift Right — Mental Model
+# 39. Shift Right — Mental Model
 
 Shift right means learning from runtime/production behavior.
 
@@ -912,7 +912,7 @@ Shift left and shift right are complementary.
 
 ---
 
-# 39. Environment Parity
+# 40. Environment Parity
 
 If environments differ too much:
 
@@ -936,7 +936,7 @@ The goal is to reduce uncontrolled differences and understand the remaining ones
 
 ---
 
-# 40. Configuration Management
+# 41. Configuration Management
 
 Applications depend on configuration such as:
 
@@ -958,7 +958,7 @@ Uncontrolled configuration change can cause incidents without code changes.
 
 ---
 
-# 41. Change Management
+# 42. Change Management
 
 Every production change introduces risk.
 
@@ -980,7 +980,7 @@ It means controls should be proportional, evidence-driven, and automation-friend
 
 ---
 
-# 42. Deployment Strategies — Preview
+# 43. Deployment Strategies — Preview
 
 Different deployment strategies reduce risk in different ways.
 
@@ -999,7 +999,7 @@ Deep implementation comes later.
 
 ---
 
-# 43. Rollback and Roll Forward
+# 44. Rollback and Roll Forward
 
 When a change fails, teams may:
 
@@ -1018,7 +1018,7 @@ Recovery must be designed before the incident.
 
 ---
 
-# 44. Blameless Learning
+# 45. Blameless Learning
 
 Blameless does not mean:
 
@@ -1039,7 +1039,7 @@ Instead ask:
 
 ---
 
-# 45. Incident Feedback Loop
+# 46. Incident Feedback Loop
 
 An incident can produce:
 
@@ -1056,7 +1056,7 @@ If incidents create no durable learning, the organization repeats failure.
 
 ---
 
-# 46. DevOps and Reliability
+# 47. DevOps and Reliability
 
 Speed and reliability are not necessarily opposites.
 
@@ -1074,7 +1074,7 @@ Large risky releases are often a symptom of slow delivery systems.
 
 ---
 
-# 47. DevOps vs SRE
+# 48. DevOps vs SRE
 
 DevOps is a broad philosophy and operating model for improving delivery and operations.
 
@@ -1096,7 +1096,7 @@ They are not identical.
 
 ---
 
-# 48. DevOps vs Platform Engineering
+# 49. DevOps vs Platform Engineering
 
 Platform engineering focuses on building internal products/platforms that improve developer experience and operational consistency.
 
@@ -1116,7 +1116,7 @@ It does not replace the need for shared ownership and feedback.
 
 ---
 
-# 49. DevOps vs Tools
+# 50. DevOps vs Tools
 
 Tools may include:
 
@@ -1144,7 +1144,7 @@ Are teams learning?
 
 ---
 
-# 50. DevOps Anti-Patterns
+# 51. DevOps Anti-Patterns
 
 Common anti-patterns include:
 
@@ -1188,7 +1188,7 @@ deploy more often
 
 ---
 
-# 51. Senior Engineer Perspective
+# 52. Senior Engineer Perspective
 
 A senior engineer asks:
 
@@ -1206,7 +1206,7 @@ The senior view is end-to-end, not tool-by-tool.
 
 ---
 
-# 52. SRE Perspective
+# 53. SRE Perspective
 
 An SRE asks:
 
@@ -1223,7 +1223,7 @@ SRE connects delivery practices to reliability outcomes.
 
 ---
 
-# 53. Architect Perspective
+# 54. Architect Perspective
 
 An architect asks:
 
@@ -1241,7 +1241,7 @@ Architecture includes the path to production, not only runtime diagrams.
 
 ---
 
-# 54. Common Beginner Mistakes
+# 55. Common Beginner Mistakes
 
 ## Mistake 1
 
@@ -1287,7 +1287,7 @@ Platform engineering can operationalize many DevOps principles, but does not rep
 
 ---
 
-# 55. Five-Level Explanation
+# 56. Five-Level Explanation
 
 ## L1 — Foundation
 
@@ -1311,7 +1311,7 @@ DevOps architecture aligns organizational design, delivery systems, platform cap
 
 ---
 
-# 56. What You Must Retain
+# 57. What You Must Retain
 
 Before moving on, retain:
 
@@ -1337,7 +1337,7 @@ Before moving on, retain:
 
 ---
 
-# 57. Practical Package — Next Layer
+# 58. Practical Package — Next Layer
 
 The practical package should include safe exercises such as:
 
@@ -1352,7 +1352,7 @@ These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
 
 ---
 
-# 58. Assessment Package — Pending
+# 59. Assessment Package — Pending
 
 The assessment should test:
 
@@ -1378,7 +1378,7 @@ The assessment should test:
 
 ---
 
-# 59. Visual Package — Pending
+# 60. Visual Package — Pending
 
 The visual package should include:
 
@@ -1391,7 +1391,7 @@ The visual package should include:
 
 ---
 
-# 60. What Comes Next
+# 61. What Comes Next
 
 After D00-T007 is completed, continue to:
 
@@ -1411,7 +1411,7 @@ That topic will connect DevOps delivery principles to:
 
 ---
 
-# 61. Sources & Evidence
+# 62. Sources & Evidence
 
 Planned authoritative source families for verification:
 
