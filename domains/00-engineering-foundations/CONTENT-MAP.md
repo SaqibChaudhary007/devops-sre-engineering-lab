@@ -186,6 +186,30 @@ Recommended content angles:
 - **Architecture With Saqib:** How State Boundaries Control Blast Radius
 - **5 Levels:** Explain IaC from Beginner to Architect
 
+
+## D00-T009 — CI/CD Mental Model
+
+Priority: **P1**
+
+Visual package:
+
+1. [CI vs Continuous Delivery vs Continuous Deployment](../../docs/diagrams/D00/D00-T009/DIA-D00-047-ci-vs-continuous-delivery-vs-deployment.md)
+2. [Source → Build → Validate → Artifact → Promote → Deploy](../../docs/diagrams/D00/D00-T009/DIA-D00-048-source-build-validate-artifact-promote-deploy.md)
+3. [Build Once / Promote Same Artifact](../../docs/diagrams/D00/D00-T009/DIA-D00-049-build-once-promote-same-artifact.md)
+4. [Pipeline Feedback & Failure Loop](../../docs/diagrams/D00/D00-T009/DIA-D00-050-pipeline-feedback-failure-loop.md)
+5. [Deployment vs Release](../../docs/diagrams/D00/D00-T009/DIA-D00-051-deployment-vs-release.md)
+6. [CI/CD + IaC + GitOps Relationship](../../docs/diagrams/D00/D00-T009/DIA-D00-052-cicd-iac-gitops-relationship.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** CI/CD Is Not Jenkins or YAML
+- **How It Really Works:** Commit → Artifact → Production → Feedback
+- **Under the Hood:** Why Build Once / Promote Same Artifact Matters
+- **Production Room:** Why "Retry Until Green" Hides Delivery Problems
+- **Think Like an SRE:** A Successful Deploy Is Not a Healthy Service
+- **Architecture With Saqib:** CI/CD + IaC + GitOps Without Confusing the Boundaries
+- **5 Levels:** Explain CI/CD from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
