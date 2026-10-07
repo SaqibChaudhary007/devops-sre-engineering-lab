@@ -149,6 +149,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.12 — Reliability Engineering Foundations
+
+[Open D00-T012 Assessment Package](../../assessments/topics/D00/D00-T012/README.md)
+
+Includes:
+
+- 96-question knowledge check
+- applied reliability-engineering scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
