@@ -43,6 +43,10 @@
 
 ## Next
 
-15. 00.15 — Security Foundations — planned
+15. [00.15 — Security Foundations](00-15-security-foundations/README.md) — canonical draft authored
+
+## Next
+
+16. 00.16 — Automation Mental Models — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
