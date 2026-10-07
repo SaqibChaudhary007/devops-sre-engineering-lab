@@ -29,6 +29,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -212,6 +213,8 @@ The goal is not to remove humans.
 
 The goal is to use human attention where judgment matters most.
 
+Operational work should be classified carefully: novel diagnosis and engineering work are not automatically toil simply because they happen in production.
+
 ---
 
 # 6. SRE vs Traditional Operations
@@ -384,6 +387,8 @@ Reliability Team
 This can become a permanent argument.
 
 Error-budget thinking creates a shared decision framework around acceptable risk.
+
+The exact response to budget consumption belongs to an explicit organizational policy; one company's freeze or escalation rule should not be treated as a universal SRE standard.
 
 ---
 
@@ -576,6 +581,8 @@ A strong page should be:
 - tied to user/service impact
 - specific enough to start investigation
 
+Organizations can use different tools and names, but the decision principle remains urgency plus actionability.
+
 A weak page often reports:
 
 ~~~text
@@ -645,6 +652,8 @@ Examples:
 - manual deployment repair
 
 Not every operational task is toil.
+
+Toil is best recognized through characteristics such as manual effort, repetition, automability, tactical/reactive nature, limited enduring value, and growth with service scale.
 
 ---
 
@@ -781,6 +790,8 @@ A postmortem captures what happened, impact, contributing factors, response, and
 
 The goal is learning.
 
+Blameless learning does not mean accountability-free operation. It means examining the system, information, tooling, incentives, and context that shaped decisions so recurrence risk can be reduced.
+
 A strong postmortem asks:
 
 - what conditions made this incident possible?
@@ -856,9 +867,9 @@ Small Audience
 → Expand Gradually
 ~~~
 
-This can reduce blast radius.
+This can reduce initial blast radius.
 
-It does not eliminate the need for rollback, observability, or correctness checks.
+It does not prove correctness and does not eliminate the need for representative traffic, meaningful telemetry, evaluation thresholds, sufficient observation time, stop/rollback capability, or correctness checks.
 
 ---
 
@@ -1282,8 +1293,30 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T013 Source Verification](../../../../docs/sources/D00/D00-T013-source-verification.md)
+
+Verified nuances:
+
+- SRE is an engineering operating model, not merely monitoring, on-call, or tooling
+- DevOps and SRE overlap heavily but should not be taught as identical or as mutually exclusive categories
+- SLIs and SLOs should follow user/service needs rather than arbitrary available metrics
+- 100% reliability is usually the wrong default target
+- error budgets are decision mechanisms whose consequences depend on explicit organizational policy
+- Google's specific operational thresholds and freeze rules are examples, not universal SRE standards
+- toil is multi-dimensional and not every operational task is toil
+- automation should follow understanding and safe conditions
+- page/ticket/dashboard is a decision model based on urgency and actionability, not a mandatory tooling taxonomy
+- on-call should feed engineering improvement rather than permanent firefighting
+- mitigation and root-cause correction are different phases
+- blameless learning is systemic but not accountability-free
+- canarying/progressive delivery reduces exposure but does not prove correctness
+- capacity/headroom and overload control belong to reliability operations
+- production readiness includes operational readiness, ownership, observability, recovery, and safe change
