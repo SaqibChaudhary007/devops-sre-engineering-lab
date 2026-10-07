@@ -66,8 +66,8 @@
 | D00-T012 Reliability Engineering Foundations | Canonical draft authored |
 | D00-T012 Source Verification | Complete |
 | D00-T012 Practical Assets | Drafted |
-| D00-T012 Assessment | Next |
-| D00-T012 Visual Package | Pending |
+| D00-T012 Assessment | Drafted |
+| D00-T012 Visual Package | Next |
 | D00-T012 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
