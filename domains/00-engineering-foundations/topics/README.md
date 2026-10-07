@@ -39,7 +39,7 @@
 
 ## Next
 
-14. [00.14 — Observability Foundations](00-14-observability-foundations/README.md) — canonical draft authored
+14. [00.14 — Observability Foundations](00-14-observability-foundations/README.md) — full topic package
 
 ## Next
 
