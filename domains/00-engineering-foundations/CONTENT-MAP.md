@@ -140,6 +140,29 @@ Recommended content angles:
 - **Architecture With Saqib:** IaaS vs PaaS vs SaaS Responsibility Boundaries
 - **5 Levels:** Explain Cloud Failure Domains from Beginner to Architect
 
+
+## D00-T007 — DevOps Foundations
+
+Priority: **P1**
+
+Visual package:
+
+1. [Traditional Siloed Delivery vs DevOps Flow](../../docs/diagrams/D00/D00-T007/DIA-D00-035-siloed-vs-devops-flow.md)
+2. [Idea → Production → Feedback Loop](../../docs/diagrams/D00/D00-T007/DIA-D00-036-idea-production-feedback-loop.md)
+3. [Queue / Handoff / Bottleneck Model](../../docs/diagrams/D00/D00-T007/DIA-D00-037-queue-handoff-bottleneck.md)
+4. [CI vs Continuous Delivery vs Continuous Deployment](../../docs/diagrams/D00/D00-T007/DIA-D00-038-ci-cd-continuous-deployment.md)
+5. [Delivery Performance: Throughput, Instability & Recovery](../../docs/diagrams/D00/D00-T007/DIA-D00-039-delivery-performance-metrics.md)
+6. [DevOps vs SRE vs Platform Engineering](../../docs/diagrams/D00/D00-T007/DIA-D00-040-devops-sre-platform-engineering.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Why DevOps Is Not a Tool or Team
+- **How It Really Works:** Idea → Production → Feedback
+- **Production Room:** Why Work Waits More Than It Works
+- **Think Like an SRE:** Delivery Metrics Without Gaming Them
+- **Architecture With Saqib:** DevOps vs SRE vs Platform Engineering
+- **5 Levels:** Explain CI/CD from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
