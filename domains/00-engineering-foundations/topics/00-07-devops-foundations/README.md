@@ -23,6 +23,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -623,7 +624,30 @@ A complex pipeline that takes hours and fails unpredictably may reduce delivery 
 
 ---
 
-# 25. Deployment Frequency
+# 25. Delivery Performance Metrics — Current DORA View
+
+DORA's software delivery performance model has evolved.
+
+The current 2026 model uses five metrics:
+
+~~~text
+Throughput
+├── Change Lead Time
+├── Deployment Frequency
+└── Failed Deployment Recovery Time
+
+Instability
+├── Change Fail Rate
+└── Deployment Rework Rate
+~~~
+
+Historically, DORA was widely taught as four key metrics. The recovery metric was commonly called MTTR or time to restore service. Current DORA guidance narrows this to **failed deployment recovery time** and adds **deployment rework rate**.
+
+These metrics are signals for continuous improvement, not universal targets to game.
+
+---
+
+# 26. Deployment Frequency
 
 Deployment frequency asks:
 
@@ -637,7 +661,7 @@ High-frequency unstable deployments are not success.
 
 ---
 
-# 26. Change Failure Rate
+# 27. Change Failure Rate
 
 Change failure rate asks:
 
@@ -655,11 +679,13 @@ The exact operational definition must be explicit.
 
 ---
 
-# 27. Time to Restore Service
+# 28. Failed Deployment Recovery Time
 
-Time to restore service asks:
+Failed deployment recovery time asks:
 
-> After service degradation, how quickly can acceptable service be restored?
+> When a production deployment fails and requires intervention, how quickly is service recovered?
+
+This is the current DORA framing. Historical material may call a related measure MTTR or time to restore service.
 
 Restoration may involve:
 
@@ -674,7 +700,15 @@ Fast recovery is as important as preventing every failure.
 
 ---
 
-# 28. Delivery Performance Is Multi-Dimensional
+# 29. Deployment Rework Rate
+
+Deployment rework rate measures the proportion of deployments that are unplanned corrective work resulting from production problems.
+
+It helps expose instability that may otherwise appear only as extra deployment activity.
+
+---
+
+# 30. Delivery Performance Is Multi-Dimensional
 
 A healthy delivery system balances:
 
@@ -701,7 +735,7 @@ That is not good delivery performance.
 
 ---
 
-# 29. Ownership
+# 31. Ownership
 
 Ownership means teams understand and accept responsibility for the outcomes of the systems they change.
 
@@ -720,7 +754,7 @@ It means responsibility does not disappear at a handoff.
 
 ---
 
-# 30. "You Build It, You Run It" — Nuance
+# 32. "You Build It, You Run It" — Nuance
 
 This phrase expresses stronger production ownership.
 
@@ -737,7 +771,7 @@ The goal is aligned ownership, not a slogan.
 
 ---
 
-# 31. Toil
+# 33. Toil
 
 Toil is repetitive operational work that is manual, automatable, tactical, and does not create durable value.
 
@@ -754,7 +788,7 @@ Some manual work requires judgment.
 
 ---
 
-# 32. Reduce Toil, Preserve Judgment
+# 34. Reduce Toil, Preserve Judgment
 
 The goal is not:
 
@@ -779,7 +813,7 @@ Human judgment remains important for:
 
 ---
 
-# 33. Infrastructure as Code as a DevOps Enabler
+# 35. Infrastructure as Code as a DevOps Enabler
 
 IaC supports DevOps by making infrastructure:
 
@@ -803,7 +837,7 @@ IaC is an enabler, not DevOps itself.
 
 ---
 
-# 34. Observability as Feedback
+# 36. Observability as Feedback
 
 Observability closes the production feedback loop.
 
@@ -825,7 +859,7 @@ Without production feedback, delivery teams can ship changes without understandi
 
 ---
 
-# 35. Security in the Delivery Flow
+# 37. Security in the Delivery Flow
 
 Security should not be only a final gate.
 
@@ -844,7 +878,7 @@ This is often described as integrating security into the lifecycle.
 
 ---
 
-# 36. Shift Left — Mental Model
+# 38. Shift Left — Mental Model
 
 Shift left means moving useful validation earlier in the lifecycle.
 
@@ -861,7 +895,7 @@ Goal:
 
 ---
 
-# 37. Shift Right — Mental Model
+# 39. Shift Right — Mental Model
 
 Shift right means learning from runtime/production behavior.
 
@@ -878,7 +912,7 @@ Shift left and shift right are complementary.
 
 ---
 
-# 38. Environment Parity
+# 40. Environment Parity
 
 If environments differ too much:
 
@@ -902,7 +936,7 @@ The goal is to reduce uncontrolled differences and understand the remaining ones
 
 ---
 
-# 39. Configuration Management
+# 41. Configuration Management
 
 Applications depend on configuration such as:
 
@@ -924,7 +958,7 @@ Uncontrolled configuration change can cause incidents without code changes.
 
 ---
 
-# 40. Change Management
+# 42. Change Management
 
 Every production change introduces risk.
 
@@ -946,7 +980,7 @@ It means controls should be proportional, evidence-driven, and automation-friend
 
 ---
 
-# 41. Deployment Strategies — Preview
+# 43. Deployment Strategies — Preview
 
 Different deployment strategies reduce risk in different ways.
 
@@ -965,7 +999,7 @@ Deep implementation comes later.
 
 ---
 
-# 42. Rollback and Roll Forward
+# 44. Rollback and Roll Forward
 
 When a change fails, teams may:
 
@@ -984,7 +1018,7 @@ Recovery must be designed before the incident.
 
 ---
 
-# 43. Blameless Learning
+# 45. Blameless Learning
 
 Blameless does not mean:
 
@@ -1005,7 +1039,7 @@ Instead ask:
 
 ---
 
-# 44. Incident Feedback Loop
+# 46. Incident Feedback Loop
 
 An incident can produce:
 
@@ -1022,7 +1056,7 @@ If incidents create no durable learning, the organization repeats failure.
 
 ---
 
-# 45. DevOps and Reliability
+# 47. DevOps and Reliability
 
 Speed and reliability are not necessarily opposites.
 
@@ -1040,7 +1074,7 @@ Large risky releases are often a symptom of slow delivery systems.
 
 ---
 
-# 46. DevOps vs SRE
+# 48. DevOps vs SRE
 
 DevOps is a broad philosophy and operating model for improving delivery and operations.
 
@@ -1062,7 +1096,7 @@ They are not identical.
 
 ---
 
-# 47. DevOps vs Platform Engineering
+# 49. DevOps vs Platform Engineering
 
 Platform engineering focuses on building internal products/platforms that improve developer experience and operational consistency.
 
@@ -1082,7 +1116,7 @@ It does not replace the need for shared ownership and feedback.
 
 ---
 
-# 48. DevOps vs Tools
+# 50. DevOps vs Tools
 
 Tools may include:
 
@@ -1110,7 +1144,7 @@ Are teams learning?
 
 ---
 
-# 49. DevOps Anti-Patterns
+# 51. DevOps Anti-Patterns
 
 Common anti-patterns include:
 
@@ -1154,7 +1188,7 @@ deploy more often
 
 ---
 
-# 50. Senior Engineer Perspective
+# 52. Senior Engineer Perspective
 
 A senior engineer asks:
 
@@ -1172,7 +1206,7 @@ The senior view is end-to-end, not tool-by-tool.
 
 ---
 
-# 51. SRE Perspective
+# 53. SRE Perspective
 
 An SRE asks:
 
@@ -1189,7 +1223,7 @@ SRE connects delivery practices to reliability outcomes.
 
 ---
 
-# 52. Architect Perspective
+# 54. Architect Perspective
 
 An architect asks:
 
@@ -1207,7 +1241,7 @@ Architecture includes the path to production, not only runtime diagrams.
 
 ---
 
-# 53. Common Beginner Mistakes
+# 55. Common Beginner Mistakes
 
 ## Mistake 1
 
@@ -1253,7 +1287,7 @@ Platform engineering can operationalize many DevOps principles, but does not rep
 
 ---
 
-# 54. Five-Level Explanation
+# 56. Five-Level Explanation
 
 ## L1 — Foundation
 
@@ -1277,7 +1311,7 @@ DevOps architecture aligns organizational design, delivery systems, platform cap
 
 ---
 
-# 55. What You Must Retain
+# 57. What You Must Retain
 
 Before moving on, retain:
 
@@ -1303,7 +1337,7 @@ Before moving on, retain:
 
 ---
 
-# 56. Practical Package — Next Layer
+# 58. Practical Package — Next Layer
 
 The practical package should include safe exercises such as:
 
@@ -1318,7 +1352,7 @@ These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
 
 ---
 
-# 57. Assessment Package — Pending
+# 59. Assessment Package — Pending
 
 The assessment should test:
 
@@ -1344,7 +1378,7 @@ The assessment should test:
 
 ---
 
-# 58. Visual Package — Pending
+# 60. Visual Package — Pending
 
 The visual package should include:
 
@@ -1357,7 +1391,7 @@ The visual package should include:
 
 ---
 
-# 59. What Comes Next
+# 61. What Comes Next
 
 After D00-T007 is completed, continue to:
 
@@ -1377,7 +1411,7 @@ That topic will connect DevOps delivery principles to:
 
 ---
 
-# 60. Sources & Evidence
+# 62. Sources & Evidence
 
 Planned authoritative source families for verification:
 
@@ -1391,8 +1425,25 @@ Planned authoritative source families for verification:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T007 Source Verification](../../../../docs/sources/D00/D00-T007-source-verification.md)
+
+Verified nuances:
+
+- DORA's current 2026 software-delivery model uses five metrics rather than the historical four
+- failed deployment recovery time replaces the broader historical MTTR/time-to-restore framing
+- deployment rework rate is now part of DORA's software-delivery performance model
+- speed and stability are not inherently opposing outcomes
+- CI/CD practices are not equivalent to owning a pipeline tool
+- toil has specific operational characteristics and is not simply undesirable work
+- blameless learning does not eliminate accountability
+- SRE can implement DevOps principles but is not identical to DevOps
+- platform engineering can scale DevOps practices through internal platforms
+- shift-left security and runtime/production feedback are complementary
