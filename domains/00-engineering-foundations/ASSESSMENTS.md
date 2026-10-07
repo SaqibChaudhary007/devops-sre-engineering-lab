@@ -214,6 +214,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.17 — Systems Thinking
+
+[Open D00-T017 Assessment Package](../../assessments/topics/D00/D00-T017/README.md)
+
+Includes:
+
+- 96-question knowledge check
+- applied systems-thinking scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
