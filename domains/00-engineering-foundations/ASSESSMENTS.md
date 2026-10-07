@@ -162,6 +162,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.13 — SRE Foundations
+
+[Open D00-T013 Assessment Package](../../assessments/topics/D00/D00-T013/README.md)
+
+Includes:
+
+- 96-question knowledge check
+- applied SRE scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
