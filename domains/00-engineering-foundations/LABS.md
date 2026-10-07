@@ -185,6 +185,20 @@ All D00-T012 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.13 — SRE Foundations
+
+1. [OBS-D00-017 — Map a User Journey to SLI, SLO, and Alerting Decisions](../../labs/observation/D00/OBS-D00-017-user-journey-sli-slo-alerting.md)
+2. [EXP-D00-021 — Error Budget, Toil, Automation, and Safe Change Decisions](../../labs/experiments/D00/EXP-D00-021-error-budget-toil-automation-safe-change.md)
+3. [EXP-D00-022 — Incident Response, Alert Actionability, Postmortem, and Production Readiness](../../labs/experiments/D00/EXP-D00-022-incident-alert-postmortem-production-readiness.md)
+
+These assets turn SRE foundations into provider-neutral reasoning exercises for user journeys, service boundaries, SLI/SLO/SLA, error-budget decisions, page/ticket/dashboard classification, alert actionability, toil, automation boundaries, safe change, on-call feedback, incident timelines, mitigation vs permanent correction, postmortem learning, blameless analysis, release safety, and production readiness.
+
+### Verification Status
+
+All D00-T013 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
