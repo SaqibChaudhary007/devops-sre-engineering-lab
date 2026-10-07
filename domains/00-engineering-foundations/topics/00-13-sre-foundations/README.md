@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 6-8h
   practical: 1-2h
@@ -156,6 +156,54 @@ Required:
 - [00.12 — Reliability Engineering Foundations](../00-12-reliability-engineering-foundations/README.md)
 
 You should already understand user journeys, availability, recoverability, failure domains, blast radius, redundancy, capacity headroom, observability, SLI/SLO/error-budget previews, and incident recovery.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T013 Source Verification](../../../../docs/sources/D00/D00-T013-source-verification.md).
+3. **Visualize** — review the [D00-T013 Visual Package](../../../../docs/diagrams/D00/D00-T013/README.md).
+4. **Observe SRE Objectives** — complete [OBS-D00-017 — Map a User Journey to SLI, SLO, and Alerting Decisions](../../../../labs/observation/D00/OBS-D00-017-user-journey-sli-slo-alerting.md).
+5. **Experiment with Error Budgets & Toil** — complete [EXP-D00-021 — Error Budget, Toil, Automation, and Safe Change Decisions](../../../../labs/experiments/D00/EXP-D00-021-error-budget-toil-automation-safe-change.md).
+6. **Experiment with Incidents & Readiness** — complete [EXP-D00-022 — Incident Response, Alert Actionability, Postmortem, and Production Readiness](../../../../labs/experiments/D00/EXP-D00-022-incident-alert-postmortem-production-readiness.md).
+7. **Assess** — complete the [D00-T013 Assessment Package](../../../../assessments/topics/D00/D00-T013/README.md).
+8. **Teach Back** — explain SRE at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.14 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-071 — User Journey → SLI → SLO → Error Budget → Decision](../../../../docs/diagrams/D00/D00-T013/DIA-D00-071-user-journey-sli-slo-error-budget-decision.md)
+- [DIA-D00-072 — Page vs Ticket vs Dashboard](../../../../docs/diagrams/D00/D00-T013/DIA-D00-072-page-ticket-dashboard.md)
+- [DIA-D00-073 — Incident: Detect → Mitigate → Recover → Learn](../../../../docs/diagrams/D00/D00-T013/DIA-D00-073-incident-detect-mitigate-recover-learn.md)
+- [DIA-D00-074 — Toil → Automation → Engineering Capacity](../../../../docs/diagrams/D00/D00-T013/DIA-D00-074-toil-automation-engineering-capacity.md)
+- [DIA-D00-075 — Error Budget → Change Velocity / Reliability Trade-Off](../../../../docs/diagrams/D00/D00-T013/DIA-D00-075-error-budget-change-velocity-reliability.md)
+- [DIA-D00-076 — Production Readiness → Operate → Incident → Improvement](../../../../docs/diagrams/D00/D00-T013/DIA-D00-076-production-readiness-operate-improve.md)
+
+## Practical Package
+
+- [OBS-D00-017 — Map a User Journey to SLI, SLO, and Alerting Decisions](../../../../labs/observation/D00/OBS-D00-017-user-journey-sli-slo-alerting.md)
+- [EXP-D00-021 — Error Budget, Toil, Automation, and Safe Change Decisions](../../../../labs/experiments/D00/EXP-D00-021-error-budget-toil-automation-safe-change.md)
+- [EXP-D00-022 — Incident Response, Alert Actionability, Postmortem, and Production Readiness](../../../../labs/experiments/D00/EXP-D00-022-incident-alert-postmortem-production-readiness.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T013 Assessment Package](../../../../assessments/topics/D00/D00-T013/README.md) includes:
+
+- 96-question knowledge check
+- applied SRE scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1206,28 +1254,23 @@ Before moving on, retain:
 
 ---
 
-# 61. Practical Package — Next Layer
+# 61. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- map a user journey to SLI/SLO
-- classify page vs ticket vs dashboard signals
-- calculate conceptual error-budget consumption
-- identify toil vs valuable operational work
-- convert repeated manual work into an automation candidate
-- build an incident timeline
-- separate mitigation from root-cause correction
-- review an alert for actionability
-- review production readiness
-- analyze reliability vs release velocity trade-offs
+1. [OBS-D00-017 — Map a User Journey to SLI, SLO, and Alerting Decisions](../../../../labs/observation/D00/OBS-D00-017-user-journey-sli-slo-alerting.md)
+2. [EXP-D00-021 — Error Budget, Toil, Automation, and Safe Change Decisions](../../../../labs/experiments/D00/EXP-D00-021-error-budget-toil-automation-safe-change.md)
+3. [EXP-D00-022 — Incident Response, Alert Actionability, Postmortem, and Production Readiness](../../../../labs/experiments/D00/EXP-D00-022-incident-alert-postmortem-production-readiness.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn SRE foundations into concrete reasoning around service boundaries, SLI/SLO/SLA, error budgets, page/ticket/dashboard decisions, toil, automation safety, on-call feedback, incident response, mitigation, recovery validation, postmortem learning, progressive delivery, and production readiness.
 
 ---
 
-# 62. Assessment Package — Pending
+# 62. Assessment Package
 
-The assessment should test:
+Complete the [D00-T013 Assessment Package](../../../../assessments/topics/D00/D00-T013/README.md).
+
+It tests:
 
 - SRE definition and purpose
 - SRE vs DevOps / operations
@@ -1245,7 +1288,7 @@ The assessment should test:
 - blameless learning
 - release engineering
 - safe change
-- capacity/headroom
+- capacity and headroom
 - overload protection
 - dependency reliability
 - production readiness
@@ -1256,9 +1299,11 @@ The assessment should test:
 
 ---
 
-# 63. Visual Package — Pending
+# 63. Visual Package
 
-The visual package should include:
+Review the [D00-T013 Visual Package](../../../../docs/diagrams/D00/D00-T013/README.md).
+
+The package includes:
 
 1. User Journey → SLI → SLO → Error Budget → Decision
 2. Page vs Ticket vs Dashboard
@@ -1269,7 +1314,54 @@ The visual package should include:
 
 ---
 
-# 64. What Comes Next
+# 64. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain what SRE is and why it exists
+- explain why SRE is broader than monitoring or on-call
+- explain the relationship between SRE and DevOps without forcing a false hard boundary
+- define a service boundary
+- map a critical user journey to a good-event definition
+- distinguish SLI, SLO, SLA, and error budget
+- explain availability, latency, correctness, and freshness as possible reliability indicators
+- explain why 100% reliability is usually the wrong default target
+- explain how error-budget health can influence change/risk decisions
+- explain why one organization's error-budget policy is not universal
+- distinguish page, ticket, and dashboard/context decisions
+- explain urgency and actionability
+- distinguish symptoms from causes
+- explain sustainable on-call
+- explain how on-call pain becomes engineering feedback
+- define toil and distinguish it from novel diagnosis or engineering work
+- explain why toil is a scaling problem
+- explain why automation should follow understanding and safety boundaries
+- explain when human judgment should remain involved
+- distinguish an incident from an alert
+- distinguish mitigation from permanent/root-cause correction
+- build an incident timeline
+- explain why recovery must be validated against the user journey
+- explain the purpose of postmortems
+- explain blameless systemic learning without removing accountability
+- design specific, owned, trackable reliability action items
+- explain why release engineering is part of reliability
+- explain progressive/canary delivery at the correct preview level
+- explain why a canary reduces exposure but does not prove correctness
+- compare rollback and roll-forward
+- explain capacity headroom and overload protection
+- explain dependency reliability as part of end-to-end service reliability
+- explain production and launch readiness
+- explain why ownership must be explicit
+- explain reliability reviews as a continuous operating practice
+- explain why SRE aims for safe velocity rather than zero change
+- explain SRE as risk management
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the SRE mental model clearly without relying on notes
+
+# 65. What Comes Next
 
 After D00-T013 is completed, continue to:
 
@@ -1279,7 +1371,7 @@ That topic will deepen metrics, logs, traces, events, telemetry design, signal q
 
 ---
 
-# 65. Sources & Evidence
+# 66. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1295,9 +1387,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1320,3 +1413,10 @@ Verified nuances:
 - canarying/progressive delivery reduces exposure but does not prove correctness
 - capacity/headroom and overload control belong to reliability operations
 - production readiness includes operational readiness, ownership, observability, recovery, and safe change
+
+
+## Topic Package Status
+
+**D00-T013 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
