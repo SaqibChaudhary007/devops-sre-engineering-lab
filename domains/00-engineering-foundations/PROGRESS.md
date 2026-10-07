@@ -73,8 +73,8 @@
 | D00-T013 Source Verification | Complete |
 | D00-T013 Practical Assets | Drafted |
 | D00-T013 Assessment | Drafted |
-| D00-T013 Visual Package | Next |
-| D00-T013 Cross-Link Integration | Pending |
+| D00-T013 Visual Package | Drafted |
+| D00-T013 Cross-Link Integration | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
