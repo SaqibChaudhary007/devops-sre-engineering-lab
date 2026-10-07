@@ -125,3 +125,17 @@ Includes:
 - Pipeline Feedback & Failure Loop
 - Deployment vs Release
 - CI/CD + IaC + GitOps Relationship
+
+
+## D00-T010 — Containers & Orchestration Mental Model
+
+- [Visual / Diagram Package](D00-T010/README.md)
+
+Includes:
+
+- Virtual Machine vs Container
+- Image → Container → Runtime → Host
+- Image Layers + Writable Container Layer
+- Desired Replicas → Scheduler → Nodes → Reconciliation
+- Service Discovery + Load Balancing Across Replicas
+- Container Failure vs Node Failure vs Orchestrator Recovery
