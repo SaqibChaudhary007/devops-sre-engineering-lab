@@ -39,6 +39,10 @@
 
 ## Next
 
-14. 00.14 — Observability Foundations — planned
+14. [00.14 — Observability Foundations](00-14-observability-foundations/README.md) — canonical draft authored
+
+## Next
+
+15. 00.15 — Security Foundations — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.

@@ -75,7 +75,12 @@
 | D00-T013 Assessment | Drafted |
 | D00-T013 Visual Package | Drafted |
 | D00-T013 Cross-Link Integration | Complete |
-| D00-T014 Observability Foundations | Next |
+| D00-T014 Observability Foundations | Canonical draft authored |
+| D00-T014 Source Verification | Next |
+| D00-T014 Practical Assets | Pending |
+| D00-T014 Assessment | Pending |
+| D00-T014 Visual Package | Pending |
+| D00-T014 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
