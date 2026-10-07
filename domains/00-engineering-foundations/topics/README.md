@@ -51,6 +51,10 @@
 
 ## Next
 
-17. 00.17 — Systems Thinking — planned
+17. [00.17 — Systems Thinking](00-17-systems-thinking/README.md) — canonical draft authored
+
+## Next
+
+18. 00.18 — Failure Thinking — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
