@@ -31,7 +31,7 @@
 
 ## Next
 
-12. [00.12 — Reliability Engineering Foundations](00-12-reliability-engineering-foundations/README.md) — canonical draft authored
+12. [00.12 — Reliability Engineering Foundations](00-12-reliability-engineering-foundations/README.md) — full topic package
 
 ## Next
 
