@@ -47,7 +47,7 @@
 
 ## Next
 
-16. [00.16 — Automation Mental Models](00-16-automation-mental-models/README.md) — canonical draft authored
+16. [00.16 — Automation Mental Models](00-16-automation-mental-models/README.md) — full topic package
 
 ## Next
 
