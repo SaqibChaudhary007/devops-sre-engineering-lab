@@ -355,6 +355,31 @@ Recommended content angles:
 - **Architecture With Saqib:** Trust Boundaries, Supply Chain, and Blast Radius
 - **5 Levels:** Explain Security from Beginner to Architect
 
+
+## D00-T016 — Automation Mental Models
+
+Priority: **P1**
+
+Visual package:
+
+1. [Trigger → Preconditions → State → Action → Validation → Feedback](../../docs/diagrams/D00/D00-T016/DIA-D00-089-trigger-preconditions-state-action-validation-feedback.md)
+2. [Current State ↔ Desired State → Reconciliation Loop](../../docs/diagrams/D00/D00-T016/DIA-D00-090-current-desired-reconciliation-loop.md)
+3. [Idempotency / Duplicate Execution / Retry Safety](../../docs/diagrams/D00/D00-T016/DIA-D00-091-idempotency-duplicate-retry-safety.md)
+4. [Partial Failure → Rollback / Roll-Forward / Compensation](../../docs/diagrams/D00/D00-T016/DIA-D00-092-partial-failure-recovery-options.md)
+5. [Human Approval → Guardrails → Automated Action → Validation](../../docs/diagrams/D00/D00-T016/DIA-D00-093-human-approval-guardrails-action-validation.md)
+6. [Automation Blast Radius: Scope / Rate / Identity / Environment / Stop Conditions](../../docs/diagrams/D00/D00-T016/DIA-D00-094-automation-blast-radius-guardrails.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Automation Is More Than Scripting
+- **How It Really Works:** Trigger → State → Action → Validation
+- **Under the Hood:** Idempotency, Duplicate Execution, and Retry Safety
+- **Build Break Fix:** What Happens When Automation Runs Twice?
+- **Production Room:** Why Rollback Is Not Always Possible
+- **Think Like an SRE:** Bound Self-Healing Before It Amplifies Failure
+- **Architecture With Saqib:** Designing Maximum Safe Automation Blast Radius
+- **5 Levels:** Explain Automation from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
