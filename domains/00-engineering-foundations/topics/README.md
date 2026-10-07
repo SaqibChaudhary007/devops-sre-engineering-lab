@@ -19,6 +19,10 @@
 
 ## Next
 
-9. 00.09 — CI/CD Mental Model — planned
+9. [00.09 — CI/CD Mental Model](00-09-cicd-mental-model/README.md) — canonical draft authored
+
+## Next
+
+10. 00.10 — Containers & Orchestration Mental Model — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
