@@ -175,6 +175,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.14 — Observability Foundations
+
+[Open D00-T014 Assessment Package](../../assessments/topics/D00/D00-T014/README.md)
+
+Includes:
+
+- 96-question knowledge check
+- applied observability scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED

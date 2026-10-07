@@ -78,8 +78,8 @@
 | D00-T014 Observability Foundations | Canonical draft authored |
 | D00-T014 Source Verification | Complete |
 | D00-T014 Practical Assets | Drafted |
-| D00-T014 Assessment | Next |
-| D00-T014 Visual Package | Pending |
+| D00-T014 Assessment | Drafted |
+| D00-T014 Visual Package | Next |
 | D00-T014 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
