@@ -23,6 +23,10 @@
 
 ## Next
 
-10. 00.10 — Containers & Orchestration Mental Model — planned
+10. [00.10 — Containers & Orchestration Mental Model](00-10-containers-orchestration-mental-model/README.md) — canonical draft authored
+
+## Next
+
+11. 00.11 — Distributed Systems Foundations — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
