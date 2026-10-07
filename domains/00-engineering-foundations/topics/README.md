@@ -11,7 +11,7 @@
 
 6. [00.06 — Cloud Mental Models](00-06-cloud-mental-models/README.md) — full topic package
 
-7. [00.07 — DevOps Foundations](00-07-devops-foundations/README.md) — canonical draft authored
+7. [00.07 — DevOps Foundations](00-07-devops-foundations/README.md) — full topic package
 
 ## Next
 
