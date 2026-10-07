@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 6-8h
   practical: 1-2h
@@ -146,6 +146,54 @@ Required:
 - [00.09 — CI/CD Mental Model](../00-09-cicd-mental-model/README.md)
 
 You should already understand processes, operating systems, application dependencies, infrastructure, delivery pipelines, artifacts, desired state, failure domains, and production feedback.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T010 Source Verification](../../../../docs/sources/D00/D00-T010-source-verification.md).
+3. **Visualize** — review the [D00-T010 Visual Package](../../../../docs/diagrams/D00/D00-T010/README.md).
+4. **Observe Runtime Layers** — complete [OBS-D00-014 — Map Image → Container → Runtime → Host](../../../../labs/observation/D00/OBS-D00-014-map-image-container-runtime-host.md).
+5. **Experiment with State & Health** — complete [EXP-D00-015 — Ephemeral vs Persistent State, Health, and Restart Reasoning](../../../../labs/experiments/D00/EXP-D00-015-ephemeral-persistent-health-restart.md).
+6. **Experiment with Orchestration & Recovery** — complete [EXP-D00-016 — Desired Replicas, Scheduling, Service Discovery, and Failure Recovery](../../../../labs/experiments/D00/EXP-D00-016-replicas-scheduling-service-discovery-recovery.md).
+7. **Assess** — complete the [D00-T010 Assessment Package](../../../../assessments/topics/D00/D00-T010/README.md).
+8. **Teach Back** — explain containers and orchestration at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.11 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-053 — Virtual Machine vs Container](../../../../docs/diagrams/D00/D00-T010/DIA-D00-053-vm-vs-container.md)
+- [DIA-D00-054 — Image → Container → Runtime → Host](../../../../docs/diagrams/D00/D00-T010/DIA-D00-054-image-container-runtime-host.md)
+- [DIA-D00-055 — Image Layers + Writable Container Layer](../../../../docs/diagrams/D00/D00-T010/DIA-D00-055-image-layers-writable-layer.md)
+- [DIA-D00-056 — Desired Replicas → Scheduler → Nodes → Reconciliation](../../../../docs/diagrams/D00/D00-T010/DIA-D00-056-replicas-scheduler-nodes-reconciliation.md)
+- [DIA-D00-057 — Service Discovery + Load Balancing Across Replicas](../../../../docs/diagrams/D00/D00-T010/DIA-D00-057-service-discovery-load-balancing.md)
+- [DIA-D00-058 — Container Failure vs Node Failure vs Orchestrator Recovery](../../../../docs/diagrams/D00/D00-T010/DIA-D00-058-container-node-orchestrator-recovery.md)
+
+## Practical Package
+
+- [OBS-D00-014 — Map Image → Container → Runtime → Host](../../../../labs/observation/D00/OBS-D00-014-map-image-container-runtime-host.md)
+- [EXP-D00-015 — Ephemeral vs Persistent State, Health, and Restart Reasoning](../../../../labs/experiments/D00/EXP-D00-015-ephemeral-persistent-health-restart.md)
+- [EXP-D00-016 — Desired Replicas, Scheduling, Service Discovery, and Failure Recovery](../../../../labs/experiments/D00/EXP-D00-016-replicas-scheduling-service-discovery-recovery.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T010 Assessment Package](../../../../assessments/topics/D00/D00-T010/README.md) includes:
+
+- 96-question knowledge check
+- applied containers/orchestration scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1294,53 +1342,53 @@ Before moving on, retain:
 
 ---
 
-# 67. Practical Package — Next Layer
+# 67. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- map image → container → runtime → host
-- compare container vs VM boundaries
-- model ephemeral vs persistent data
-- trace container networking from process port to client
-- simulate desired replicas vs actual replicas
-- reason through container failure vs node failure
-- design a service-discovery/load-balancing model
-- classify restartable vs non-restartable failures
-- reason about stateless vs stateful workload placement
+1. [OBS-D00-014 — Map Image → Container → Runtime → Host](../../../../labs/observation/D00/OBS-D00-014-map-image-container-runtime-host.md)
+2. [EXP-D00-015 — Ephemeral vs Persistent State, Health, and Restart Reasoning](../../../../labs/experiments/D00/EXP-D00-015-ephemeral-persistent-health-restart.md)
+3. [EXP-D00-016 — Desired Replicas, Scheduling, Service Discovery, and Failure Recovery](../../../../labs/experiments/D00/EXP-D00-016-replicas-scheduling-service-discovery-recovery.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn the container/orchestration mental model into concrete reasoning around runtime layers, image identity, persistence, probe semantics, restart loops, desired state, scheduling, capacity, service discovery, failure domains, stateful recovery, rolling updates, and bounded self-healing.
 
 ---
 
-# 68. Assessment Package — Pending
+# 68. Assessment Package
 
-The assessment should test:
+Complete the [D00-T010 Assessment Package](../../../../assessments/topics/D00/D00-T010/README.md).
+
+It tests:
 
 - why containers exist
 - image vs container
-- registry/runtime/host
-- layers and writable state
+- registry/runtime/host boundaries
+- image layers and writable state
 - ephemeral vs persistent data
-- namespaces/cgroups mental model
+- namespaces/cgroups at a mental-model level
 - networking and ports
-- configuration/secrets
-- health and restart
-- desired state/reconciliation
+- configuration and secrets
+- startup/liveness/readiness
+- restart behavior
+- desired state and reconciliation
 - nodes/control plane/scheduler
-- service discovery/load balancing
-- scaling/update strategy
-- stateless/stateful workloads
+- scheduling and capacity
+- service discovery and load balancing
+- scaling and rolling updates
+- stateless vs stateful workloads
 - failure and rescheduling
 - observability
-- security/image trust
+- security and image trust
 - CI/CD + IaC + orchestration boundaries
 - Senior/SRE/Architect reasoning
 
 ---
 
-# 69. Visual Package — Pending
+# 69. Visual Package
 
-The visual package should include:
+Review the [D00-T010 Visual Package](../../../../docs/diagrams/D00/D00-T010/README.md).
+
+The package includes:
 
 1. Virtual Machine vs Container
 2. Image → Container → Runtime → Host
@@ -1351,7 +1399,51 @@ The visual package should include:
 
 ---
 
-# 70. What Comes Next
+# 70. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain why containers exist without defining them as mini-VMs
+- distinguish image, container, runtime, host, and orchestrator
+- explain why mainstream Linux containers usually share the host kernel
+- explain image tags vs immutable content digests
+- explain image layers vs writable container state
+- explain why container-local writable state is not automatically durable
+- separate workload lifecycle from storage lifecycle
+- explain namespaces and cgroups at the correct mental-model level
+- explain why requests/limits should not be overgeneralized
+- explain container networking and temporary instance identity
+- explain why configuration and secrets should be externalized deliberately
+- distinguish startup, liveness, readiness, and service health
+- explain why restart is not root-cause recovery
+- explain why orchestration exists
+- explain desired state, observed state, reconciliation, and control loops
+- explain what a node and control plane are at a high level
+- explain what a scheduler decides
+- explain why an unschedulable workload can mean reconciliation is working but capacity is insufficient
+- explain service discovery and stable service identity
+- explain load balancing across ready replicas
+- distinguish horizontal and vertical scaling
+- explain why rolling updates reduce but do not remove deployment risk
+- distinguish stateless and stateful workloads
+- explain why stateful recovery needs identity/storage/consistency reasoning
+- distinguish container failure from node failure
+- explain node-level blast radius
+- explain why replica count alone does not guarantee availability
+- explain bounded rescheduling and self-healing
+- explain why logs/metrics/events should survive workload replacement
+- explain image trust and least privilege at a mental-model level
+- explain CI/CD vs orchestration responsibilities
+- explain IaC vs orchestration responsibilities
+- explain why Kubernetes is an orchestrator, not the container runtime
+- explain why orchestration is itself a distributed-system problem
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the containers/orchestration mental model clearly without relying on notes
+
+# 71. What Comes Next
 
 After D00-T010 is completed, continue to:
 
@@ -1361,7 +1453,7 @@ That topic will connect orchestration to partial failure, network uncertainty, c
 
 ---
 
-# 71. Sources & Evidence
+# 72. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1378,9 +1470,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1404,3 +1497,10 @@ Verified nuances:
 - stateful workloads need stronger identity/storage/recovery handling
 - Kubernetes orchestrates containers but is not itself the container runtime
 - self-healing is bounded by platform capability, capacity, dependencies, storage, networking, and control-plane health
+
+
+## Topic Package Status
+
+**D00-T010 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
