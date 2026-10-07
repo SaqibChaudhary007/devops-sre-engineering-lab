@@ -171,6 +171,20 @@ All D00-T011 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.12 — Reliability Engineering Foundations
+
+1. [OBS-D00-016 — Map a Critical User Journey and Reliability Boundaries](../../labs/observation/D00/OBS-D00-016-map-critical-user-journey-reliability-boundaries.md)
+2. [EXP-D00-019 — Reliability Targets, Failure Domains, Redundancy, and Graceful Degradation](../../labs/experiments/D00/EXP-D00-019-reliability-targets-failure-domains-degradation.md)
+3. [EXP-D00-020 — Recovery, Capacity Headroom, Backup Validation, and Incident Timeline](../../labs/experiments/D00/EXP-D00-020-recovery-capacity-backup-incident-timeline.md)
+
+These assets turn reliability-engineering foundations into provider-neutral reasoning exercises for critical user journeys, reliability properties, failure domains, blast radius, redundancy independence, graceful degradation, SLI/SLO/SLA mental models, error budgets, failover assumptions, capacity headroom, saturation, alert quality, RTO/RPO, tested recovery, runbooks, and production readiness.
+
+### Verification Status
+
+All D00-T012 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
