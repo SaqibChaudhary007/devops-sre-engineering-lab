@@ -51,12 +51,13 @@
 | D00-T009 Assessment | Drafted |
 | D00-T009 Visual Package | Drafted |
 | D00-T009 Cross-Link Integration | Complete |
-| D00-T010 Containers & Orchestration Mental Model | Canonical draft authored |
+| D00-T010 Containers & Orchestration Mental Model | Full topic package integrated |
 | D00-T010 Source Verification | Complete |
 | D00-T010 Practical Assets | Drafted |
 | D00-T010 Assessment | Drafted |
 | D00-T010 Visual Package | Drafted |
-| D00-T010 Cross-Link Integration | Next |
+| D00-T010 Cross-Link Integration | Complete |
+| D00-T011 Distributed Systems Foundations | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
