@@ -33,3 +33,5 @@ AI output is never treated as technical authority.
 - [D00-T006 — Cloud Mental Models](../../docs/sources/D00/D00-T006-source-verification.md) — core claims DOC-VERIFIED
 
 - [D00-T007 — DevOps Foundations](../../docs/sources/D00/D00-T007-source-verification.md) — core claims DOC-VERIFIED; DORA metrics updated to current five-metric model
+
+- [D00-T008 — Infrastructure as Code Mental Model](../../docs/sources/D00/D00-T008-source-verification.md) — core claims DOC-VERIFIED; state, locking, idempotence, plan, drift, import, and GitOps nuances verified
