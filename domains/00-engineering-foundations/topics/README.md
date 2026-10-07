@@ -27,7 +27,7 @@
 
 ## Next
 
-11. [00.11 — Distributed Systems Foundations](00-11-distributed-systems-foundations/README.md) — canonical draft authored
+11. [00.11 — Distributed Systems Foundations](00-11-distributed-systems-foundations/README.md) — full topic package
 
 ## Next
 
