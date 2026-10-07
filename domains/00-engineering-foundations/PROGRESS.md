@@ -81,12 +81,13 @@
 | D00-T014 Assessment | Drafted |
 | D00-T014 Visual Package | Drafted |
 | D00-T014 Cross-Link Integration | Complete |
-| D00-T015 Security Foundations | Canonical draft authored |
+| D00-T015 Security Foundations | Full topic package integrated |
 | D00-T015 Source Verification | Complete |
 | D00-T015 Practical Assets | Drafted |
 | D00-T015 Assessment | Drafted |
 | D00-T015 Visual Package | Drafted |
-| D00-T015 Cross-Link Integration | Next |
+| D00-T015 Cross-Link Integration | Complete |
+| D00-T016 Automation Mental Models | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.

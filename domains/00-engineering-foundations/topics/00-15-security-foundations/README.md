@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 6-8h
   practical: 1-2h
@@ -182,6 +182,54 @@ Required:
 - [00.14 — Observability Foundations](../00-14-observability-foundations/README.md)
 
 You should already understand systems, dependencies, distributed trust, change pipelines, observability, incidents, blast radius, and recovery.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T015 Source Verification](../../../../docs/sources/D00/D00-T015-source-verification.md).
+3. **Visualize** — review the [D00-T015 Visual Package](../../../../docs/diagrams/D00/D00-T015/README.md).
+4. **Observe Security Boundaries** — complete [OBS-D00-019 — Map Assets, Threats, Trust Boundaries, and Controls](../../../../labs/observation/D00/OBS-D00-019-assets-trust-boundaries-controls.md).
+5. **Experiment with Identity & Secrets** — complete [EXP-D00-025 — Identity, Least Privilege, Secrets, and Audit Review](../../../../labs/experiments/D00/EXP-D00-025-identity-least-privilege-secrets-audit.md).
+6. **Experiment with Supply-Chain Trust** — complete [EXP-D00-026 — Supply-Chain Trust, Defense in Depth, and Security Readiness](../../../../labs/experiments/D00/EXP-D00-026-supply-chain-defense-security-readiness.md).
+7. **Assess** — complete the [D00-T015 Assessment Package](../../../../assessments/topics/D00/D00-T015/README.md).
+8. **Teach Back** — explain security at Beginner, Engineer, Senior, SRE/Security Operations, and Architect levels.
+9. **Continue** — move to 00.16 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-083 — Asset → Threat → Vulnerability → Risk → Control](../../../../docs/diagrams/D00/D00-T015/DIA-D00-083-asset-threat-vulnerability-risk-control.md)
+- [DIA-D00-084 — Identity → Authentication → Authorization → Least Privilege → Audit](../../../../docs/diagrams/D00/D00-T015/DIA-D00-084-identity-authn-authz-least-privilege-audit.md)
+- [DIA-D00-085 — Trust Boundary → Control → Detection → Response](../../../../docs/diagrams/D00/D00-T015/DIA-D00-085-trust-boundary-control-detection-response.md)
+- [DIA-D00-086 — Secret Lifecycle](../../../../docs/diagrams/D00/D00-T015/DIA-D00-086-secret-lifecycle.md)
+- [DIA-D00-087 — Software Supply Chain Trust](../../../../docs/diagrams/D00/D00-T015/DIA-D00-087-software-supply-chain-trust.md)
+- [DIA-D00-088 — Defense in Depth → Blast Radius Reduction](../../../../docs/diagrams/D00/D00-T015/DIA-D00-088-defense-in-depth-blast-radius.md)
+
+## Practical Package
+
+- [OBS-D00-019 — Map Assets, Threats, Trust Boundaries, and Controls](../../../../labs/observation/D00/OBS-D00-019-assets-trust-boundaries-controls.md)
+- [EXP-D00-025 — Identity, Least Privilege, Secrets, and Audit Review](../../../../labs/experiments/D00/EXP-D00-025-identity-least-privilege-secrets-audit.md)
+- [EXP-D00-026 — Supply-Chain Trust, Defense in Depth, and Security Readiness](../../../../labs/experiments/D00/EXP-D00-026-supply-chain-defense-security-readiness.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T015 Assessment Package](../../../../assessments/topics/D00/D00-T015/README.md) includes:
+
+- 96-question knowledge check
+- applied defensive security scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1423,30 +1471,23 @@ Before moving on, retain:
 
 ---
 
-# 68. Practical Package — Next Layer
+# 68. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- identify assets, threats, vulnerabilities, and risks for a sample service
-- map trust boundaries
-- distinguish authentication vs authorization
-- review permissions for least privilege
-- classify human vs workload identities
-- review a secret lifecycle
-- identify unsafe secret placement
-- classify data and logging sensitivity
-- map defense-in-depth controls
-- review a CI/CD trust path
-- map supply-chain trust at a conceptual level
-- perform a production-readiness security review
+1. [OBS-D00-019 — Map Assets, Threats, Trust Boundaries, and Controls](../../../../labs/observation/D00/OBS-D00-019-assets-trust-boundaries-controls.md)
+2. [EXP-D00-025 — Identity, Least Privilege, Secrets, and Audit Review](../../../../labs/experiments/D00/EXP-D00-025-identity-least-privilege-secrets-audit.md)
+3. [EXP-D00-026 — Supply-Chain Trust, Defense in Depth, and Security Readiness](../../../../labs/experiments/D00/EXP-D00-026-supply-chain-defense-security-readiness.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn security foundations into concrete reasoning around assets, threats, vulnerabilities, risk, trust boundaries, identity, authentication, authorization, least privilege, secrets lifecycle, auditability, CI/CD trust, artifact integrity, provenance, dependency risk, defense in depth, blast radius, backup security, security monitoring, security/reliability trade-offs, and production readiness.
 
 ---
 
-# 69. Assessment Package — Pending
+# 69. Assessment Package
 
-The assessment should test:
+Complete the [D00-T015 Assessment Package](../../../../assessments/topics/D00/D00-T015/README.md).
+
+It tests:
 
 - security as risk management
 - CIA triad
@@ -1483,9 +1524,11 @@ The assessment should test:
 
 ---
 
-# 70. Visual Package — Pending
+# 70. Visual Package
 
-The visual package should include:
+Review the [D00-T015 Visual Package](../../../../docs/diagrams/D00/D00-T015/README.md).
+
+The package includes:
 
 1. Asset → Threat → Vulnerability → Risk → Control
 2. Identity → Authentication → Authorization → Least Privilege → Audit
@@ -1496,7 +1539,60 @@ The visual package should include:
 
 ---
 
-# 71. What Comes Next
+# 71. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain security as risk management
+- explain confidentiality, integrity, and availability
+- distinguish asset, threat, vulnerability, exploit concept, exposure, impact, and risk
+- explain why risk ≈ likelihood × impact is only a beginner approximation
+- identify attack surface and trust boundaries
+- distinguish human and workload identity
+- distinguish authentication from authorization
+- explain least privilege using scope, action, duration, and conditions
+- explain separation of duties
+- explain deny-by-default
+- explain Zero Trust without reducing it to "trust nobody"
+- explain credentials and secrets
+- explain the full secret lifecycle
+- explain why hard-coded secrets create long-lived exposure
+- explain why short-lived credentials reduce exposure without becoming automatically safe
+- explain certificates at a foundation level
+- distinguish encryption in transit from encryption at rest
+- distinguish hashing from reversible encryption
+- explain why generic fast hashing is not a complete password-storage model
+- explain data classification and minimization
+- explain security logging and audit evidence
+- explain why prevention must be combined with detection and response
+- explain defense in depth without treating more controls as automatically better
+- explain secure defaults and fail-safe defaults
+- explain secure configuration and hardening
+- explain patching as risk-driven change
+- explain vulnerability-management prioritization at a preview level
+- explain dependency and third-party risk
+- explain software-supply-chain trust from source to runtime
+- explain artifact integrity and provenance
+- explain why provenance is evidence rather than automatic trust
+- explain why CI/CD is a production security boundary
+- explain how IaC can scale secure or insecure configuration
+- explain container/Kubernetes security at preview level
+- explain cloud shared responsibility and why it varies by service model
+- explain segmentation and blast-radius reduction
+- explain security incident response and trust restoration
+- explain backup/recovery security
+- explain how observability supports security operations
+- explain security/reliability trade-offs
+- explain why the secure path should be easy to use
+- explain shared security ownership with explicit accountability
+- perform a security production-readiness review
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the security mental model clearly without relying on notes
+
+# 72. What Comes Next
 
 After D00-T015 is completed, continue to:
 
@@ -1506,7 +1602,7 @@ That topic will deepen idempotency, orchestration, event-driven automation, safe
 
 ---
 
-# 72. Sources & Evidence
+# 73. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1522,9 +1618,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1548,3 +1645,10 @@ Verified nuances:
 - software provenance is verifiable evidence, not automatic trust
 - cloud shared responsibility changes by service model and managed-service boundary
 - security and reliability controls can reinforce or conflict and must be evaluated together
+
+
+## Topic Package Status
+
+**D00-T015 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.

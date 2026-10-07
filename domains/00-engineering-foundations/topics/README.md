@@ -43,7 +43,7 @@
 
 ## Next
 
-15. [00.15 — Security Foundations](00-15-security-foundations/README.md) — canonical draft authored
+15. [00.15 — Security Foundations](00-15-security-foundations/README.md) — full topic package
 
 ## Next
 
