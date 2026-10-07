@@ -201,6 +201,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.16 — Automation Mental Models
+
+[Open D00-T016 Assessment Package](../../assessments/topics/D00/D00-T016/README.md)
+
+Includes:
+
+- 96-question knowledge check
+- applied automation scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
