@@ -54,8 +54,8 @@
 | D00-T010 Containers & Orchestration Mental Model | Canonical draft authored |
 | D00-T010 Source Verification | Complete |
 | D00-T010 Practical Assets | Drafted |
-| D00-T010 Assessment | Next |
-| D00-T010 Visual Package | Pending |
+| D00-T010 Assessment | Drafted |
+| D00-T010 Visual Package | Next |
 | D00-T010 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
