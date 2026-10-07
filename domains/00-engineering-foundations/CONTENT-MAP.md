@@ -258,6 +258,30 @@ Recommended content angles:
 - **Architecture With Saqib:** CAP Without the "Choose Two" Myth
 - **5 Levels:** Explain Distributed Systems from Beginner to Architect
 
+
+## D00-T012 — Reliability Engineering Foundations
+
+Priority: **P1**
+
+Visual package:
+
+1. [Reliability vs Availability vs Durability vs Resilience](../../docs/diagrams/D00/D00-T012/DIA-D00-065-reliability-availability-durability-resilience.md)
+2. [User Journey → Dependency Chain → Reliability Outcome](../../docs/diagrams/D00/D00-T012/DIA-D00-066-user-journey-dependency-reliability.md)
+3. [Failure Domain → Blast Radius → Redundancy Placement](../../docs/diagrams/D00/D00-T012/DIA-D00-067-failure-domain-blast-radius-redundancy.md)
+4. [Detect → Contain → Recover → Validate → Learn](../../docs/diagrams/D00/D00-T012/DIA-D00-068-detect-contain-recover-validate-learn.md)
+5. [SLI → SLO → Error Budget Mental Model](../../docs/diagrams/D00/D00-T012/DIA-D00-069-sli-slo-error-budget.md)
+6. [Capacity Headroom → Failure → Failover / Degradation](../../docs/diagrams/D00/D00-T012/DIA-D00-070-capacity-headroom-failure-recovery.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Reliability Is More Than Uptime
+- **How It Really Works:** User Journey → Failure → Detection → Recovery
+- **Under the Hood:** Redundancy, Failure Domains, and Blast Radius
+- **Production Room:** Why Backup Does Not Mean Recovery
+- **Think Like an SRE:** SLI → SLO → Error Budget
+- **Architecture With Saqib:** How Much Reliability Is Enough?
+- **5 Levels:** Explain Reliability Engineering from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
