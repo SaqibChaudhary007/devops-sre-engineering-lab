@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 5-7h
   practical: 1-2h
@@ -106,6 +106,54 @@ Required:
 - [00.07 — DevOps Foundations](../00-07-devops-foundations/README.md)
 
 You should already understand infrastructure resources, cloud APIs, environments, automation, version control, CI/CD at a high level, change risk, blast radius, and production feedback.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T008 Source Verification](../../../../docs/sources/D00/D00-T008-source-verification.md).
+3. **Visualize** — review the [D00-T008 Visual Package](../../../../docs/diagrams/D00/D00-T008/README.md).
+4. **Observe State & Drift** — complete [OBS-D00-012 — Desired State, Actual State, and Drift Mapping](../../../../labs/observation/D00/OBS-D00-012-desired-actual-state-drift.md).
+5. **Experiment with State Boundaries & Concurrency** — complete [EXP-D00-011 — Dependency Graph, State Boundary, and Concurrency Design](../../../../labs/experiments/D00/EXP-D00-011-dependency-state-boundary-concurrency.md).
+6. **Experiment with Plan Review** — complete [EXP-D00-012 — Review a Hypothetical IaC Plan for Safety, Cost, and Recovery](../../../../labs/experiments/D00/EXP-D00-012-iac-plan-safety-cost-recovery-review.md).
+7. **Assess** — complete the [D00-T008 Assessment Package](../../../../assessments/topics/D00/D00-T008/README.md).
+8. **Teach Back** — explain IaC at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.09 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-041 — Manual Infrastructure vs Infrastructure as Code](../../../../docs/diagrams/D00/D00-T008/DIA-D00-041-manual-vs-infrastructure-as-code.md)
+- [DIA-D00-042 — Desired State vs Actual State](../../../../docs/diagrams/D00/D00-T008/DIA-D00-042-desired-vs-actual-state.md)
+- [DIA-D00-043 — Declarative vs Imperative](../../../../docs/diagrams/D00/D00-T008/DIA-D00-043-declarative-vs-imperative.md)
+- [DIA-D00-044 — Plan → Apply → Infrastructure Lifecycle](../../../../docs/diagrams/D00/D00-T008/DIA-D00-044-plan-apply-lifecycle.md)
+- [DIA-D00-045 — IaC State / Dependency / Locking Model](../../../../docs/diagrams/D00/D00-T008/DIA-D00-045-state-dependency-locking.md)
+- [DIA-D00-046 — IaC Change Risk: Review → Blast Radius → Recovery](../../../../docs/diagrams/D00/D00-T008/DIA-D00-046-review-blast-radius-recovery.md)
+
+## Practical Package
+
+- [OBS-D00-012 — Desired State, Actual State, and Drift Mapping](../../../../labs/observation/D00/OBS-D00-012-desired-actual-state-drift.md)
+- [EXP-D00-011 — Dependency Graph, State Boundary, and Concurrency Design](../../../../labs/experiments/D00/EXP-D00-011-dependency-state-boundary-concurrency.md)
+- [EXP-D00-012 — Review a Hypothetical IaC Plan for Safety, Cost, and Recovery](../../../../labs/experiments/D00/EXP-D00-012-iac-plan-safety-cost-recovery-review.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T008 Assessment Package](../../../../assessments/topics/D00/D00-T008/README.md) includes:
+
+- 96-question knowledge check
+- applied IaC change scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -937,31 +985,48 @@ Before moving on, retain:
 
 ---
 
-# 53. Practical Package — Next Layer
+# 53. Practical Package
 
-The practical package should include safe exercises such as:
+Complete the practical assets:
 
-- model desired vs actual state
-- compare declarative vs imperative approaches
-- simulate drift
-- build a dependency graph
-- classify create/update/replace/delete actions
-- design state and ownership boundaries
-- review a hypothetical plan for security, blast radius, and cost
+1. [OBS-D00-012 — Desired State, Actual State, and Drift Mapping](../../../../labs/observation/D00/OBS-D00-012-desired-actual-state-drift.md)
+2. [EXP-D00-011 — Dependency Graph, State Boundary, and Concurrency Design](../../../../labs/experiments/D00/EXP-D00-011-dependency-state-boundary-concurrency.md)
+3. [EXP-D00-012 — Review a Hypothetical IaC Plan for Safety, Cost, and Recovery](../../../../labs/experiments/D00/EXP-D00-012-iac-plan-safety-cost-recovery-review.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn IaC concepts into concrete reasoning around drift, state/ownership boundaries, dependency graphs, concurrency, locking, replacement/delete risk, security, cost, blast radius, and recovery.
 
 ---
 
-# 54. Assessment Package — Pending
+# 54. Assessment Package
 
-The assessment should test why IaC exists, desired vs actual state, declarative vs imperative, idempotence, drift, plan/apply, lifecycle, replacement risk, dependencies, state, locking, modules, environment separation, policy, secrets, provider/API behavior, import, destroy, rollback limits, CI/CD/GitOps relationships, and Senior/SRE/Architect reasoning.
+Complete the [D00-T008 Assessment Package](../../../../assessments/topics/D00/D00-T008/README.md).
+
+It tests:
+
+- why IaC exists
+- desired vs actual state
+- declarative vs imperative
+- idempotence
+- drift
+- plan/apply
+- lifecycle and replacement risk
+- dependencies
+- state and locking
+- modules and environment separation
+- policy and secrets
+- provider/API behavior
+- import and destroy
+- rollback limitations
+- CI/CD and GitOps relationships
+- Senior/SRE/Architect reasoning
 
 ---
 
-# 55. Visual Package — Pending
+# 55. Visual Package
 
-The visual package should include:
+Review the [D00-T008 Visual Package](../../../../docs/diagrams/D00/D00-T008/README.md).
+
+The package includes:
 
 1. Manual Infrastructure vs Infrastructure as Code
 2. Desired State vs Actual State
@@ -972,7 +1037,45 @@ The visual package should include:
 
 ---
 
-# 56. What Comes Next
+# 56. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain why IaC exists without defining it as Terraform
+- distinguish desired state from actual state
+- explain drift and why it creates production risk
+- distinguish declarative from imperative approaches
+- explain idempotence without treating it as universal
+- explain why a code diff is not the same as runtime impact
+- explain plan/preview vs apply
+- classify create/update/replace/delete actions
+- explain why replacement and deletion need stronger review
+- build a dependency graph
+- explain implicit vs explicit dependencies
+- explain why explicit state files are tool-specific
+- explain Terraform state without generalizing it to every IaC system
+- explain why remote state does not automatically guarantee locking
+- explain what locking protects and what it does not
+- reason about state/ownership boundaries and blast radius
+- explain variables, outputs, modules, and module-version risk
+- explain environment separation without forcing identical environments
+- explain policy-as-code at a mental-model level
+- explain why secrets need deliberate handling
+- explain provider/API dependencies
+- explain import/adoption risk
+- explain why destroy requires safeguards
+- explain why Git revert does not guarantee infrastructure rollback
+- distinguish rollback from roll-forward
+- explain how IaC integrates with CI/CD
+- distinguish IaC from GitOps
+- connect infrastructure change to security, cost, observability, SLOs, and recovery
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the IaC mental model clearly without relying on notes
+
+# 57. What Comes Next
 
 After D00-T008 is completed, continue to:
 
@@ -982,7 +1085,7 @@ That topic will connect IaC and DevOps delivery principles to pipeline stages, a
 
 ---
 
-# 57. Sources & Evidence
+# 58. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -998,9 +1101,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1018,3 +1122,10 @@ Verified nuances:
 - idempotence is desirable but depends on tool/module implementation
 - GitOps is more specific than IaC and requires automatic pull plus continuous reconciliation
 - reverting source definitions does not guarantee safe infrastructure rollback
+
+
+## Topic Package Status
+
+**D00-T008 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
