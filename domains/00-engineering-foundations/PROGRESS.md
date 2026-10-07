@@ -33,12 +33,13 @@
 | D00-T006 Assessment | Drafted |
 | D00-T006 Visual Package | Drafted |
 | D00-T006 Cross-Link Integration | Complete |
-| D00-T007 DevOps Foundations | Canonical draft authored |
+| D00-T007 DevOps Foundations | Full topic package integrated |
 | D00-T007 Source Verification | Complete |
 | D00-T007 Practical Assets | Drafted |
 | D00-T007 Assessment | Drafted |
 | D00-T007 Visual Package | Drafted |
-| D00-T007 Cross-Link Integration | Next |
+| D00-T007 Cross-Link Integration | Complete |
+| D00-T008 Infrastructure as Code Mental Model | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
