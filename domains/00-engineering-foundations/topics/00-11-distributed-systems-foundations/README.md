@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 7-9h
   practical: 1-2h
@@ -146,6 +146,54 @@ Required:
 - [00.10 — Containers & Orchestration Mental Model](../00-10-containers-orchestration-mental-model/README.md)
 
 You should already understand networked applications, failure domains, replicas, scheduling, service discovery, desired state, and production feedback.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T011 Source Verification](../../../../docs/sources/D00/D00-T011-source-verification.md).
+3. **Visualize** — review the [D00-T011 Visual Package](../../../../docs/diagrams/D00/D00-T011/README.md).
+4. **Observe Ambiguous Failure** — complete [OBS-D00-015 — Diagnose an Ambiguous Timeout](../../../../labs/observation/D00/OBS-D00-015-diagnose-ambiguous-timeout.md).
+5. **Experiment with Retry & Idempotency** — complete [EXP-D00-017 — Retry, Duplicate Work, Idempotency, and Retry Amplification](../../../../labs/experiments/D00/EXP-D00-017-retry-idempotency-amplification.md).
+6. **Experiment with Replication & Backpressure** — complete [EXP-D00-018 — Replication, Partition Trade-Offs, Backpressure, and Failure Domains](../../../../labs/experiments/D00/EXP-D00-018-replication-partition-backpressure-failure-domains.md).
+7. **Assess** — complete the [D00-T011 Assessment Package](../../../../assessments/topics/D00/D00-T011/README.md).
+8. **Teach Back** — explain distributed-systems foundations at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.12 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-059 — Local Call vs Network Call](../../../../docs/diagrams/D00/D00-T011/DIA-D00-059-local-call-vs-network-call.md)
+- [DIA-D00-060 — Partial Failure & Ambiguous Timeout](../../../../docs/diagrams/D00/D00-T011/DIA-D00-060-partial-failure-ambiguous-timeout.md)
+- [DIA-D00-061 — Retry → Duplicate → Idempotency Key](../../../../docs/diagrams/D00/D00-T011/DIA-D00-061-retry-duplicate-idempotency.md)
+- [DIA-D00-062 — Replication → Lag → Stale Read](../../../../docs/diagrams/D00/D00-T011/DIA-D00-062-replication-lag-stale-read.md)
+- [DIA-D00-063 — Partition Trade-Off / CAP Mental Model](../../../../docs/diagrams/D00/D00-T011/DIA-D00-063-partition-cap-mental-model.md)
+- [DIA-D00-064 — Timeout + Retry + Backoff + Circuit Breaker Failure Loop](../../../../docs/diagrams/D00/D00-T011/DIA-D00-064-timeout-retry-backoff-circuit-breaker.md)
+
+## Practical Package
+
+- [OBS-D00-015 — Diagnose an Ambiguous Timeout](../../../../labs/observation/D00/OBS-D00-015-diagnose-ambiguous-timeout.md)
+- [EXP-D00-017 — Retry, Duplicate Work, Idempotency, and Retry Amplification](../../../../labs/experiments/D00/EXP-D00-017-retry-idempotency-amplification.md)
+- [EXP-D00-018 — Replication, Partition Trade-Offs, Backpressure, and Failure Domains](../../../../labs/experiments/D00/EXP-D00-018-replication-partition-backpressure-failure-domains.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T011 Assessment Package](../../../../assessments/topics/D00/D00-T011/README.md) includes:
+
+- 96-question knowledge check
+- applied distributed-systems scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1275,58 +1323,54 @@ Before moving on, retain:
 
 ---
 
-# 73. Practical Package — Next Layer
+# 73. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- diagnose an ambiguous timeout
-- classify retry-safe vs retry-unsafe operations
-- design idempotency/request identity
-- model duplicate message delivery
-- reason about stale reads and replication lag
-- simulate partition trade-offs
-- design timeout/retry/backoff/circuit-breaker behavior
-- model queue backlog and backpressure
-- analyze failure-domain placement
-- trace one request across multiple services
-- classify synchronous vs asynchronous boundaries
+1. [OBS-D00-015 — Diagnose an Ambiguous Timeout](../../../../labs/observation/D00/OBS-D00-015-diagnose-ambiguous-timeout.md)
+2. [EXP-D00-017 — Retry, Duplicate Work, Idempotency, and Retry Amplification](../../../../labs/experiments/D00/EXP-D00-017-retry-idempotency-amplification.md)
+3. [EXP-D00-018 — Replication, Partition Trade-Offs, Backpressure, and Failure Domains](../../../../labs/experiments/D00/EXP-D00-018-replication-partition-backpressure-failure-domains.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn distributed-systems foundations into concrete reasoning around ambiguous outcomes, request identity, safe retries, retry amplification, duplicate effects, backoff/jitter, circuit breakers, replication lag, stale reads, CAP partition-time trade-offs, queue backlog, backpressure, hot partitions, graceful degradation, failure domains, and distributed observability.
 
 ---
 
-# 74. Assessment Package — Pending
+# 74. Assessment Package
 
-The assessment should test:
+Complete the [D00-T011 Assessment Package](../../../../assessments/topics/D00/D00-T011/README.md).
+
+It tests:
 
 - distributed-system definition
 - partial failure
 - latency and timeouts
 - retries and idempotency
-- duplicates and request identity
+- duplicate effects and request identity
 - ordering and time
 - replication and lag
 - consistency and availability
 - partitions and CAP
-- leader/follower/quorum
+- leader/follower/quorum mental models
 - failure detection
-- backoff/jitter
-- circuit breakers/bulkheads/load shedding
+- backoff and jitter
+- circuit breakers, bulkheads, and load shedding
 - queues and backpressure
 - delivery semantics
-- sharding/partitioning
+- sharding and partitioning
 - caching
-- distributed transactions/compensation
+- distributed transactions and compensation
 - cascading failure
-- blast radius/failure domains
-- observability/correlation/tracing
+- blast radius and failure domains
+- observability, correlation, and tracing
 - Senior/SRE/Architect reasoning
 
 ---
 
-# 75. Visual Package — Pending
+# 75. Visual Package
 
-The visual package should include:
+Review the [D00-T011 Visual Package](../../../../docs/diagrams/D00/D00-T011/README.md).
+
+The package includes:
 
 1. Local Call vs Network Call
 2. Partial Failure & Ambiguous Timeout
@@ -1337,7 +1381,54 @@ The visual package should include:
 
 ---
 
-# 76. What Comes Next
+# 76. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain why network calls introduce independent failure and uncertainty
+- explain partial failure
+- explain why timeout does not prove remote non-execution
+- explain latency and tail-latency reasoning
+- choose timeout values as trade-offs rather than arbitrary constants
+- explain when retry helps and when it amplifies failure
+- explain retry amplification across multiple layers
+- explain idempotency and request identity
+- distinguish duplicate delivery from duplicate business effect
+- distinguish at-most-once, at-least-once, scoped exactly-once delivery, and exactly-once business effect
+- explain why ordering guarantees are scoped
+- explain why wall-clock time is not perfect global ordering
+- explain replication and replication lag
+- explain stale reads and eventual consistency
+- connect consistency requirements to business correctness
+- explain network partitions
+- explain CAP as a partition-time consistency-versus-availability trade-off
+- explain why "choose two forever" is misleading
+- explain why failure detection is inferred rather than perfect
+- explain leader election, quorum, and consensus at the correct mental-model level
+- explain backoff and jitter
+- explain the role and limits of circuit breakers
+- explain bulkheads and load shedding
+- explain queues as decoupling/buffering, not infinite capacity
+- explain backpressure
+- distinguish synchronous and asynchronous work
+- distinguish replication from partitioning/sharding
+- explain hot-partition risk
+- explain caching staleness and stampede risk
+- explain why distributed transactions are harder than local transactions
+- explain compensation as an imperfect rollback mechanism
+- explain cascading failure and retry feedback loops
+- explain blast radius and failure domains
+- explain why replicas must be placed across meaningful failure domains
+- explain graceful degradation
+- explain correlation IDs and distributed tracing
+- explain why availability is end-to-end
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the distributed-systems mental model clearly without relying on notes
+
+# 77. What Comes Next
 
 After D00-T011 is completed, continue to:
 
@@ -1347,7 +1438,7 @@ That topic will connect distributed-system failure behavior to reliability objec
 
 ---
 
-# 77. Sources & Evidence
+# 78. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1363,9 +1454,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1388,3 +1480,10 @@ Verified nuances:
 - failure detection is inferred through signals such as timeouts/heartbeats, not perfect knowledge
 - graceful degradation and load shedding can preserve critical service
 - cascading failures often arise from positive feedback between slowdown, in-flight work, saturation, and retries
+
+
+## Topic Package Status
+
+**D00-T011 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.

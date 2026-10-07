@@ -57,12 +57,13 @@
 | D00-T010 Assessment | Drafted |
 | D00-T010 Visual Package | Drafted |
 | D00-T010 Cross-Link Integration | Complete |
-| D00-T011 Distributed Systems Foundations | Canonical draft authored |
+| D00-T011 Distributed Systems Foundations | Full topic package integrated |
 | D00-T011 Source Verification | Complete |
 | D00-T011 Practical Assets | Drafted |
 | D00-T011 Assessment | Drafted |
 | D00-T011 Visual Package | Drafted |
-| D00-T011 Cross-Link Integration | Next |
+| D00-T011 Cross-Link Integration | Complete |
+| D00-T012 Reliability Engineering Foundations | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
