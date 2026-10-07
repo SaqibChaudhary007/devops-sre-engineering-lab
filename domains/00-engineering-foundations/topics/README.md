@@ -35,7 +35,7 @@
 
 ## Next
 
-13. [00.13 — SRE Foundations](00-13-sre-foundations/README.md) — canonical draft authored
+13. [00.13 — SRE Foundations](00-13-sre-foundations/README.md) — full topic package
 
 ## Next
 
