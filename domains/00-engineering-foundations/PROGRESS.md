@@ -88,8 +88,8 @@
 | D00-T015 Visual Package | Drafted |
 | D00-T015 Cross-Link Integration | Complete |
 | D00-T016 Automation Mental Models | Canonical draft authored |
-| D00-T016 Source Verification | Next |
-| D00-T016 Practical Assets | Pending |
+| D00-T016 Source Verification | Complete |
+| D00-T016 Practical Assets | Next |
 | D00-T016 Assessment | Pending |
 | D00-T016 Visual Package | Pending |
 | D00-T016 Cross-Link Integration | Pending |
