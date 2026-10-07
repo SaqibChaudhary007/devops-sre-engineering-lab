@@ -32,6 +32,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -206,6 +207,8 @@ Known Intent
 ~~~
 
 Automation should make outcomes more consistent, not merely faster.
+
+Automation is a force multiplier: it can scale good operational intent, but it can also scale incorrect assumptions and unsafe actions.
 
 ---
 
@@ -579,7 +582,9 @@ Repeatability depends on:
 
 # 23. Idempotency
 
-Idempotency means that repeating the same intended operation does not create additional unintended effects.
+Idempotency means that repeating the same intended operation does not create additional unintended effects after the intended state has already been reached.
+
+Idempotency improves repeated-execution safety, but it does not mean that an operation always succeeds or that every retry is safe.
 
 Conceptually:
 
@@ -633,7 +638,9 @@ Design should assume duplicates can happen.
 
 A retry repeats an operation after failure.
 
-Retries can improve reliability when failures are temporary.
+Retries can improve reliability when failures are temporary and the operation is safe to repeat.
+
+Retry should be treated as an explicit policy, not as an automatic reaction to every failure.
 
 But retries can also:
 
@@ -699,6 +706,8 @@ Deep algorithms come later.
 # 30. Timeout
 
 A timeout limits how long automation waits.
+
+Timeouts should be designed together with retry limits and the overall operation time budget.
 
 Without timeouts, work can:
 
@@ -1607,8 +1616,30 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T016 Source Verification](../../../../docs/sources/D00/D00-T016-source-verification.md)
+
+Verified nuances:
+
+- automation is a force multiplier, not a universal improvement
+- toil reduction is a strong automation target, but not all operational work is toil
+- desired/current state and reconciliation are durable control-loop concepts
+- reconciliation is iterative and can involve stale or delayed observations
+- idempotency is about repeated effect, not guaranteed success
+- retry is a bounded policy for appropriate transient failures
+- backoff, jitter, timeout, and rate limiting reduce amplification risk
+- partial failure must be expected in workflows and infrastructure automation
+- rollback is not always possible; roll-forward or compensation may be safer
+- human approval can be a valid automation boundary
+- successful process completion does not prove the intended system outcome
+- guardrails should bound scope, rate, permissions, environment, and retry count
+- automation requires explicit identity, least privilege, observability, and auditability
+- self-healing and auto-remediation must be bounded and observable
+- AI-assisted automation needs stronger validation as impact and uncertainty rise
