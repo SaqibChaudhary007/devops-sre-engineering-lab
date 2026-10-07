@@ -28,6 +28,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -171,6 +172,8 @@ Correct Service
 ~~~
 
 Reliability is judged from the perspective of the service that users depend on.
+
+Reliability targets should therefore be attached to important user and business flows rather than to whichever infrastructure metric is easiest to collect.
 
 ---
 
@@ -511,9 +514,9 @@ Improving recovery often provides more value than trying to eliminate every poss
 
 # 25. MTTR — Mental Model
 
-MTTR is commonly used to describe mean time to restore/recover/repair, depending on context.
+MTTR is commonly used to describe mean time to restore, recover, or repair, depending on context.
 
-The exact definition must be stated.
+The exact definition must be stated before the metric is used or compared.
 
 At D00 retain:
 
@@ -594,7 +597,7 @@ Conceptually:
 → allowed unreliability
 ~~~
 
-Error budgets create a way to balance reliability work and change velocity.
+The important operational lesson is that the budget should influence decisions about risk, change, and reliability work.
 
 Detailed policy comes later.
 
@@ -887,17 +890,17 @@ Therefore monitor:
 
 A backup proves that data was copied.
 
-Recovery requires proving that data can be restored correctly and in time.
+Recovery requires proving that data can be restored correctly and within the required time and data-loss objectives.
 
 Therefore:
 
 ~~~text
 Backup
 ≠
-Recovery
+Proven Recovery
 ~~~
 
-Restore testing matters.
+Restore testing, validation, and measured recovery timing matter.
 
 ---
 
@@ -1328,8 +1331,31 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T012 Source Verification](../../../../docs/sources/D00/D00-T012-source-verification.md)
+
+Verified nuances:
+
+- reliability should be anchored to important user/business flows
+- availability is one dimension of reliability, not the entire concept
+- recoverability is part of reliability
+- SLI, SLO, and SLA are different concepts and should not be used interchangeably
+- 100% reliability is usually the wrong default target for software services
+- error budgets represent allowed unreliability and should influence risk/change decisions
+- reliability targets require business and engineering trade-offs
+- change is a normal reliability input
+- graceful degradation can preserve critical service when business correctness allows it
+- redundancy is useful only when critical failure modes are sufficiently independent
+- failover and recovery must be tested rather than assumed
+- RTO and RPO answer different recovery questions
+- MTTR is ambiguous unless its exact definition is stated
+- monitoring, alert quality, access, runbooks, ownership, and validation all affect recovery time
+- backup success alone does not prove recoverability
+- capacity headroom supports failover, rescheduling, retries, maintenance, and recovery
