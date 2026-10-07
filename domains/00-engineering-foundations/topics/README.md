@@ -7,14 +7,14 @@
 3. [00.03 — Software Engineering Foundations](00-03-software-engineering-foundations/README.md) — full topic package
 4. [00.04 — Application Architecture Fundamentals](00-04-application-architecture-fundamentals/README.md) — full topic package
 
-## Next
-
 5. [00.05 — Infrastructure Foundations](00-05-infrastructure-foundations/README.md) — full topic package
 
+6. [00.06 — Cloud Mental Models](00-06-cloud-mental-models/README.md) — full topic package
+
+7. [00.07 — DevOps Foundations](00-07-devops-foundations/README.md) — canonical draft authored
+
 ## Next
 
-6. [00.06 — Cloud Mental Models](00-06-cloud-mental-models/README.md) — canonical draft authored
-
-7. 00.07 — DevOps Foundations — planned
+8. 00.08 — Infrastructure as Code Mental Model — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
