@@ -129,6 +129,20 @@ All D00-T008 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.09 — CI/CD Mental Model
+
+1. [OBS-D00-013 — Trace a Change from Commit to Production Outcome](../../labs/observation/D00/OBS-D00-013-trace-commit-to-production-outcome.md)
+2. [EXP-D00-013 — Build Once, Promote, Cache, and Artifact Integrity](../../labs/experiments/D00/EXP-D00-013-build-once-promote-artifact-integrity.md)
+3. [EXP-D00-014 — Diagnose Pipeline Failure, Retry, Concurrency, and Recovery](../../labs/experiments/D00/EXP-D00-014-pipeline-failure-retry-concurrency-recovery.md)
+
+These assets turn CI/CD mental models into provider-neutral reasoning exercises for end-to-end traceability, build-once/promote, artifact identity, cache vs artifact, provenance, flaky signals, retries, concurrency, protected production delivery, deployment verification, change markers, runner trust, and rollback/roll-forward recovery.
+
+### Verification Status
+
+All D00-T009 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
