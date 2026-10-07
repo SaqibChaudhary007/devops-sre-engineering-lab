@@ -181,3 +181,17 @@ Includes:
 - Toil → Automation → Engineering Capacity
 - Error Budget → Change Velocity / Reliability Trade-Off
 - Production Readiness → Operate → Incident → Improvement
+
+
+## D00-T014 — Observability Foundations
+
+- [Visual / Diagram Package](D00-T014/README.md)
+
+Includes:
+
+- System → Instrumentation → Telemetry → Correlation → Insight
+- Metrics vs Logs vs Traces vs Events
+- User Journey → Trace → Spans → Logs / Metrics
+- RED vs USE vs Golden Signals
+- Change Marker → Symptom → Dependency → Root-Cause Hypothesis
+- Cardinality / Sampling / Retention / Cost Trade-Off

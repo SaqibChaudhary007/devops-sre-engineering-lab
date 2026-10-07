@@ -306,6 +306,31 @@ Recommended content angles:
 - **Architecture With Saqib:** Safe Velocity Through Error Budgets and Readiness Gates
 - **5 Levels:** Explain SRE from Beginner to Architect
 
+
+## D00-T014 — Observability Foundations
+
+Priority: **P1**
+
+Visual package:
+
+1. [System → Instrumentation → Telemetry → Correlation → Insight](../../docs/diagrams/D00/D00-T014/DIA-D00-077-system-instrumentation-telemetry-correlation-insight.md)
+2. [Metrics vs Logs vs Traces vs Events](../../docs/diagrams/D00/D00-T014/DIA-D00-078-metrics-logs-traces-events.md)
+3. [User Journey → Trace → Spans → Logs / Metrics](../../docs/diagrams/D00/D00-T014/DIA-D00-079-user-journey-trace-spans-logs-metrics.md)
+4. [RED vs USE vs Golden Signals](../../docs/diagrams/D00/D00-T014/DIA-D00-080-red-use-golden-signals.md)
+5. [Change Marker → Symptom → Dependency → Root-Cause Hypothesis](../../docs/diagrams/D00/D00-T014/DIA-D00-081-change-symptom-dependency-hypothesis.md)
+6. [Cardinality / Sampling / Retention / Cost Trade-Off](../../docs/diagrams/D00/D00-T014/DIA-D00-082-cardinality-sampling-retention-cost.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Observability Is More Than Dashboards
+- **How It Really Works:** Instrumentation → Telemetry → Correlation → Insight
+- **Follow the Request:** Trace One Checkout Across Services
+- **Under the Hood:** Cardinality, Sampling, Retention, and Cost
+- **Production Room:** Correlation Is Not Causation
+- **Think Like an SRE:** Start with User Impact, Not Random Commands
+- **Architecture With Saqib:** Designing an Observability Platform That Does Not Drown in Noise
+- **5 Levels:** Explain Observability from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
