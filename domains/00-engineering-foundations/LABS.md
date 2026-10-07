@@ -157,6 +157,20 @@ All D00-T010 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.11 — Distributed Systems Foundations
+
+1. [OBS-D00-015 — Diagnose an Ambiguous Timeout](../../labs/observation/D00/OBS-D00-015-diagnose-ambiguous-timeout.md)
+2. [EXP-D00-017 — Retry, Duplicate Work, Idempotency, and Retry Amplification](../../labs/experiments/D00/EXP-D00-017-retry-idempotency-amplification.md)
+3. [EXP-D00-018 — Replication, Partition Trade-Offs, Backpressure, and Failure Domains](../../labs/experiments/D00/EXP-D00-018-replication-partition-backpressure-failure-domains.md)
+
+These assets turn distributed-systems mental models into provider-neutral reasoning exercises for ambiguous timeouts, safe retries, request identity, duplicate side effects, retry amplification, backoff/jitter, circuit breakers, replication lag, stale reads, CAP partition-time trade-offs, queue backlog, backpressure, hot partitions, failure-domain placement, graceful degradation, and cross-service observability.
+
+### Verification Status
+
+All D00-T011 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
