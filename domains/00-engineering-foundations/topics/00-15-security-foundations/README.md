@@ -31,6 +31,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -303,7 +304,9 @@ Risk
 ≈ Likelihood × Impact
 ~~~
 
-Real risk analysis can be more complex.
+Keep the approximation symbol: this is a teaching model, not a universal risk equation.
+
+Real risk analysis can also account for exposure, threat capability, control strength, uncertainty, business impact, and other context.
 
 At D00 retain:
 
@@ -542,17 +545,18 @@ The exact implementation depends on the platform.
 
 # 21. Zero Trust — Preview
 
-Zero Trust is often summarized as:
-
-> Never trust solely because of network location; verify identity, context, and policy.
+Zero Trust should not be reduced to "trust nobody."
 
 At D00 retain:
 
+- no implicit trust based only on network location or ownership
 - explicit identity
+- context-aware authentication and authorization
 - least privilege
-- continuous verification
+- continual evaluation
 - limited trust
-- strong segmentation
+- resource-focused protection
+- segmentation where useful
 
 Deep Zero Trust architecture comes later.
 
@@ -661,7 +665,7 @@ Short-Lived Credential
 → Smaller Exposure Window
 ~~~
 
-Short-lived does not mean automatically safe; scope and issuance still matter.
+Short-lived does not mean automatically safe; scope, issuance, identity, monitoring, and revocation still matter.
 
 ---
 
@@ -712,6 +716,8 @@ Hashing transforms input into a fixed-size value used for purposes such as:
 - password-verification systems when combined with appropriate password-specific techniques
 
 Hashing is not the same as reversible encryption.
+
+For password storage, do not teach generic fast hashing such as a plain SHA-256 operation as sufficient. Password verification requires password-specific techniques; implementation detail belongs later.
 
 ---
 
@@ -998,7 +1004,7 @@ Deep implementation comes later.
 
 # 48. Provenance — Preview
 
-Provenance is evidence about where an artifact came from and how it was produced.
+Provenance is verifiable evidence about where an artifact came from and how it was produced.
 
 Conceptually:
 
@@ -1011,6 +1017,8 @@ Source
 ~~~
 
 This supports trust in the delivery path.
+
+Provenance is evidence, not automatic trust: the builder, source, attestation/signing path, policy, and verification process still matter.
 
 ---
 
@@ -1512,8 +1520,31 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T015 Source Verification](../../../../docs/sources/D00/D00-T015-source-verification.md)
+
+Verified nuances:
+
+- security is risk management, but "risk ≈ likelihood × impact" is only a beginner approximation
+- prevention alone is incomplete; governance, identification, protection, detection, response, and recovery all matter
+- Zero Trust removes implicit trust based on location/ownership rather than meaning "trust nobody"
+- authentication and authorization are distinct
+- least privilege should consider scope, action, duration, and conditions
+- human and workload identities require different operating models
+- secrets are lifecycle assets, not ordinary configuration
+- short-lived credentials reduce exposure windows but are not automatically safe
+- encryption does not replace identity, authorization, key management, or data minimization
+- password hashing needs password-specific techniques rather than generic fast hashes
+- secure-by-default design reduces reliance on perfect operator behavior
+- defense in depth should address real failure modes rather than add controls randomly
+- CI/CD systems are security-sensitive trust boundaries
+- software provenance is verifiable evidence, not automatic trust
+- cloud shared responsibility changes by service model and managed-service boundary
+- security and reliability controls can reinforce or conflict and must be evaluated together
