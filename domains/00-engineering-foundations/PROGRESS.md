@@ -43,8 +43,8 @@
 | D00-T008 Source Verification | Complete |
 | D00-T008 Practical Assets | Drafted |
 | D00-T008 Assessment | Drafted |
-| D00-T008 Visual Package | Next |
-| D00-T008 Cross-Link Integration | Pending |
+| D00-T008 Visual Package | Drafted |
+| D00-T008 Cross-Link Integration | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
