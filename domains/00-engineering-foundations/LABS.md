@@ -227,6 +227,20 @@ All D00-T015 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.16 — Automation Mental Models
+
+1. [OBS-D00-020 — Automation Suitability, Trigger, State, and Validation](../../labs/observation/D00/OBS-D00-020-automation-suitability-trigger-state-validation.md)
+2. [EXP-D00-027 — Idempotency, Retry Safety, and Partial Failure](../../labs/experiments/D00/EXP-D00-027-idempotency-retry-partial-failure.md)
+3. [EXP-D00-028 — Reconciliation, Guardrails, Human Approval, and Automation Readiness](../../labs/experiments/D00/EXP-D00-028-control-loops-guardrails-human-approval.md)
+
+These assets turn Automation Mental Models into safe, provider-neutral reasoning exercises for automation suitability, intent, triggers, state, current-vs-desired state, reconciliation, imperative/declarative models, preconditions/postconditions, outcome validation, idempotency, duplicate execution, retries, backoff, jitter, timeouts, partial failure, rollback/roll-forward/compensation, concurrency, guardrails, blast radius, human approval boundaries, automation identity, least privilege, observability/auditability, bounded self-healing, production readiness, and AI-assisted autonomy boundaries.
+
+### Verification Status
+
+All D00-T016 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
