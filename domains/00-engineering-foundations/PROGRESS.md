@@ -91,8 +91,8 @@
 | D00-T016 Source Verification | Complete |
 | D00-T016 Practical Assets | Drafted |
 | D00-T016 Assessment | Drafted |
-| D00-T016 Visual Package | Next |
-| D00-T016 Cross-Link Integration | Pending |
+| D00-T016 Visual Package | Drafted |
+| D00-T016 Cross-Link Integration | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
