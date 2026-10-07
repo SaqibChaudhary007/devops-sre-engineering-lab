@@ -45,3 +45,5 @@ AI output is never treated as technical authority.
 - [D00-T012 — Reliability Engineering Foundations](../../docs/sources/D00/D00-T012-source-verification.md) — core claims DOC-VERIFIED; user-centered reliability, SLI/SLO/SLA, error budgets, recovery targets, redundancy/independence, graceful degradation, change risk, observability, capacity headroom, and tested recovery nuances verified
 
 - [D00-T013 — SRE Foundations](../../docs/sources/D00/D00-T013-source-verification.md) — core claims DOC-VERIFIED; SRE operating model, SLI/SLO/SLA, error budgets, toil, paging/on-call, incident learning, release engineering, progressive delivery, capacity, and production-readiness nuances verified
+
+- [D00-T014 — Observability Foundations](../../docs/sources/D00/D00-T014-source-verification.md) — core claims DOC-VERIFIED; observability/monitoring boundaries, telemetry/instrumentation, cross-signal correlation, trace context, structured telemetry, cardinality, latency distributions, sampling/retention, security, cost, dashboards, and alerting nuances verified
