@@ -209,3 +209,17 @@ Includes:
 - Secret Lifecycle: Create → Store → Distribute → Use → Rotate → Revoke
 - Source → Build → Artifact → Registry → Deployment → Runtime Trust Chain
 - Defense in Depth → Blast Radius Reduction
+
+
+## D00-T016 — Automation Mental Models
+
+- [Visual / Diagram Package](D00-T016/README.md)
+
+Includes:
+
+- Trigger → Preconditions → State → Action → Validation → Feedback
+- Current State ↔ Desired State → Reconciliation Loop
+- Idempotency / Duplicate Execution / Retry Safety
+- Partial Failure → Rollback / Roll-Forward / Compensation
+- Human Approval → Guardrails → Automated Action → Validation
+- Automation Blast Radius: Scope / Rate / Identity / Environment / Stop Conditions
