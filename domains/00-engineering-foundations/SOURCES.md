@@ -43,3 +43,5 @@ AI output is never treated as technical authority.
 - [D00-T011 — Distributed Systems Foundations](../../docs/sources/D00/D00-T011-source-verification.md) — core claims DOC-VERIFIED; partial failure, ambiguous timeout, retries/backoff/jitter, duplicate handling, delivery semantics, CAP, circuit breaker/bulkhead, queues/backpressure, failure domains, and cascading-failure nuances verified
 
 - [D00-T012 — Reliability Engineering Foundations](../../docs/sources/D00/D00-T012-source-verification.md) — core claims DOC-VERIFIED; user-centered reliability, SLI/SLO/SLA, error budgets, recovery targets, redundancy/independence, graceful degradation, change risk, observability, capacity headroom, and tested recovery nuances verified
+
+- [D00-T013 — SRE Foundations](../../docs/sources/D00/D00-T013-source-verification.md) — core claims DOC-VERIFIED; SRE operating model, SLI/SLO/SLA, error budgets, toil, paging/on-call, incident learning, release engineering, progressive delivery, capacity, and production-readiness nuances verified
