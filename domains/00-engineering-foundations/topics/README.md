@@ -47,6 +47,10 @@
 
 ## Next
 
-16. 00.16 — Automation Mental Models — planned
+16. [00.16 — Automation Mental Models](00-16-automation-mental-models/README.md) — canonical draft authored
+
+## Next
+
+17. 00.17 — Systems Thinking — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
