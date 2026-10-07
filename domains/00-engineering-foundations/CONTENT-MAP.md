@@ -210,6 +210,30 @@ Recommended content angles:
 - **Architecture With Saqib:** CI/CD + IaC + GitOps Without Confusing the Boundaries
 - **5 Levels:** Explain CI/CD from Beginner to Architect
 
+
+## D00-T010 — Containers & Orchestration Mental Model
+
+Priority: **P1**
+
+Visual package:
+
+1. [Virtual Machine vs Container](../../docs/diagrams/D00/D00-T010/DIA-D00-053-vm-vs-container.md)
+2. [Image → Container → Runtime → Host](../../docs/diagrams/D00/D00-T010/DIA-D00-054-image-container-runtime-host.md)
+3. [Image Layers + Writable Container Layer](../../docs/diagrams/D00/D00-T010/DIA-D00-055-image-layers-writable-layer.md)
+4. [Desired Replicas → Scheduler → Nodes → Reconciliation](../../docs/diagrams/D00/D00-T010/DIA-D00-056-replicas-scheduler-nodes-reconciliation.md)
+5. [Service Discovery + Load Balancing Across Replicas](../../docs/diagrams/D00/D00-T010/DIA-D00-057-service-discovery-load-balancing.md)
+6. [Container Failure vs Node Failure vs Orchestrator Recovery](../../docs/diagrams/D00/D00-T010/DIA-D00-058-container-node-orchestrator-recovery.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Why Containers Are Not Lightweight VMs
+- **How It Really Works:** Image → Runtime → Container → Host
+- **Under the Hood:** Image Layers, Writable State, and Persistence
+- **Production Room:** Restarting Is Not the Same as Recovering
+- **Think Like an SRE:** Replica Count Does Not Guarantee Availability
+- **Architecture With Saqib:** Desired State, Scheduling, and Bounded Self-Healing
+- **5 Levels:** Explain Containers & Orchestration from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
