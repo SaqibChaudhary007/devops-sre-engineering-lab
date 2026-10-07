@@ -167,3 +167,17 @@ Includes:
 - Detect → Contain → Recover → Validate → Learn
 - SLI → SLO → Error Budget Mental Model
 - Capacity Headroom → Failure → Failover / Degradation
+
+
+## D00-T013 — SRE Foundations
+
+- [Visual / Diagram Package](D00-T013/README.md)
+
+Includes:
+
+- User Journey → SLI → SLO → Error Budget → Decision
+- Page vs Ticket vs Dashboard
+- Incident: Detect → Mitigate → Recover → Learn
+- Toil → Automation → Engineering Capacity
+- Error Budget → Change Velocity / Reliability Trade-Off
+- Production Readiness → Operate → Incident → Improvement
