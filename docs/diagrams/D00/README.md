@@ -153,3 +153,17 @@ Includes:
 - Replication → Lag → Stale Read
 - Partition Trade-Off / CAP Mental Model
 - Timeout + Retry + Backoff + Circuit Breaker Failure Loop
+
+
+## D00-T012 — Reliability Engineering Foundations
+
+- [Visual / Diagram Package](D00-T012/README.md)
+
+Includes:
+
+- Reliability vs Availability vs Durability vs Resilience
+- User Journey → Dependency Chain → Reliability Outcome
+- Failure Domain → Blast Radius → Redundancy Placement
+- Detect → Contain → Recover → Validate → Learn
+- SLI → SLO → Error Budget Mental Model
+- Capacity Headroom → Failure → Failover / Degradation
