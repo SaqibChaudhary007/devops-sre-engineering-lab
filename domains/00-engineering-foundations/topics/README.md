@@ -15,7 +15,7 @@
 
 ## Next
 
-8. [00.08 — Infrastructure as Code Mental Model](00-08-infrastructure-as-code-mental-model/README.md) — canonical draft authored
+8. [00.08 — Infrastructure as Code Mental Model](00-08-infrastructure-as-code-mental-model/README.md) — full topic package
 
 ## Next
 
