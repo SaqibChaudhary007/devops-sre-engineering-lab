@@ -39,3 +39,5 @@ AI output is never treated as technical authority.
 - [D00-T009 — CI/CD Mental Model](../../docs/sources/D00/D00-T009-source-verification.md) — core claims DOC-VERIFIED; CI/CD definitions, build-once/promote, artifacts, runners, concurrency, environment controls, credentials, provenance, and GitOps boundaries verified
 
 - [D00-T010 — Containers & Orchestration Mental Model](../../docs/sources/D00/D00-T010-source-verification.md) — core claims DOC-VERIFIED; OCI image/runtime model, layers, runtime/host boundaries, cgroups, storage, Kubernetes reconciliation, scheduling, health, self-healing, and stateful/stateless nuances verified
+
+- [D00-T011 — Distributed Systems Foundations](../../docs/sources/D00/D00-T011-source-verification.md) — core claims DOC-VERIFIED; partial failure, ambiguous timeout, retries/backoff/jitter, duplicate handling, delivery semantics, CAP, circuit breaker/bulkhead, queues/backpressure, failure domains, and cascading-failure nuances verified
