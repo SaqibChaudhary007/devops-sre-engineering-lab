@@ -101,6 +101,20 @@ All D00-T006 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after executing/completing them end-to-end and reviewing the results.
 
+## 00.07 — DevOps Foundations
+
+1. [OBS-D00-011 — Map a Change from Idea to Production and Feedback](../../labs/observation/D00/OBS-D00-011-map-change-idea-to-production.md)
+2. [EXP-D00-009 — Compare Large-Batch vs Small-Batch Delivery](../../labs/experiments/D00/EXP-D00-009-large-vs-small-batch-delivery.md)
+3. [EXP-D00-010 — Build a Delivery Metrics, Toil, and Feedback Worksheet](../../labs/experiments/D00/EXP-D00-010-delivery-metrics-toil-feedback.md)
+
+These assets turn DevOps concepts into concrete, provider-neutral delivery-system reasoning: end-to-end flow, queues, handoffs, bottlenecks, feedback loops, batch-size trade-offs, the current DORA five-metric model, toil classification, recovery thinking, and metric-gaming risks.
+
+### Verification Status
+
+All D00-T007 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
