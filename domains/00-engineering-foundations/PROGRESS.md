@@ -97,8 +97,8 @@
 | D00-T017 Source Verification | Complete |
 | D00-T017 Practical Assets | Drafted |
 | D00-T017 Assessment | Drafted |
-| D00-T017 Visual Package | Next |
-| D00-T017 Cross-Link Integration | Pending |
+| D00-T017 Visual Package | Drafted |
+| D00-T017 Cross-Link Integration | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
