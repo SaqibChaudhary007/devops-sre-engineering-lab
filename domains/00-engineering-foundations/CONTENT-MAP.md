@@ -282,6 +282,30 @@ Recommended content angles:
 - **Architecture With Saqib:** How Much Reliability Is Enough?
 - **5 Levels:** Explain Reliability Engineering from Beginner to Architect
 
+
+## D00-T013 — SRE Foundations
+
+Priority: **P1**
+
+Visual package:
+
+1. [User Journey → SLI → SLO → Error Budget → Decision](../../docs/diagrams/D00/D00-T013/DIA-D00-071-user-journey-sli-slo-error-budget-decision.md)
+2. [Page vs Ticket vs Dashboard](../../docs/diagrams/D00/D00-T013/DIA-D00-072-page-ticket-dashboard.md)
+3. [Incident: Detect → Mitigate → Recover → Learn](../../docs/diagrams/D00/D00-T013/DIA-D00-073-incident-detect-mitigate-recover-learn.md)
+4. [Toil → Automation → Engineering Capacity](../../docs/diagrams/D00/D00-T013/DIA-D00-074-toil-automation-engineering-capacity.md)
+5. [Error Budget → Change Velocity / Reliability Trade-Off](../../docs/diagrams/D00/D00-T013/DIA-D00-075-error-budget-change-velocity-reliability.md)
+6. [Production Readiness → Operate → Incident → Improvement](../../docs/diagrams/D00/D00-T013/DIA-D00-076-production-readiness-operate-improve.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** SRE Is More Than Monitoring and On-Call
+- **How It Really Works:** User Journey → SLI → SLO → Error Budget → Decision
+- **Under the Hood:** Toil, Automation, and Sustainable Engineering Capacity
+- **Production Room:** Mitigate First, Then Learn Deeply
+- **Think Like an SRE:** Which Signals Should Page a Human?
+- **Architecture With Saqib:** Safe Velocity Through Error Budgets and Readiness Gates
+- **5 Levels:** Explain SRE from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
