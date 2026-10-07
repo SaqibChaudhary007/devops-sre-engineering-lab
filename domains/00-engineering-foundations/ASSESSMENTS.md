@@ -136,6 +136,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.11 — Distributed Systems Foundations
+
+[Open D00-T011 Assessment Package](../../assessments/topics/D00/D00-T011/README.md)
+
+Includes:
+
+- 96-question knowledge check
+- applied distributed-systems scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
