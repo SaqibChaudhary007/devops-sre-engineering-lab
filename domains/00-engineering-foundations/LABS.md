@@ -199,6 +199,20 @@ All D00-T013 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.14 — Observability Foundations
+
+1. [OBS-D00-018 — Map a User Journey to Metrics, Logs, Traces, and Events](../../labs/observation/D00/OBS-D00-018-map-user-journey-observability-signals.md)
+2. [EXP-D00-023 — Cardinality, Tail Latency, Sampling, and Telemetry Cost](../../labs/experiments/D00/EXP-D00-023-cardinality-latency-sampling-cost.md)
+3. [EXP-D00-024 — Evidence-First Incident Investigation and Dashboard Review](../../labs/experiments/D00/EXP-D00-024-evidence-first-incident-dashboard-review.md)
+
+These assets turn observability foundations into provider-neutral reasoning exercises for user journeys, telemetry mapping, metrics/logs/traces/events, structured logging, context propagation, black-box vs white-box evidence, business/dependency/queue signals, cardinality, tail latency, aggregation, sampling, retention, telemetry cost, security/privacy, dashboard hierarchy, alert context, change markers, and evidence-first troubleshooting.
+
+### Verification Status
+
+All D00-T014 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
