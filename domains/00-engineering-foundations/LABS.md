@@ -115,6 +115,20 @@ All D00-T007 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.08 — Infrastructure as Code Mental Model
+
+1. [OBS-D00-012 — Desired State, Actual State, and Drift Mapping](../../labs/observation/D00/OBS-D00-012-desired-actual-state-drift.md)
+2. [EXP-D00-011 — Dependency Graph, State Boundary, and Concurrency Design](../../labs/experiments/D00/EXP-D00-011-dependency-state-boundary-concurrency.md)
+3. [EXP-D00-012 — Review a Hypothetical IaC Plan for Safety, Cost, and Recovery](../../labs/experiments/D00/EXP-D00-012-iac-plan-safety-cost-recovery-review.md)
+
+These assets turn IaC mental models into provider-neutral reasoning exercises for desired vs actual state, drift, dependency graphs, ownership/state boundaries, concurrency, locking, change-plan review, replacement/deletion risk, security, cost, blast radius, and recovery.
+
+### Verification Status
+
+All D00-T008 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
