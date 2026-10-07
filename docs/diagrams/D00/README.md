@@ -139,3 +139,17 @@ Includes:
 - Desired Replicas → Scheduler → Nodes → Reconciliation
 - Service Discovery + Load Balancing Across Replicas
 - Container Failure vs Node Failure vs Orchestrator Recovery
+
+
+## D00-T011 — Distributed Systems Foundations
+
+- [Visual / Diagram Package](D00-T011/README.md)
+
+Includes:
+
+- Local Call vs Network Call
+- Partial Failure & Ambiguous Timeout
+- Retry → Duplicate → Idempotency Key
+- Replication → Lag → Stale Read
+- Partition Trade-Off / CAP Mental Model
+- Timeout + Retry + Backoff + Circuit Breaker Failure Loop
