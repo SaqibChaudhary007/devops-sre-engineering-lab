@@ -63,12 +63,13 @@
 | D00-T011 Assessment | Drafted |
 | D00-T011 Visual Package | Drafted |
 | D00-T011 Cross-Link Integration | Complete |
-| D00-T012 Reliability Engineering Foundations | Canonical draft authored |
+| D00-T012 Reliability Engineering Foundations | Full topic package integrated |
 | D00-T012 Source Verification | Complete |
 | D00-T012 Practical Assets | Drafted |
 | D00-T012 Assessment | Drafted |
 | D00-T012 Visual Package | Drafted |
-| D00-T012 Cross-Link Integration | Next |
+| D00-T012 Cross-Link Integration | Complete |
+| D00-T013 SRE Foundations | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
