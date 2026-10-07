@@ -15,6 +15,10 @@
 
 ## Next
 
-8. 00.08 — Infrastructure as Code Mental Model — planned
+8. [00.08 — Infrastructure as Code Mental Model](00-08-infrastructure-as-code-mental-model/README.md) — canonical draft authored
+
+## Next
+
+9. 00.09 — CI/CD Mental Model — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
