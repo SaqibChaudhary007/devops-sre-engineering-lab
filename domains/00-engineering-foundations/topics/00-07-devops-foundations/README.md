@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 5-7h
   practical: 1-2h
@@ -123,6 +123,54 @@ You should already understand:
 - failure domains
 - observability at a high level
 - production risk
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T007 Source Verification](../../../../docs/sources/D00/D00-T007-source-verification.md).
+3. **Visualize** — review the [D00-T007 Visual Package](../../../../docs/diagrams/D00/D00-T007/README.md).
+4. **Observe Flow** — complete [OBS-D00-011 — Map a Change from Idea to Production and Feedback](../../../../labs/observation/D00/OBS-D00-011-map-change-idea-to-production.md).
+5. **Experiment with Batch Size** — complete [EXP-D00-009 — Compare Large-Batch vs Small-Batch Delivery](../../../../labs/experiments/D00/EXP-D00-009-large-vs-small-batch-delivery.md).
+6. **Experiment with Metrics, Toil & Feedback** — complete [EXP-D00-010 — Build a Delivery Metrics, Toil, and Feedback Worksheet](../../../../labs/experiments/D00/EXP-D00-010-delivery-metrics-toil-feedback.md).
+7. **Assess** — complete the [D00-T007 Assessment Package](../../../../assessments/topics/D00/D00-T007/README.md).
+8. **Teach Back** — explain DevOps at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.08 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-035 — Traditional Siloed Delivery vs DevOps Flow](../../../../docs/diagrams/D00/D00-T007/DIA-D00-035-siloed-vs-devops-flow.md)
+- [DIA-D00-036 — Idea → Production → Feedback Loop](../../../../docs/diagrams/D00/D00-T007/DIA-D00-036-idea-production-feedback-loop.md)
+- [DIA-D00-037 — Queue / Handoff / Bottleneck Model](../../../../docs/diagrams/D00/D00-T007/DIA-D00-037-queue-handoff-bottleneck.md)
+- [DIA-D00-038 — CI vs Continuous Delivery vs Continuous Deployment](../../../../docs/diagrams/D00/D00-T007/DIA-D00-038-ci-cd-continuous-deployment.md)
+- [DIA-D00-039 — Delivery Performance: Throughput, Instability & Recovery](../../../../docs/diagrams/D00/D00-T007/DIA-D00-039-delivery-performance-metrics.md)
+- [DIA-D00-040 — DevOps vs SRE vs Platform Engineering](../../../../docs/diagrams/D00/D00-T007/DIA-D00-040-devops-sre-platform-engineering.md)
+
+## Practical Package
+
+- [OBS-D00-011 — Map a Change from Idea to Production and Feedback](../../../../labs/observation/D00/OBS-D00-011-map-change-idea-to-production.md)
+- [EXP-D00-009 — Compare Large-Batch vs Small-Batch Delivery](../../../../labs/experiments/D00/EXP-D00-009-large-vs-small-batch-delivery.md)
+- [EXP-D00-010 — Build a Delivery Metrics, Toil, and Feedback Worksheet](../../../../labs/experiments/D00/EXP-D00-010-delivery-metrics-toil-feedback.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T007 Assessment Package](../../../../assessments/topics/D00/D00-T007/README.md) includes:
+
+- 96-question knowledge check
+- applied delivery-system scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1337,61 +1385,83 @@ Before moving on, retain:
 
 ---
 
-# 58. Practical Package — Next Layer
+# 58. Practical Package
 
-The practical package should include safe exercises such as:
+Complete the practical assets:
 
-- map one feature from idea → code → review → build → test → deploy → operate → learn
-- identify queues, handoffs, WIP, and bottlenecks in a hypothetical delivery system
-- compare one large release with multiple smaller releases
-- design a basic feedback loop using build/test/deployment/production signals
-- classify repetitive operational work as toil vs judgment work
-- build a lightweight delivery-metrics worksheet
+1. [OBS-D00-011 — Map a Change from Idea to Production and Feedback](../../../../labs/observation/D00/OBS-D00-011-map-change-idea-to-production.md)
+2. [EXP-D00-009 — Compare Large-Batch vs Small-Batch Delivery](../../../../labs/experiments/D00/EXP-D00-009-large-vs-small-batch-delivery.md)
+3. [EXP-D00-010 — Build a Delivery Metrics, Toil, and Feedback Worksheet](../../../../labs/experiments/D00/EXP-D00-010-delivery-metrics-toil-feedback.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These assets turn DevOps concepts into concrete reasoning around flow, waiting time, queues, handoffs, bottlenecks, batch size, feedback loops, the current DORA five-metric model, toil, recovery, and metric-gaming risk.
 
 ---
 
-# 59. Assessment Package — Pending
+# 59. Assessment Package
 
-The assessment should test:
+Complete the [D00-T007 Assessment Package](../../../../assessments/topics/D00/D00-T007/README.md).
+
+It tests:
 
 - why DevOps exists
-- flow
-- feedback
-- WIP
-- queues
-- handoffs
-- bottlenecks
-- automation
-- standardization
-- CI/CD mental models
-- deployment/recovery metrics
-- ownership
-- toil
-- observability
-- security integration
-- shift left/right
-- change management
+- flow and feedback
+- WIP, queues, handoffs, and bottlenecks
+- automation and standardization
+- CI / continuous delivery / continuous deployment
+- the current DORA five-metric model
+- ownership and toil
+- observability and lifecycle security
+- shift left and shift right
+- change and recovery thinking
 - DevOps vs SRE vs platform engineering
 - Senior/SRE/Architect reasoning
 
 ---
 
-# 60. Visual Package — Pending
+# 60. Visual Package
 
-The visual package should include:
+Review the [D00-T007 Visual Package](../../../../docs/diagrams/D00/D00-T007/README.md).
+
+The package includes:
 
 1. Traditional Siloed Delivery vs DevOps Flow
 2. Idea → Production → Feedback Loop
 3. Queue / Handoff / Bottleneck Model
 4. CI vs Continuous Delivery vs Continuous Deployment
-5. Delivery Performance: Speed / Stability / Recovery
+5. Delivery Performance: Throughput, Instability & Recovery
 6. DevOps vs SRE vs Platform Engineering
 
 ---
 
-# 61. What Comes Next
+# 61. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain why DevOps exists without defining it as a tool or team
+- map idea → code → build → test → deploy → operate → observe → learn
+- identify queues, WIP, handoffs, and bottlenecks in a delivery system
+- explain why local optimization can fail to improve end-to-end flow
+- explain batch-size trade-offs
+- distinguish CI from continuous delivery and continuous deployment
+- explain the current five DORA delivery-performance metrics
+- explain why metrics should not be gamed in isolation
+- distinguish automation from good engineering judgment
+- explain ownership without assuming one person does everything
+- identify toil using its actual characteristics
+- explain why observability is a delivery feedback mechanism
+- explain shift-left and shift-right as complementary
+- explain why change controls should be proportional and evidence-driven
+- explain rollback vs roll-forward thinking
+- explain blameless learning without removing accountability
+- distinguish DevOps, SRE, and platform engineering
+- explain how a platform team can enable DevOps without becoming another ticket queue
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the DevOps mental model clearly without relying on notes
+
+# 62. What Comes Next
 
 After D00-T007 is completed, continue to:
 
@@ -1411,7 +1481,7 @@ That topic will connect DevOps delivery principles to:
 
 ---
 
-# 62. Sources & Evidence
+# 63. Sources & Evidence
 
 Planned authoritative source families for verification:
 
@@ -1427,9 +1497,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1447,3 +1518,10 @@ Verified nuances:
 - SRE can implement DevOps principles but is not identical to DevOps
 - platform engineering can scale DevOps practices through internal platforms
 - shift-left security and runtime/production feedback are complementary
+
+
+## Topic Package Status
+
+**D00-T007 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
