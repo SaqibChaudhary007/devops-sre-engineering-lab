@@ -241,6 +241,20 @@ All D00-T016 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.17 — Systems Thinking
+
+1. [OBS-D00-021 — System Boundary, Flows, Constraints, and Bottlenecks](../../labs/observation/D00/OBS-D00-021-system-boundary-flows-bottlenecks.md)
+2. [EXP-D00-029 — Feedback Loops, Delays, Retry Amplification, and Autoscaling](../../labs/experiments/D00/EXP-D00-029-feedback-delays-retries-autoscaling.md)
+3. [EXP-D00-030 — Hidden Coupling, Cascading Failure, Second-Order Effects, and Leverage Points](../../labs/experiments/D00/EXP-D00-030-hidden-coupling-cascading-failure-leverage.md)
+
+These assets turn Systems Thinking into safe, provider-neutral reasoning exercises for system boundaries, components/relationships/flows, stocks and constraints, bottlenecks, local-vs-global optimization, reinforcing/balancing feedback, delays and oscillation, retry amplification, autoscaling, backpressure, hidden coupling, shared failure domains, cascading failure, redundancy vs independence, second-order effects, leverage points, structural incident reasoning, and SLOs as system outcomes.
+
+### Verification Status
+
+All D00-T017 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
