@@ -24,6 +24,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -229,6 +230,8 @@ Run 3 → no meaningful change
 
 Idempotence is important for safe, repeatable automation.
 
+It is a desirable property, not a universal guarantee. For example, Ansible documents that many modules are idempotent but not every module/playbook behaves that way.
+
 ---
 
 # 10. Configuration Drift
@@ -400,7 +403,11 @@ Explicit dependencies are useful when inference is insufficient, but overuse can
 
 # 19. State Tracking
 
-Some IaC tools maintain state mapping definitions to real resources.
+Some IaC tools maintain explicit state mapping definitions to real resources.
+
+Important:
+
+> Explicit state files are **not universal across IaC systems**. Terraform requires state, while systems such as Bicep/ARM rely on the platform control plane and do not require the user to manage a state file.
 
 ~~~text
 Code Resource
@@ -432,7 +439,9 @@ State is part of the operational architecture.
 
 # 21. Remote State
 
-Teams commonly place shared state in a remote backend/service for collaboration, backup, locking, access control, and CI/CD execution.
+Teams commonly place shared state in a remote backend/service for collaboration, backup, access control, and CI/CD execution.
+
+Some backends also support state locking. Locking capability is backend-specific and must be verified rather than assumed.
 
 State should not be treated as an unimportant local file.
 
@@ -450,7 +459,7 @@ Engineer A Apply
 Engineer B Apply
 ~~~
 
-Locking helps protect shared mutation, though it does not solve every coordination problem.
+Locking helps protect shared mutation when the selected backend/tool supports it, though it does not solve every coordination problem.
 
 ---
 
@@ -739,6 +748,8 @@ Git Desired State
 
 IaC and GitOps overlap but are not identical.
 
+OpenGitOps defines GitOps more specifically around declarative desired state that is versioned/immutable, pulled automatically, and continuously reconciled.
+
 Deep GitOps belongs to D21.
 
 ---
@@ -985,8 +996,25 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T008 Source Verification](../../../../docs/sources/D00/D00-T008-source-verification.md)
+
+Verified nuances:
+
+- explicit state files are tool-specific rather than universal across IaC
+- Terraform requires state; Bicep/ARM does not require a user-managed state file
+- Terraform locking depends on backend support
+- declarative IaC does not automatically mean continuous reconciliation
+- plan/What-If/change-set output reduces uncertainty but does not guarantee execution success
+- drift includes out-of-band/manual changes to managed infrastructure
+- import/adoption maps resources into management but does not reconstruct original intent
+- idempotence is desirable but depends on tool/module implementation
+- GitOps is more specific than IaC and requires automatic pull plus continuous reconciliation
+- reverting source definitions does not guarantee safe infrastructure rollback
