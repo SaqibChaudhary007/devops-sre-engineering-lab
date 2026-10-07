@@ -87,12 +87,13 @@
 | D00-T015 Assessment | Drafted |
 | D00-T015 Visual Package | Drafted |
 | D00-T015 Cross-Link Integration | Complete |
-| D00-T016 Automation Mental Models | Canonical draft authored |
+| D00-T016 Automation Mental Models | Full topic package integrated |
 | D00-T016 Source Verification | Complete |
 | D00-T016 Practical Assets | Drafted |
 | D00-T016 Assessment | Drafted |
 | D00-T016 Visual Package | Drafted |
-| D00-T016 Cross-Link Integration | Next |
+| D00-T016 Cross-Link Integration | Complete |
+| D00-T017 Systems Thinking | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.

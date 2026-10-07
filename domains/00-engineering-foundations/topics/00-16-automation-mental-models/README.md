@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 6-8h
   practical: 1-2h
@@ -189,6 +189,54 @@ Required:
 - [00.15 — Security Foundations](../00-15-security-foundations/README.md)
 
 You should already understand state, distributed systems, retries, failure, observability, least privilege, CI/CD, IaC, and production-readiness thinking.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T016 Source Verification](../../../../docs/sources/D00/D00-T016-source-verification.md).
+3. **Visualize** — review the [D00-T016 Visual Package](../../../../docs/diagrams/D00/D00-T016/README.md).
+4. **Observe Automation Suitability** — complete [OBS-D00-020 — Automation Suitability, Trigger, State, and Validation](../../../../labs/observation/D00/OBS-D00-020-automation-suitability-trigger-state-validation.md).
+5. **Experiment with Idempotency & Retry Safety** — complete [EXP-D00-027 — Idempotency, Retry Safety, and Partial Failure](../../../../labs/experiments/D00/EXP-D00-027-idempotency-retry-partial-failure.md).
+6. **Experiment with Reconciliation & Guardrails** — complete [EXP-D00-028 — Reconciliation, Guardrails, Human Approval, and Automation Readiness](../../../../labs/experiments/D00/EXP-D00-028-control-loops-guardrails-human-approval.md).
+7. **Assess** — complete the [D00-T016 Assessment Package](../../../../assessments/topics/D00/D00-T016/README.md).
+8. **Teach Back** — explain automation at Beginner, Engineer, Senior, SRE/Platform, and Architect levels.
+9. **Continue** — move to 00.17 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-089 — Trigger → Preconditions → State → Action → Validation → Feedback](../../../../docs/diagrams/D00/D00-T016/DIA-D00-089-trigger-preconditions-state-action-validation-feedback.md)
+- [DIA-D00-090 — Current State ↔ Desired State → Reconciliation Loop](../../../../docs/diagrams/D00/D00-T016/DIA-D00-090-current-desired-reconciliation-loop.md)
+- [DIA-D00-091 — Idempotency / Duplicate Execution / Retry Safety](../../../../docs/diagrams/D00/D00-T016/DIA-D00-091-idempotency-duplicate-retry-safety.md)
+- [DIA-D00-092 — Partial Failure → Rollback / Roll-Forward / Compensation](../../../../docs/diagrams/D00/D00-T016/DIA-D00-092-partial-failure-recovery-options.md)
+- [DIA-D00-093 — Human Approval → Guardrails → Automated Action → Validation](../../../../docs/diagrams/D00/D00-T016/DIA-D00-093-human-approval-guardrails-action-validation.md)
+- [DIA-D00-094 — Automation Blast Radius: Scope / Rate / Identity / Environment / Stop Conditions](../../../../docs/diagrams/D00/D00-T016/DIA-D00-094-automation-blast-radius-guardrails.md)
+
+## Practical Package
+
+- [OBS-D00-020 — Automation Suitability, Trigger, State, and Validation](../../../../labs/observation/D00/OBS-D00-020-automation-suitability-trigger-state-validation.md)
+- [EXP-D00-027 — Idempotency, Retry Safety, and Partial Failure](../../../../labs/experiments/D00/EXP-D00-027-idempotency-retry-partial-failure.md)
+- [EXP-D00-028 — Reconciliation, Guardrails, Human Approval, and Automation Readiness](../../../../labs/experiments/D00/EXP-D00-028-control-loops-guardrails-human-approval.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T016 Assessment Package](../../../../assessments/topics/D00/D00-T016/README.md) includes:
+
+- 96-question knowledge check
+- applied automation scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1521,30 +1569,23 @@ Before moving on, retain:
 
 ---
 
-# 73. Practical Package — Next Layer
+# 73. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- classify manual tasks by automation suitability
-- design triggers, preconditions, actions, and validation
-- compare imperative vs declarative models
-- identify idempotent vs non-idempotent actions
-- review retry safety
-- design timeout/backoff/jitter reasoning
-- model partial failure and compensation
-- review concurrency and duplicate execution
-- define human approval boundaries
-- design blast-radius guardrails
-- design automation observability/audit evidence
-- perform an automation production-readiness review
+1. [OBS-D00-020 — Automation Suitability, Trigger, State, and Validation](../../../../labs/observation/D00/OBS-D00-020-automation-suitability-trigger-state-validation.md)
+2. [EXP-D00-027 — Idempotency, Retry Safety, and Partial Failure](../../../../labs/experiments/D00/EXP-D00-027-idempotency-retry-partial-failure.md)
+3. [EXP-D00-028 — Reconciliation, Guardrails, Human Approval, and Automation Readiness](../../../../labs/experiments/D00/EXP-D00-028-control-loops-guardrails-human-approval.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn automation mental models into concrete reasoning around suitability, intent, triggers, current/desired state, reconciliation, imperative/declarative models, preconditions/postconditions, outcome validation, idempotency, duplicate execution, retries, backoff, jitter, timeout budgets, partial failure, rollback/roll-forward/compensation, concurrency, guardrails, blast radius, human approval boundaries, automation identity, observability/auditability, bounded self-healing, production readiness, and AI-assisted autonomy boundaries.
 
 ---
 
-# 74. Assessment Package — Pending
+# 74. Assessment Package
 
-The assessment should test:
+Complete the [D00-T016 Assessment Package](../../../../assessments/topics/D00/D00-T016/README.md).
+
+It tests:
 
 - automation definition and purpose
 - manual vs automated work
@@ -1579,9 +1620,11 @@ The assessment should test:
 
 ---
 
-# 75. Visual Package — Pending
+# 75. Visual Package
 
-The visual package should include:
+Review the [D00-T016 Visual Package](../../../../docs/diagrams/D00/D00-T016/README.md).
+
+The package includes:
 
 1. Trigger → Preconditions → State → Action → Validation → Feedback
 2. Current State ↔ Desired State → Reconciliation Loop
@@ -1592,7 +1635,54 @@ The visual package should include:
 
 ---
 
-# 76. What Comes Next
+# 76. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain automation as more than scripting
+- classify work by automation suitability
+- define intent, trigger, current state, desired state, and validation
+- explain why a trigger does not prove safety
+- explain reconciliation and control loops
+- explain why reconciliation is iterative
+- compare imperative and declarative automation
+- compare push and pull automation at a foundation level
+- define preconditions and postconditions
+- explain why process completion is not outcome validation
+- distinguish repeatability from idempotency
+- explain why duplicate execution should be expected
+- explain why idempotency improves safety without guaranteeing success
+- explain retry eligibility and why not every failure should retry
+- design bounded retries with backoff, jitter, timeout budgets, and stop conditions
+- explain cancellation as part of failure design
+- explain partial failure
+- compare rollback, roll-forward, and compensation
+- explain why rollback is not universally safe
+- explain workflows and orchestration as coordination state
+- explain queues and dead-letter concepts at the correct preview level
+- explain concurrency and race-condition risk
+- explain locking as both coordination and a possible failure source
+- explain rate limiting as an amplification guardrail
+- design automation blast-radius limits
+- explain guardrails separately from business logic
+- define human approval boundaries
+- explain human-in-the-loop as a valid design choice
+- explain automation identity and least privilege
+- explain secrets handling for automation
+- define observability and audit evidence for automation
+- explain why self-healing must be bounded
+- explain the runbook-to-automation maturity path
+- explain drift and reconciliation opportunities
+- explain automation economics
+- explain how automation can improve or harm reliability and security
+- explain how AI-assisted automation authority should decrease as impact, irreversibility, and uncertainty increase
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the automation mental model clearly without relying on notes
+
+# 77. What Comes Next
 
 After D00-T016 is completed, continue to:
 
@@ -1602,7 +1692,7 @@ That topic will deepen feedback loops, local vs global optimization, system boun
 
 ---
 
-# 77. Sources & Evidence
+# 78. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1618,9 +1708,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1643,3 +1734,10 @@ Verified nuances:
 - automation requires explicit identity, least privilege, observability, and auditability
 - self-healing and auto-remediation must be bounded and observable
 - AI-assisted automation needs stronger validation as impact and uncertainty rise
+
+
+## Topic Package Status
+
+**D00-T016 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
