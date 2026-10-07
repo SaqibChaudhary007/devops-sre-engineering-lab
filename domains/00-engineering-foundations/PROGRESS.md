@@ -83,8 +83,8 @@
 | D00-T014 Cross-Link Integration | Complete |
 | D00-T015 Security Foundations | Canonical draft authored |
 | D00-T015 Source Verification | Complete |
-| D00-T015 Practical Assets | Next |
-| D00-T015 Assessment | Pending |
+| D00-T015 Practical Assets | Drafted |
+| D00-T015 Assessment | Next |
 | D00-T015 Visual Package | Pending |
 | D00-T015 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |

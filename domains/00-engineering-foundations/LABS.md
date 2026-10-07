@@ -213,6 +213,20 @@ All D00-T014 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.15 — Security Foundations
+
+1. [OBS-D00-019 — Map Assets, Threats, Trust Boundaries, and Controls](../../labs/observation/D00/OBS-D00-019-assets-trust-boundaries-controls.md)
+2. [EXP-D00-025 — Identity, Least Privilege, Secrets, and Audit Review](../../labs/experiments/D00/EXP-D00-025-identity-least-privilege-secrets-audit.md)
+3. [EXP-D00-026 — Supply-Chain Trust, Defense in Depth, and Security Readiness](../../labs/experiments/D00/EXP-D00-026-supply-chain-defense-security-readiness.md)
+
+These assets turn Security Foundations into safe, provider-neutral reasoning exercises for assets/threats/vulnerabilities/risk, trust boundaries, authentication vs authorization, least privilege, human/workload identity, secrets lifecycle, auditability, CI/CD trust, artifact integrity/provenance, dependency risk, defense in depth, blast radius, backup security, security monitoring, security/reliability trade-offs, and production readiness.
+
+### Verification Status
+
+All D00-T015 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
