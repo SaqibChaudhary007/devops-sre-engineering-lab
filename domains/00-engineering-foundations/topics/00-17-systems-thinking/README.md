@@ -33,6 +33,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -235,6 +236,8 @@ User
 
 The chosen boundary changes what causes and solutions you can see.
 
+There is not always one universally correct boundary; the boundary should be appropriate to the question and outcome being studied.
+
 ---
 
 # 5. Environment
@@ -366,6 +369,8 @@ Constraints often determine throughput.
 # 12. Bottleneck
 
 A bottleneck is the constraint that limits overall system performance.
+
+The active bottleneck can move after an intervention, so the whole flow should be measured again after meaningful changes.
 
 If every other component becomes faster but the bottleneck does not change, total throughput may barely improve.
 
@@ -959,7 +964,7 @@ Detailed patterns come later.
 
 # 49. Redundancy and Common Failure
 
-Redundancy helps only when redundant paths do not fail for the same reason.
+Redundancy helps only when redundant paths are sufficiently independent for the failure being considered.
 
 Example:
 
@@ -1452,8 +1457,30 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T017 Source Verification](../../../../docs/sources/D00/D00-T017-source-verification.md)
+
+Verified nuances:
+
+- a system is defined by interactions and system-level outcomes, not only by component health
+- the chosen system boundary depends on the question being analyzed
+- external systems, humans, policies, and interfaces may belong in the system context
+- emergent behavior arises from interactions among parts
+- stocks accumulate and flows change those accumulations
+- reinforcing loops amplify change while balancing loops counteract deviation
+- delays can create over-correction and oscillation
+- local optimization can move the bottleneck or worsen the global outcome
+- retries are system feedback and can amplify overload
+- backpressure must propagate across upstream/downstream relationships
+- autoscaling is a delayed feedback/control loop rather than instant capacity
+- cascading failures commonly involve interacting conditions rather than one isolated cause
+- redundancy only helps when relevant failure modes are sufficiently independent
+- humans and organizational incentives can influence production-system behavior
+- architecture changes are interventions whose second-order effects must be considered
