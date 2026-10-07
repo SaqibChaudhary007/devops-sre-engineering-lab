@@ -97,6 +97,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.08 — Infrastructure as Code Mental Model
+
+[Open D00-T008 Assessment Package](../../assessments/topics/D00/D00-T008/README.md)
+
+Includes:
+
+- 96-question knowledge check
+- applied IaC change scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED

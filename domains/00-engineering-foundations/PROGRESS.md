@@ -42,8 +42,8 @@
 | D00-T008 Infrastructure as Code Mental Model | Canonical draft authored |
 | D00-T008 Source Verification | Complete |
 | D00-T008 Practical Assets | Drafted |
-| D00-T008 Assessment | Next |
-| D00-T008 Visual Package | Pending |
+| D00-T008 Assessment | Drafted |
+| D00-T008 Visual Package | Next |
 | D00-T008 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
