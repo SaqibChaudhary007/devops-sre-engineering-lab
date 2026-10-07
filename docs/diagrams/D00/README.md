@@ -195,3 +195,17 @@ Includes:
 - RED vs USE vs Golden Signals
 - Change Marker → Symptom → Dependency → Root-Cause Hypothesis
 - Cardinality / Sampling / Retention / Cost Trade-Off
+
+
+## D00-T015 — Security Foundations
+
+- [Visual / Diagram Package](D00-T015/README.md)
+
+Includes:
+
+- Asset → Threat → Vulnerability → Risk → Control
+- Identity → Authentication → Authorization → Least Privilege → Audit
+- Trust Boundary → Control → Detection → Response
+- Secret Lifecycle: Create → Store → Distribute → Use → Rotate → Revoke
+- Source → Build → Artifact → Registry → Deployment → Runtime Trust Chain
+- Defense in Depth → Blast Radius Reduction

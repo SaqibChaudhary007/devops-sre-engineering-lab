@@ -331,6 +331,30 @@ Recommended content angles:
 - **Architecture With Saqib:** Designing an Observability Platform That Does Not Drown in Noise
 - **5 Levels:** Explain Observability from Beginner to Architect
 
+
+## D00-T015 — Security Foundations
+
+Priority: **P1**
+
+Visual package:
+
+1. [Asset → Threat → Vulnerability → Risk → Control](../../docs/diagrams/D00/D00-T015/DIA-D00-083-asset-threat-vulnerability-risk-control.md)
+2. [Identity → Authentication → Authorization → Least Privilege → Audit](../../docs/diagrams/D00/D00-T015/DIA-D00-084-identity-authn-authz-least-privilege-audit.md)
+3. [Trust Boundary → Control → Detection → Response](../../docs/diagrams/D00/D00-T015/DIA-D00-085-trust-boundary-control-detection-response.md)
+4. [Secret Lifecycle: Create → Store → Distribute → Use → Rotate → Revoke](../../docs/diagrams/D00/D00-T015/DIA-D00-086-secret-lifecycle.md)
+5. [Source → Build → Artifact → Registry → Deployment → Runtime Trust Chain](../../docs/diagrams/D00/D00-T015/DIA-D00-087-software-supply-chain-trust.md)
+6. [Defense in Depth → Blast Radius Reduction](../../docs/diagrams/D00/D00-T015/DIA-D00-088-defense-in-depth-blast-radius.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Security Is Risk Management, Not a Firewall
+- **How It Really Works:** Identity → Authentication → Authorization → Least Privilege
+- **Under the Hood:** The Secret Lifecycle Nobody Should Skip
+- **Production Room:** What Happens When One Credential Has Too Much Reach?
+- **Think Like an SRE:** Security Controls That Can Hurt Reliability
+- **Architecture With Saqib:** Trust Boundaries, Supply Chain, and Blast Radius
+- **5 Levels:** Explain Security from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
