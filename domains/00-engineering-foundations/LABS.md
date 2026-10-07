@@ -143,6 +143,20 @@ All D00-T009 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.10 — Containers & Orchestration Mental Model
+
+1. [OBS-D00-014 — Map Image → Container → Runtime → Host](../../labs/observation/D00/OBS-D00-014-map-image-container-runtime-host.md)
+2. [EXP-D00-015 — Ephemeral vs Persistent State, Health, and Restart Reasoning](../../labs/experiments/D00/EXP-D00-015-ephemeral-persistent-health-restart.md)
+3. [EXP-D00-016 — Desired Replicas, Scheduling, Service Discovery, and Failure Recovery](../../labs/experiments/D00/EXP-D00-016-replicas-scheduling-service-discovery-recovery.md)
+
+These assets turn container/orchestration mental models into provider-neutral reasoning exercises for image/container/runtime/host boundaries, tag vs digest identity, container vs VM isolation, ephemeral vs persistent state, startup/liveness/readiness, restart loops, desired replicas, scheduler constraints, service discovery, node failure, rollout readiness, stateful recovery, and self-healing boundaries.
+
+### Verification Status
+
+All D00-T010 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
