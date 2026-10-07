@@ -71,8 +71,8 @@
 | D00-T012 Cross-Link Integration | Complete |
 | D00-T013 SRE Foundations | Canonical draft authored |
 | D00-T013 Source Verification | Complete |
-| D00-T013 Practical Assets | Next |
-| D00-T013 Assessment | Pending |
+| D00-T013 Practical Assets | Drafted |
+| D00-T013 Assessment | Next |
 | D00-T013 Visual Package | Pending |
 | D00-T013 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
