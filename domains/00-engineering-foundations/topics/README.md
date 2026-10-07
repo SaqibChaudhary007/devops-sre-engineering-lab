@@ -31,6 +31,10 @@
 
 ## Next
 
-12. 00.12 — Reliability Engineering Foundations — planned
+12. [00.12 — Reliability Engineering Foundations](00-12-reliability-engineering-foundations/README.md) — canonical draft authored
+
+## Next
+
+13. 00.13 — SRE Foundations — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
