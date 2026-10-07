@@ -19,7 +19,7 @@
 
 ## Next
 
-9. [00.09 — CI/CD Mental Model](00-09-cicd-mental-model/README.md) — canonical draft authored
+9. [00.09 — CI/CD Mental Model](00-09-cicd-mental-model/README.md) — full topic package
 
 ## Next
 
