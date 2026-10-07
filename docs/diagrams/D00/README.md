@@ -111,3 +111,17 @@ Includes:
 - Plan → Apply → Infrastructure Lifecycle
 - IaC State / Dependency / Locking Model
 - IaC Change Risk: Review → Blast Radius → Recovery
+
+
+## D00-T009 — CI/CD Mental Model
+
+- [Visual / Diagram Package](D00-T009/README.md)
+
+Includes:
+
+- CI vs Continuous Delivery vs Continuous Deployment
+- Source → Build → Validate → Artifact → Promote → Deploy
+- Build Once / Promote Same Artifact
+- Pipeline Feedback & Failure Loop
+- Deployment vs Release
+- CI/CD + IaC + GitOps Relationship
