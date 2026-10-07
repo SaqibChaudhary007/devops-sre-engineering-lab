@@ -27,6 +27,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -231,6 +232,8 @@ A client may see a timeout.
 
 That timeout does not prove what happened.
 
+The operation may have failed before execution, may still be running, or may have completed while the response was lost.
+
 Possibilities include:
 
 - request never arrived
@@ -398,7 +401,9 @@ Exactly-once effect
 → business effect happens once
 ~~~
 
-Exactly-once effect usually requires end-to-end design rather than one transport feature.
+Exactly-once effect usually requires end-to-end design rather than relying only on one transport feature.
+
+Some messaging systems offer exactly-once delivery under explicitly scoped conditions. That does not automatically guarantee one business side effect across external systems.
 
 ---
 
@@ -574,7 +579,7 @@ Both sides may still be running.
 
 At D00 level, retain:
 
-> During a network partition, a distributed system cannot simultaneously guarantee a single consistent view and full availability for all partitioned sides.
+> During a network partition, affected operations face a consistency-versus-availability trade-off: a system cannot guarantee both one consistent view and full availability to all partitioned sides.
 
 CAP does not mean:
 
@@ -1356,8 +1361,30 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T011 Source Verification](../../../../docs/sources/D00/D00-T011-source-verification.md)
+
+Verified nuances:
+
+- timeout means uncertainty, not proof that a remote operation did not execute
+- retries can recover transient faults but can amplify overload and duplicate side effects
+- retry policy should be bounded, selective, and paired with idempotency/request identity where needed
+- exponential backoff and jitter solve different parts of retry synchronization
+- circuit breakers protect callers from repeatedly invoking a failing dependency
+- bulkheads isolate resources and contain blast radius
+- queues decouple producers/consumers but do not create infinite downstream capacity
+- at-least-once delivery requires duplicate-safe thinking
+- exactly-once guarantees are system-specific and scoped; exactly-once business effect remains an end-to-end design concern
+- ordering guarantees are scoped, not universal
+- CAP should be taught as a partition-time consistency-versus-availability trade-off rather than a permanent pick-two slogan
+- replica count alone does not provide availability if replicas share failure domains
+- failure detection is inferred through signals such as timeouts/heartbeats, not perfect knowledge
+- graceful degradation and load shedding can preserve critical service
+- cascading failures often arise from positive feedback between slowdown, in-flight work, saturation, and retries
