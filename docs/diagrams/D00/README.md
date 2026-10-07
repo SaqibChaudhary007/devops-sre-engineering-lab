@@ -83,3 +83,17 @@ Includes:
 - Region / Zone / Resource Failure Domains
 - Elasticity & Autoscaling Loop
 - Cloud Responsibility / Cost / Governance Triangle
+
+
+## D00-T007 — DevOps Foundations
+
+- [Visual / Diagram Package](D00-T007/README.md)
+
+Includes:
+
+- Traditional Siloed Delivery vs DevOps Flow
+- Idea → Production → Feedback Loop
+- Queue / Handoff / Bottleneck Model
+- CI vs Continuous Delivery vs Continuous Deployment
+- Delivery Performance: Throughput, Instability & Recovery
+- DevOps vs SRE vs Platform Engineering

@@ -37,8 +37,8 @@
 | D00-T007 Source Verification | Complete |
 | D00-T007 Practical Assets | Drafted |
 | D00-T007 Assessment | Drafted |
-| D00-T007 Visual Package | Next |
-| D00-T007 Cross-Link Integration | Pending |
+| D00-T007 Visual Package | Drafted |
+| D00-T007 Cross-Link Integration | Next |
 | Domain v1.0 | Pending |
 
 Current milestone: **Domain 00 topic authoring**.
