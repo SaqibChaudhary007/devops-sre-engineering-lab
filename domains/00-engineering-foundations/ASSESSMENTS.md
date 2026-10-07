@@ -84,6 +84,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.07 — DevOps Foundations
+
+[Open D00-T007 Assessment Package](../../assessments/topics/D00/D00-T007/README.md)
+
+Includes:
+
+- 96-question knowledge check
+- applied delivery-system scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
