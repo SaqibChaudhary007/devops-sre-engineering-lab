@@ -234,6 +234,30 @@ Recommended content angles:
 - **Architecture With Saqib:** Desired State, Scheduling, and Bounded Self-Healing
 - **5 Levels:** Explain Containers & Orchestration from Beginner to Architect
 
+
+## D00-T011 — Distributed Systems Foundations
+
+Priority: **P1**
+
+Visual package:
+
+1. [Local Call vs Network Call](../../docs/diagrams/D00/D00-T011/DIA-D00-059-local-call-vs-network-call.md)
+2. [Partial Failure & Ambiguous Timeout](../../docs/diagrams/D00/D00-T011/DIA-D00-060-partial-failure-ambiguous-timeout.md)
+3. [Retry → Duplicate → Idempotency Key](../../docs/diagrams/D00/D00-T011/DIA-D00-061-retry-duplicate-idempotency.md)
+4. [Replication → Lag → Stale Read](../../docs/diagrams/D00/D00-T011/DIA-D00-062-replication-lag-stale-read.md)
+5. [Partition Trade-Off / CAP Mental Model](../../docs/diagrams/D00/D00-T011/DIA-D00-063-partition-cap-mental-model.md)
+6. [Timeout + Retry + Backoff + Circuit Breaker Failure Loop](../../docs/diagrams/D00/D00-T011/DIA-D00-064-timeout-retry-backoff-circuit-breaker.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Why Distributed Systems Are Harder Than "Many Servers"
+- **How It Really Works:** Network Call → Timeout → Uncertainty → Recovery Decision
+- **Under the Hood:** Retry, Duplicate Effects, and Idempotency
+- **Production Room:** The Request Timed Out, but the Payment Still Happened
+- **Think Like an SRE:** How Retries Turn a Slow Dependency into an Outage
+- **Architecture With Saqib:** CAP Without the "Choose Two" Myth
+- **5 Levels:** Explain Distributed Systems from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
