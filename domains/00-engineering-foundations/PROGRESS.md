@@ -52,8 +52,8 @@
 | D00-T009 Visual Package | Drafted |
 | D00-T009 Cross-Link Integration | Complete |
 | D00-T010 Containers & Orchestration Mental Model | Canonical draft authored |
-| D00-T010 Source Verification | Next |
-| D00-T010 Practical Assets | Pending |
+| D00-T010 Source Verification | Complete |
+| D00-T010 Practical Assets | Next |
 | D00-T010 Assessment | Pending |
 | D00-T010 Visual Package | Pending |
 | D00-T010 Cross-Link Integration | Pending |

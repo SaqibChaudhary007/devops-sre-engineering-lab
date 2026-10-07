@@ -26,6 +26,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -183,7 +184,7 @@ A container is best understood as:
 
 A container is **not** a complete separate physical machine.
 
-A container normally shares the host kernel.
+For the mainstream Linux-container model used throughout this curriculum, containers normally share the host kernel. Other runtime technologies can use stronger VM-backed isolation, so "container" should not be treated as one universal implementation.
 
 ---
 
@@ -500,13 +501,13 @@ A mental model:
 
 ~~~text
 Request
-→ scheduling expectation / reservation signal
+→ scheduling/capacity signal
 
 Limit
-→ upper boundary
+→ runtime boundary where supported
 ~~~
 
-Exact semantics vary by platform and resource type.
+Exact semantics vary by platform and resource type. Requests should not be taught as a universal guarantee of runtime reservation, and limits do not behave identically for every resource.
 
 Deep Kubernetes behavior comes later.
 
@@ -580,15 +581,20 @@ The exact secret mechanism is platform-specific.
 
 A process can be running while the application is unhealthy.
 
-Health checks answer questions such as:
+Health checks answer different questions:
 
 ~~~text
-Is the process alive?
-Can it receive traffic?
-Has it finished starting?
+Startup
+→ has initialization completed?
+
+Liveness
+→ should this container be restarted?
+
+Readiness
+→ should traffic be sent here?
 ~~~
 
-Different platforms use different health-check models.
+Different platforms use different health-check models, but these questions should not be collapsed into one generic "health" signal.
 
 ---
 
@@ -931,10 +937,12 @@ This improves workload recovery.
 But recovery still depends on:
 
 - spare capacity
-- storage availability
+- storage availability and attachment behavior
 - network health
+- image availability
 - dependencies
-- control plane
+- control-plane health
+- policy and permissions
 
 ---
 
@@ -1368,8 +1376,31 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T010 Source Verification](../../../../docs/sources/D00/D00-T010-source-verification.md)
+
+Verified nuances:
+
+- OCI standardizes image/runtime/distribution interfaces rather than one vendor implementation
+- mainstream Linux containers share the host kernel, while some runtime technologies use stronger VM-backed isolation
+- image tags are weaker identifiers than immutable content digests
+- image layers and container writable state have different lifecycles
+- persistent storage must be reasoned about separately from replaceable workload instances
+- cgroups govern resource distribution, but detailed enforcement semantics belong to later topics
+- resource requests/limits should not be overgeneralized at D00
+- startup, liveness, and readiness answer different health questions
+- restart is not root-cause resolution
+- reconciliation is continuous but not instantaneous or unlimited
+- scheduling depends on capacity and constraints
+- replica count alone does not guarantee availability
+- service discovery exists because workload identities change
+- stateful workloads need stronger identity/storage/recovery handling
+- Kubernetes orchestrates containers but is not itself the container runtime
+- self-healing is bounded by platform capability, capacity, dependencies, storage, networking, and control-plane health
