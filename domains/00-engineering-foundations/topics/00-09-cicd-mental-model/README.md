@@ -25,6 +25,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - How It Really Works
@@ -211,6 +212,8 @@ How can validated change reach production automatically?
 # 7. Continuous Delivery
 
 Continuous delivery means software is kept deployable through a repeatable delivery process.
+
+A provider-neutral definition should focus on **releasability and repeatability**. Some delivery systems retain an explicit production approval or release decision; continuous deployment removes that explicit production promotion step when all required automated conditions are satisfied.
 
 ~~~text
 Code
@@ -420,13 +423,15 @@ A strong mental model is:
 ~~~text
 Build once
 → validate artifact
-→ promote same artifact
+→ promote same identified artifact
 → deploy to later environments
 ~~~
 
 Why?
 
 Because rebuilding per environment can produce different outputs.
+
+This reduces **artifact uncertainty**, but does not eliminate environment-specific differences in configuration, infrastructure, data, dependencies, or traffic.
 
 ---
 
@@ -736,6 +741,8 @@ Examples:
 
 But stale or poisoned caches can create confusing behavior.
 
+A cache is an optimization mechanism, **not the canonical release artifact**.
+
 A faster pipeline is not valuable if it becomes nondeterministic.
 
 ---
@@ -751,6 +758,8 @@ Secrets should not be:
 - embedded in artifacts
 
 Better models include short-lived credentials, secret stores, protected variables, and identity-based access where supported.
+
+Where a platform supports workload identity federation/OIDC, a pipeline can obtain scoped short-lived credentials instead of storing a long-lived cloud credential.
 
 ---
 
@@ -1191,8 +1200,27 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T009 Source Verification](../../../../docs/sources/D00/D00-T009-source-verification.md)
+
+Verified nuances:
+
+- continuous delivery is best taught provider-neutrally as maintaining a releasable state; production may still require a deliberate decision
+- continuous deployment automatically promotes validated change through production
+- build-once/promote reduces artifact uncertainty but does not make environments identical
+- artifacts and caches serve different purposes
+- passing checks provides evidence rather than a guarantee of production safety
+- approval gates are valuable only when they represent meaningful risk decisions
+- concurrency policy is part of delivery safety
+- runner trust/ownership changes the security model
+- short-lived OIDC/federated credentials can reduce reliance on stored long-lived secrets
+- deployment success does not by itself prove service health
+- GitOps and CI/CD are complementary but distinct control models
+- SLSA provenance strengthens artifact traceability and integrity evidence
