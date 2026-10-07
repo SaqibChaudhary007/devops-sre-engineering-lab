@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 6-8h
   practical: 1-2h
@@ -153,6 +153,54 @@ Required:
 - [00.11 — Distributed Systems Foundations](../00-11-distributed-systems-foundations/README.md)
 
 You should already understand partial failure, retries, dependencies, blast radius, failure domains, capacity, deployment risk, and production observability.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T012 Source Verification](../../../../docs/sources/D00/D00-T012-source-verification.md).
+3. **Visualize** — review the [D00-T012 Visual Package](../../../../docs/diagrams/D00/D00-T012/README.md).
+4. **Observe the User Journey** — complete [OBS-D00-016 — Map a Critical User Journey and Reliability Boundaries](../../../../labs/observation/D00/OBS-D00-016-map-critical-user-journey-reliability-boundaries.md).
+5. **Experiment with Reliability Targets & Failure Domains** — complete [EXP-D00-019 — Reliability Targets, Failure Domains, Redundancy, and Graceful Degradation](../../../../labs/experiments/D00/EXP-D00-019-reliability-targets-failure-domains-degradation.md).
+6. **Experiment with Recovery & Capacity** — complete [EXP-D00-020 — Recovery, Capacity Headroom, Backup Validation, and Incident Timeline](../../../../labs/experiments/D00/EXP-D00-020-recovery-capacity-backup-incident-timeline.md).
+7. **Assess** — complete the [D00-T012 Assessment Package](../../../../assessments/topics/D00/D00-T012/README.md).
+8. **Teach Back** — explain reliability engineering at Beginner, Engineer, Senior, SRE, and Architect levels.
+9. **Continue** — move to 00.13 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-065 — Reliability vs Availability vs Durability vs Resilience](../../../../docs/diagrams/D00/D00-T012/DIA-D00-065-reliability-availability-durability-resilience.md)
+- [DIA-D00-066 — User Journey → Dependency Chain → Reliability Outcome](../../../../docs/diagrams/D00/D00-T012/DIA-D00-066-user-journey-dependency-reliability.md)
+- [DIA-D00-067 — Failure Domain → Blast Radius → Redundancy Placement](../../../../docs/diagrams/D00/D00-T012/DIA-D00-067-failure-domain-blast-radius-redundancy.md)
+- [DIA-D00-068 — Detect → Contain → Recover → Validate → Learn](../../../../docs/diagrams/D00/D00-T012/DIA-D00-068-detect-contain-recover-validate-learn.md)
+- [DIA-D00-069 — SLI → SLO → Error Budget Mental Model](../../../../docs/diagrams/D00/D00-T012/DIA-D00-069-sli-slo-error-budget.md)
+- [DIA-D00-070 — Capacity Headroom → Failure → Failover / Degradation](../../../../docs/diagrams/D00/D00-T012/DIA-D00-070-capacity-headroom-failure-recovery.md)
+
+## Practical Package
+
+- [OBS-D00-016 — Map a Critical User Journey and Reliability Boundaries](../../../../labs/observation/D00/OBS-D00-016-map-critical-user-journey-reliability-boundaries.md)
+- [EXP-D00-019 — Reliability Targets, Failure Domains, Redundancy, and Graceful Degradation](../../../../labs/experiments/D00/EXP-D00-019-reliability-targets-failure-domains-degradation.md)
+- [EXP-D00-020 — Recovery, Capacity Headroom, Backup Validation, and Incident Timeline](../../../../labs/experiments/D00/EXP-D00-020-recovery-capacity-backup-incident-timeline.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T012 Assessment Package](../../../../assessments/topics/D00/D00-T012/README.md) includes:
+
+- 96-question knowledge check
+- applied reliability-engineering scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
 
 ---
 
@@ -1246,57 +1294,54 @@ Before moving on, retain:
 
 ---
 
-# 66. Practical Package — Next Layer
+# 66. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- map a critical user journey
-- classify availability vs durability vs resilience failures
-- map failure domains and blast radius
-- compare redundant but correlated designs
-- design graceful degradation
-- evaluate failover assumptions
-- define simple SLI/SLO examples
-- model capacity headroom during node loss
-- distinguish backup from proven recovery
-- build an incident detection-to-recovery timeline
+1. [OBS-D00-016 — Map a Critical User Journey and Reliability Boundaries](../../../../labs/observation/D00/OBS-D00-016-map-critical-user-journey-reliability-boundaries.md)
+2. [EXP-D00-019 — Reliability Targets, Failure Domains, Redundancy, and Graceful Degradation](../../../../labs/experiments/D00/EXP-D00-019-reliability-targets-failure-domains-degradation.md)
+3. [EXP-D00-020 — Recovery, Capacity Headroom, Backup Validation, and Incident Timeline](../../../../labs/experiments/D00/EXP-D00-020-recovery-capacity-backup-incident-timeline.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn reliability-engineering foundations into concrete reasoning around critical user journeys, reliability properties, failure domains, correlated redundancy, graceful degradation, SLI/SLO/SLA concepts, error budgets, failover assumptions, capacity headroom, saturation, alert quality, RTO/RPO, backup-vs-recovery, runbooks, and production readiness.
 
 ---
 
-# 67. Assessment Package — Pending
+# 67. Assessment Package
 
-The assessment should test:
+Complete the [D00-T012 Assessment Package](../../../../assessments/topics/D00/D00-T012/README.md).
+
+It tests:
 
 - reliability vs availability
-- durability/resilience/fault tolerance/recoverability
+- durability, resilience, fault tolerance, and recoverability
 - critical user journeys
-- failure models/domains/blast radius
+- failure models, failure domains, and blast radius
 - redundancy and independence
 - graceful degradation
 - failover
-- detection/response/recovery
-- SLI/SLO/SLA/error-budget concepts
+- detection, response, and recovery
+- SLI, SLO, SLA, and error-budget concepts
 - reliability/cost trade-offs
 - dependency reliability
 - observability and alert quality
 - change risk
-- rollback/roll-forward
-- capacity headroom/saturation
-- load shedding/backpressure
-- backup/recovery
-- RTO/RPO
+- rollback vs roll-forward
+- capacity headroom and saturation
+- load shedding and backpressure
+- backup and recovery
+- RTO and RPO
 - incident readiness
-- toil/human reliability
+- toil and human reliability
 - production readiness
 - Senior/SRE/Architect reasoning
 
 ---
 
-# 68. Visual Package — Pending
+# 68. Visual Package
 
-The visual package should include:
+Review the [D00-T012 Visual Package](../../../../docs/diagrams/D00/D00-T012/README.md).
+
+The package includes:
 
 1. Reliability vs Availability vs Durability vs Resilience
 2. User Journey → Dependency Chain → Reliability Outcome
@@ -1307,7 +1352,51 @@ The visual package should include:
 
 ---
 
-# 69. What Comes Next
+# 69. Completion Gate
+
+Before moving on, confirm that you can:
+
+- explain why reliability is broader than uptime
+- distinguish availability, durability, resilience, fault tolerance, and recoverability
+- define reliability from a critical user journey rather than component health
+- explain why failure models make reliability claims meaningful
+- identify failure domains and blast radius
+- explain why redundancy requires independence
+- explain graceful degradation and when it is safe
+- explain failover as detect → decide → redirect/promote → validate
+- explain why failover itself can fail
+- distinguish active/active and active/passive at a high level
+- explain detection time, response time, and recovery time separately
+- explain why MTTR must be defined explicitly
+- distinguish SLI, SLO, SLA, and error budget
+- explain why 100% reliability is usually the wrong default target
+- explain how reliability targets balance user need, cost, and complexity
+- explain end-to-end dependency reliability
+- distinguish health, observability, and reliability
+- explain why user-impact-aware alerting is stronger than raw component thresholds alone
+- distinguish symptom from root cause
+- explain why change is a reliability risk
+- compare rollback and roll-forward
+- explain capacity headroom and why failover needs spare capacity
+- explain saturation and cascading-failure risk
+- explain load shedding and backpressure
+- explain why queue backlog is a reliability signal
+- explain why backup does not prove recovery
+- distinguish RTO from RPO
+- explain why restore/failover testing matters
+- explain disaster recovery at the correct preview level
+- explain why reliability testing must include failure scenarios
+- explain runbook purpose and incident-readiness requirements
+- explain how ownership, access, and human factors affect recovery
+- explain toil at a high level
+- explain why production readiness is a reliability gate
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the reliability-engineering mental model clearly without relying on notes
+
+# 70. What Comes Next
 
 After D00-T012 is completed, continue to:
 
@@ -1317,7 +1406,7 @@ That topic will formalize service-level objectives, error budgets, toil, on-call
 
 ---
 
-# 70. Sources & Evidence
+# 71. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1333,9 +1422,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1359,3 +1449,10 @@ Verified nuances:
 - monitoring, alert quality, access, runbooks, ownership, and validation all affect recovery time
 - backup success alone does not prove recoverability
 - capacity headroom supports failover, rescheduling, retries, maintenance, and recovery
+
+
+## Topic Package Status
+
+**D00-T012 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
