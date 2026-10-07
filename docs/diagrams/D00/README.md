@@ -97,3 +97,17 @@ Includes:
 - CI vs Continuous Delivery vs Continuous Deployment
 - Delivery Performance: Throughput, Instability & Recovery
 - DevOps vs SRE vs Platform Engineering
+
+
+## D00-T008 — Infrastructure as Code Mental Model
+
+- [Visual / Diagram Package](D00-T008/README.md)
+
+Includes:
+
+- Manual Infrastructure vs Infrastructure as Code
+- Desired State vs Actual State
+- Declarative vs Imperative
+- Plan → Apply → Infrastructure Lifecycle
+- IaC State / Dependency / Locking Model
+- IaC Change Risk: Review → Blast Radius → Recovery

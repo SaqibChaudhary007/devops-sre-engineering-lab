@@ -163,6 +163,29 @@ Recommended content angles:
 - **Architecture With Saqib:** DevOps vs SRE vs Platform Engineering
 - **5 Levels:** Explain CI/CD from Beginner to Architect
 
+
+## D00-T008 — Infrastructure as Code Mental Model
+
+Priority: **P1**
+
+Visual package:
+
+1. [Manual Infrastructure vs Infrastructure as Code](../../docs/diagrams/D00/D00-T008/DIA-D00-041-manual-vs-infrastructure-as-code.md)
+2. [Desired State vs Actual State](../../docs/diagrams/D00/D00-T008/DIA-D00-042-desired-vs-actual-state.md)
+3. [Declarative vs Imperative](../../docs/diagrams/D00/D00-T008/DIA-D00-043-declarative-vs-imperative.md)
+4. [Plan → Apply → Infrastructure Lifecycle](../../docs/diagrams/D00/D00-T008/DIA-D00-044-plan-apply-lifecycle.md)
+5. [IaC State / Dependency / Locking Model](../../docs/diagrams/D00/D00-T008/DIA-D00-045-state-dependency-locking.md)
+6. [IaC Change Risk: Review → Blast Radius → Recovery](../../docs/diagrams/D00/D00-T008/DIA-D00-046-review-blast-radius-recovery.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Why Infrastructure as Code Is More Than Terraform
+- **How It Really Works:** Desired State → Plan → Apply → Reality
+- **Under the Hood:** Why State and Dependency Graphs Matter
+- **Production Room:** The Plan Was Clean, but Production Still Failed
+- **Architecture With Saqib:** How State Boundaries Control Blast Radius
+- **5 Levels:** Explain IaC from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
