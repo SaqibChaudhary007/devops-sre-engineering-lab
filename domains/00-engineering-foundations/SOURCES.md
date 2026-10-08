@@ -53,3 +53,5 @@ AI output is never treated as technical authority.
 - [D00-T016 — Automation Mental Models](../../docs/sources/D00/D00-T016-source-verification.md) — core claims DOC-VERIFIED; automation value, toil reduction, desired/current state, reconciliation, idempotency, retry/backoff/jitter/timeout safety, partial failure, approval boundaries, guardrails, identity, observability, and bounded remediation nuances verified
 
 - [D00-T017 — Systems Thinking](../../docs/sources/D00/D00-T017-source-verification.md) — core claims DOC-VERIFIED; system boundaries, relationships, emergent behavior, stocks/flows, feedback loops, delays, local-vs-global optimization, retries, backpressure, autoscaling, cascading failure, common-mode dependencies, and second-order effects verified
+
+- [D00-T018 — Failure Thinking](../../docs/sources/D00/D00-T018-source-verification.md) — core claims DOC-VERIFIED; failure-mode analysis, blast radius, cascading failure, overload, retry amplification, graceful degradation, fault isolation, backup/restore, RTO/RPO, partition/quorum preview, recovery validation, game days, and chaos-testing boundaries verified

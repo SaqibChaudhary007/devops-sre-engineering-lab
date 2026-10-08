@@ -34,6 +34,7 @@ prerequisites:
   recommended: []
 evidence_status:
   - RESEARCHED
+  - DOC-VERIFIED
 certifications: []
 content_series:
   - Why Does It Exist
@@ -255,7 +256,7 @@ Failure:
 checkout request fails for user
 ~~~
 
-Terminology can vary across fields, so focus on the relationship rather than memorizing one wording.
+Terminology can vary across reliability, safety, and distributed-systems traditions, so focus on the conceptual relationship rather than overfitting to one formal vocabulary.
 
 ---
 
@@ -354,7 +355,7 @@ Examples conceptually:
 - temporary lock contention
 - momentary rate limit
 
-Retries may help when repetition is safe.
+Retries may help when repetition is safe, the failure is plausibly transient, the attempt count is bounded, and the dependency is not being further overloaded.
 
 ---
 
@@ -417,7 +418,9 @@ Examples:
 - one region succeeds, another times out
 - service is reachable but extremely slow
 
-Gray failures are dangerous because monitoring may disagree with user experience.
+Gray failures are dangerous because different observers can disagree about whether the system is healthy.
+
+At D00, treat "gray failure" as a useful mental model for observer-dependent or partial degradation rather than as one universally standardized formal definition.
 
 ---
 
@@ -798,6 +801,8 @@ Detailed bulkhead patterns come later.
 
 A circuit breaker can temporarily stop calls to a failing dependency after failure conditions are met.
 
+It is a conditional protection pattern rather than a universal requirement; some architectures already isolate or queue failures effectively elsewhere.
+
 Conceptually:
 
 ~~~text
@@ -913,6 +918,8 @@ Data recovery is different from service restart.
 
 A backup existing does not prove recovery works.
 
+Recoverability is demonstrated by restoring data, validating that it is usable, and confirming the workload can meet its intended recovery objectives.
+
 Recovery requires:
 
 ~~~text
@@ -985,7 +992,9 @@ A quorum is a minimum agreement threshold used by some distributed systems to ma
 
 At D00, retain:
 
-> Quorum mechanisms try to prevent incompatible sides from both acting as the sole authority.
+> Quorum mechanisms are used by some distributed systems to make authority decisions when communication is disrupted.
+
+The exact safety and availability behavior depends on the protocol. The etcd model used in source verification is one majority-based example and must not be generalized to every distributed system.
 
 Detailed mathematics come later.
 
@@ -1617,8 +1626,30 @@ Planned authoritative source families:
 
 Current evidence status:
 
-- conceptual draft: RESEARCHED
-- source verification: pending
+- core conceptual material: RESEARCHED / DOC-VERIFIED
+- source verification: complete
 - practical package: pending
 - assessment package: pending
 - visual package: pending
+
+Detailed verification record:
+
+- [D00-T018 Source Verification](../../../../docs/sources/D00/D00-T018-source-verification.md)
+
+Verified nuances:
+
+- failure mode should describe how a workload degrades and what impact becomes visible
+- fault/error/failure terminology varies across disciplines, so the topic preserves a conceptual chain instead of claiming one universal formal wording
+- complete outage is only one failure form; slow, stale, incorrect, intermittent, partial, or observer-dependent behavior can also matter
+- retries are part of failure propagation and can amplify overload
+- graceful degradation and load shedding can preserve critical functionality under stress
+- circuit breakers are conditional protection mechanisms, not universal fixes
+- redundancy does not prove independence from common-mode failure
+- failover is itself an operation with assumptions, capacity requirements, and failure modes
+- backup existence does not prove recoverability; restore and workload validation are required
+- RTO and RPO are distinct business-driven recovery objectives
+- network-partition and quorum behavior is protocol-specific and remains preview-level
+- containment can be prioritized before perfect explanation during active user impact
+- recovery must be validated end-to-end
+- resilience testing should be hypothesis-driven, bounded, observable, recoverable, and authorized
+- chaos engineering is controlled experimentation, not random destruction
