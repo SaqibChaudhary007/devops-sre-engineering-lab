@@ -255,6 +255,20 @@ All D00-T017 practical assets are **DRAFT**, not LAB-VERIFIED.
 
 Promote them only after completing them end-to-end and reviewing the outputs.
 
+## 00.18 — Failure Thinking
+
+1. [OBS-D00-022 — Failure Modes, Failure Domains, and Blast Radius](../../labs/observation/D00/OBS-D00-022-failure-modes-domains-blast-radius.md)
+2. [EXP-D00-031 — Slow Dependency, Retry Amplification, Backpressure, and Graceful Degradation](../../labs/experiments/D00/EXP-D00-031-slow-dependency-retries-backpressure-degradation.md)
+3. [EXP-D00-032 — Failover, Recovery Validation, Backup/Restore, and Safe Failure Testing](../../labs/experiments/D00/EXP-D00-032-failover-recovery-backup-safe-failure-testing.md)
+
+These assets turn Failure Thinking into safe, provider-neutral exercises covering failure-mode classification, fault/error/failure/impact distinctions, failure domains, blast radius, transient/permanent/intermittent/partial behavior, slow-dependency propagation, timeout boundaries, retry amplification, backpressure, load shedding, graceful degradation, redundancy vs independence, failover assumptions, backup vs recovery, RTO/RPO reasoning, state uncertainty, partition/quorum preview, pre-mortems, tabletop game days, and bounded failure-test design.
+
+### Verification Status
+
+All D00-T018 practical assets are **DRAFT**, not LAB-VERIFIED.
+
+Promote them only after completing them end-to-end and reviewing the outputs.
+
 ## Future D00 Practical Catalog
 
 Future experiments include stateful/stateless behavior, manual vs automated work and partial failure.
