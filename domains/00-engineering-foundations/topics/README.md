@@ -55,6 +55,10 @@
 
 ## Next
 
-18. 00.18 — Failure Thinking — planned
+18. [00.18 — Failure Thinking](00-18-failure-thinking/README.md) — canonical draft authored
+
+## Next
+
+19. 00.19 — Troubleshooting Mental Model — planned
 
 Additional topics will be added progressively as canonical content is authored, verified and integrated.
