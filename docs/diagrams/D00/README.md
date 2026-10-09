@@ -237,3 +237,17 @@ Includes:
 - Local Optimization vs Global Outcome
 - Dependency Chain → Cascading Failure → Blast Radius
 - Intervention → First-Order Effect → Second-Order Effect → New System State
+
+## D00-T018 — Failure Thinking
+
+- [Visual / Diagram Package](D00-T018/README.md)
+
+Includes:
+
+- Fault → Error → Failure → Impact → Detection → Recovery
+- Failure Modes: Down / Slow / Stale / Wrong / Partial / Intermittent
+- Dependency Failure → Retry → Saturation → Cascading Failure
+- Failure Domain → Redundancy → Common-Mode Failure → Blast Radius
+- Detect → Contain → Recover → Validate → Learn
+- Hypothesis → Controlled Failure Test → Observe → Stop → Recover → Learn
+
