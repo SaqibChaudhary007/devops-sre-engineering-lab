@@ -7,7 +7,7 @@ level:
   - L2
   - L3
 priority: P1
-status: draft
+status: published
 estimated_time:
   theory: 6-8h
   practical: 1-2h
@@ -211,6 +211,55 @@ Required:
 - [00.17 — Systems Thinking](../00-17-systems-thinking/README.md)
 
 You should already understand distributed dependencies, queues, retries, saturation, feedback loops, observability, blast radius, SLOs, automation guardrails, and systems thinking.
+
+---
+
+# Learning Package Navigation
+
+Use this page as the canonical learner entry point.
+
+Move through the package in this order:
+
+1. **Learn** — complete the conceptual sections on this page.
+2. **Verify** — review the [D00-T018 Source Verification](../../../../docs/sources/D00/D00-T018-source-verification.md).
+3. **Visualize** — review the [D00-T018 Visual Package](../../../../docs/diagrams/D00/D00-T018/README.md).
+4. **Observe Failure Modes & Blast Radius** — complete [OBS-D00-022 — Failure Modes, Failure Domains, and Blast Radius](../../../../labs/observation/D00/OBS-D00-022-failure-modes-domains-blast-radius.md).
+5. **Experiment with Slow Dependencies & Retry Amplification** — complete [EXP-D00-031 — Slow Dependency, Retries, Backpressure, and Degradation](../../../../labs/experiments/D00/EXP-D00-031-slow-dependency-retries-backpressure-degradation.md).
+6. **Experiment with Recovery & Safe Failure Testing** — complete [EXP-D00-032 — Failover, Recovery, Backup, and Safe Failure Testing](../../../../labs/experiments/D00/EXP-D00-032-failover-recovery-backup-safe-failure-testing.md).
+7. **Assess** — complete the [D00-T018 Assessment Package](../../../../assessments/topics/D00/D00-T018/README.md).
+8. **Teach Back** — explain failure thinking at Beginner, Engineer, Senior, SRE/Platform, and Architect levels.
+9. **Continue** — move to 00.19 only after the completion gate is satisfied.
+
+## Visual Package
+
+The dedicated diagrams are:
+
+- [DIA-D00-101 — Fault → Error → Failure → Impact → Detection → Recovery](../../../../docs/diagrams/D00/D00-T018/DIA-D00-101-fault-error-failure-impact-recovery.md)
+- [DIA-D00-102 — Failure Modes: Down / Slow / Stale / Wrong / Partial / Intermittent](../../../../docs/diagrams/D00/D00-T018/DIA-D00-102-failure-modes-spectrum.md)
+- [DIA-D00-103 — Dependency Failure → Retry → Saturation → Cascading Failure](../../../../docs/diagrams/D00/D00-T018/DIA-D00-103-retry-amplification-cascade.md)
+- [DIA-D00-104 — Failure Domain → Redundancy → Common-Mode Failure → Blast Radius](../../../../docs/diagrams/D00/D00-T018/DIA-D00-104-failure-domain-redundancy-common-mode.md)
+- [DIA-D00-105 — Detect → Contain → Recover → Validate → Learn](../../../../docs/diagrams/D00/D00-T018/DIA-D00-105-detect-contain-recover-validate-learn.md)
+- [DIA-D00-106 — Hypothesis → Controlled Failure Test → Observe → Stop → Recover → Learn](../../../../docs/diagrams/D00/D00-T018/DIA-D00-106-controlled-failure-test-loop.md)
+
+## Practical Package
+
+- [OBS-D00-022 — Failure Modes, Failure Domains, and Blast Radius](../../../../labs/observation/D00/OBS-D00-022-failure-modes-domains-blast-radius.md)
+- [EXP-D00-031 — Slow Dependency, Retries, Backpressure, and Degradation](../../../../labs/experiments/D00/EXP-D00-031-slow-dependency-retries-backpressure-degradation.md)
+- [EXP-D00-032 — Failover, Recovery, Backup, and Safe Failure Testing](../../../../labs/experiments/D00/EXP-D00-032-failover-recovery-backup-safe-failure-testing.md)
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
+
+## Assessment Package
+
+The [D00-T018 Assessment Package](../../../../assessments/topics/D00/D00-T018/README.md) includes:
+
+- 96-question knowledge check
+- applied failure-thinking scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- critical misconception rules
+- remediation map
 
 ---
 
@@ -1534,64 +1583,54 @@ Before moving on, retain:
 
 ---
 
-# 77. Practical Package — Next Layer
+# 77. Practical Package
 
-The practical package should include safe, provider-neutral exercises such as:
+Complete the practical assets:
 
-- classify failure modes for one user journey
-- distinguish fault, error, failure, and impact
-- map failure domains and blast radius
-- classify transient/permanent/intermittent/partial failures
-- model a slow-dependency failure chain
-- analyze retry amplification and timeout boundaries
-- design graceful degradation / backpressure / load shedding conceptually
-- review redundancy for common-mode failure
-- reason about failover and recovery validation
-- distinguish backup existence from restore capability
-- perform a pre-mortem / tabletop failure review
-- design a safe failure-testing hypothesis with stop conditions
+1. [OBS-D00-022 — Failure Modes, Failure Domains, and Blast Radius](../../../../labs/observation/D00/OBS-D00-022-failure-modes-domains-blast-radius.md)
+2. [EXP-D00-031 — Slow Dependency, Retries, Backpressure, and Degradation](../../../../labs/experiments/D00/EXP-D00-031-slow-dependency-retries-backpressure-degradation.md)
+3. [EXP-D00-032 — Failover, Recovery, Backup, and Safe Failure Testing](../../../../labs/experiments/D00/EXP-D00-032-failover-recovery-backup-safe-failure-testing.md)
 
-These assets will be authored separately and remain DRAFT until LAB-VERIFIED.
+These exercises turn failure thinking into concrete reasoning around failure modes, blast radius, dependency degradation, retry amplification, timeout boundaries, backpressure, graceful degradation, failover assumptions, recovery validation, backup vs restore, pre-mortems, and bounded failure testing.
+
+The practical assets remain **DRAFT** until they are completed end-to-end and promoted to `LAB-VERIFIED`.
 
 ---
 
-# 78. Assessment Package — Pending
+# 78. Assessment Package
 
-The assessment should test:
+Complete the [D00-T018 Assessment Package](../../../../assessments/topics/D00/D00-T018/README.md).
+
+It tests:
 
 - fault / error / failure / impact
 - failure modes
 - transient / permanent / intermittent / partial failure
 - gray / slow / stale / incorrect failure
-- dependency failure
-- correlated/common-mode failure
+- dependency and common-mode failure
 - failure domains / blast radius
 - overload / resource exhaustion
 - cascading failure / propagation
-- timeouts / fail-fast
-- retries / backoff / amplification
-- load shedding / backpressure
-- graceful degradation
-- isolation / circuit-breaker previews
-- redundancy / independence
-- failover / failback
-- data failure / backup / restore
-- RTO / RPO previews
+- timeouts / fail-fast / retries / amplification
+- load shedding / backpressure / graceful degradation
+- redundancy / independence / failover / failback
+- data failure / backup / restore / RTO / RPO
 - partition / split-brain / quorum previews
 - state uncertainty / duplicates
 - change / configuration / security-control failure
 - human / process / observability / alerting / runbook failure
 - control-plane vs data-plane failure
 - containment / recovery / validation / learning
-- pre-mortems
-- failure testing / fault injection / chaos / game-day previews
+- pre-mortems / safe failure testing / game-day reasoning
 - Senior/SRE/Architect reasoning
 
 ---
 
-# 79. Visual Package — Pending
+# 79. Visual Package
 
-The visual package should include:
+Review the [D00-T018 Visual Package](../../../../docs/diagrams/D00/D00-T018/README.md).
+
+The package includes:
 
 1. Fault → Error → Failure → Impact → Detection → Recovery
 2. Failure Modes: Down / Slow / Stale / Wrong / Partial / Intermittent
@@ -1602,7 +1641,47 @@ The visual package should include:
 
 ---
 
-# 80. What Comes Next
+# 80. Completion Gate
+
+Before moving on, confirm that you can:
+
+- distinguish fault, error, failure, failure mode, and impact
+- explain why failure is not limited to complete outage
+- recognize slow, stale, wrong, partial, intermittent, and gray failures
+- identify failure domains and reason about blast radius
+- distinguish transient, permanent, intermittent, and partial failures
+- explain dependency failure and propagation paths
+- identify correlated and common-mode failure
+- explain overload, saturation, and resource exhaustion
+- explain cascading failure and amplification
+- reason about timeout boundaries and fail-fast behavior
+- explain when retries can help and when retries can amplify failure
+- connect backoff and jitter to retry pressure conceptually
+- explain load shedding, backpressure, and graceful degradation
+- classify dependencies as critical, degradable, optional, or asynchronous
+- explain isolation / bulkhead and circuit-breaker concepts at preview level
+- distinguish redundancy from sufficient independence
+- explain why failover can itself fail
+- distinguish failover from failback
+- distinguish service recovery from data recovery
+- explain why backups do not prove recoverability
+- distinguish RTO from RPO
+- explain partition, split-brain, and quorum only at D00 preview depth
+- reason about state uncertainty and duplicate processing
+- connect change, configuration, security controls, people, observability, alerting, and runbooks to failure
+- distinguish control-plane failure from data-plane failure
+- prioritize containment during active impact when appropriate
+- validate recovery end-to-end instead of relying on one metric
+- use pre-mortem thinking before major changes
+- explain why controlled failure testing requires hypothesis, scope, stop conditions, recovery, and validation
+- explain why chaos engineering is controlled experimentation, not random destruction
+- complete the practical package
+- score at least 80% on the knowledge check
+- score at least 75% on the applied scenario
+- demonstrate at least L3 / FD-3 reasoning
+- teach the failure-thinking mental model clearly without relying on notes
+
+# 81. What Comes Next
 
 After D00-T018 is completed, continue to:
 
@@ -1612,7 +1691,7 @@ That topic will deepen evidence-first diagnosis, scoping, timelines, hypothesis 
 
 ---
 
-# 81. Sources & Evidence
+# 82. Sources & Evidence
 
 Planned authoritative source families:
 
@@ -1628,9 +1707,10 @@ Current evidence status:
 
 - core conceptual material: RESEARCHED / DOC-VERIFIED
 - source verification: complete
-- practical package: pending
-- assessment package: pending
-- visual package: pending
+- practical package: authored as DRAFT; LAB-VERIFICATION pending
+- assessment package: authored and cross-linked
+- visual package: authored and cross-linked
+- canonical learner journey: integrated
 
 Detailed verification record:
 
@@ -1653,3 +1733,9 @@ Verified nuances:
 - recovery must be validated end-to-end
 - resilience testing should be hypothesis-driven, bounded, observable, recoverable, and authorized
 - chaos engineering is controlled experimentation, not random destruction
+
+## Topic Package Status
+
+**D00-T018 is structurally complete.**
+
+Remaining quality work is operational verification of the practical exercises. Once those exercises are completed and reviewed, their evidence status can be promoted from DRAFT to LAB-VERIFIED.
