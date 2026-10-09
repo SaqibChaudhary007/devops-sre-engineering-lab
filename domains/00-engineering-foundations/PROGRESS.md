@@ -102,8 +102,8 @@
 | D00-T018 Failure Thinking | Canonical draft authored |
 | D00-T018 Source Verification | Complete |
 | D00-T018 Practical Assets | Drafted |
-| D00-T018 Assessment | Next |
-| D00-T018 Visual Package | Pending |
+| D00-T018 Assessment | Drafted |
+| D00-T018 Visual Package | Next |
 | D00-T018 Cross-Link Integration | Pending |
 | Domain v1.0 | Pending |
 
