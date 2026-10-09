@@ -404,6 +404,30 @@ Recommended content angles:
 - **Architecture With Saqib:** Hidden Coupling, Shared Failure Domains, and Second-Order Effects
 - **5 Levels:** Explain Systems Thinking from Beginner to Architect
 
+
+## D00-T018 — Failure Thinking
+
+Priority: **P1**
+
+Visual package:
+
+1. [Fault → Error → Failure → Impact → Detection → Recovery](../../docs/diagrams/D00/D00-T018/DIA-D00-101-fault-error-failure-impact-recovery.md)
+2. [Failure Modes: Down / Slow / Stale / Wrong / Partial / Intermittent](../../docs/diagrams/D00/D00-T018/DIA-D00-102-failure-modes-spectrum.md)
+3. [Dependency Failure → Retry → Saturation → Cascading Failure](../../docs/diagrams/D00/D00-T018/DIA-D00-103-retry-amplification-cascade.md)
+4. [Failure Domain → Redundancy → Common-Mode Failure → Blast Radius](../../docs/diagrams/D00/D00-T018/DIA-D00-104-failure-domain-redundancy-common-mode.md)
+5. [Detect → Contain → Recover → Validate → Learn](../../docs/diagrams/D00/D00-T018/DIA-D00-105-detect-contain-recover-validate-learn.md)
+6. [Hypothesis → Controlled Failure Test → Observe → Stop → Recover → Learn](../../docs/diagrams/D00/D00-T018/DIA-D00-106-controlled-failure-test-loop.md)
+
+Recommended content angles:
+
+- **Why Does It Exist:** Failure Is More Than a Complete Outage
+- **How It Really Works:** Fault → Failure Mode → Impact → Recovery
+- **Under the Hood:** Why Retries Can Amplify a Slow Dependency
+- **Production Room:** Contain Impact Before Chasing Perfect Root Cause
+- **Think Like an SRE:** Validate Recovery End-to-End
+- **Architecture With Saqib:** Redundancy, Independence, and Common-Mode Failure
+- **5 Levels:** Explain Failure Thinking from Beginner to Architect
+
 ## Rule
 
 Research once, verify it, build the canonical topic, then repurpose it into the right formats without duplicating technical truth across multiple places.
