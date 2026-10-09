@@ -227,6 +227,19 @@ Includes:
 - scoring rubric
 - remediation map
 
+### 00.18 — Failure Thinking
+
+[Open D00-T018 Assessment Package](../../assessments/topics/D00/D00-T018/README.md)
+
+Includes:
+
+- 96-question knowledge check
+- applied failure-thinking scenario
+- Senior/SRE/Architect follow-ups
+- teach-back assessment
+- scoring rubric
+- remediation map
+
 ## Status
 
 - NOT STARTED
